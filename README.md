@@ -14,8 +14,9 @@ tests.
 
 > [!IMPORTANT]
 > **Unit 1 has project-reviewed solutions. Units 2–10 are working question
-> inventories, not solved guides.** All 1,938 answers in Units 2–10 are still
-> withheld. Some question placement, OCR text, formulas and missing figures
+> inventories, not solved guides.** Seventeen of 1,939 records in Units 2–10 now have
+> verified, independently explained answers; the other 1,922 remain withheld.
+> Some question placement, OCR text, formulas and missing figures
 > also require manual correction. Do not use Units 2–10 as your only source for
 > answer checking or final revision.
 
@@ -24,17 +25,17 @@ tests.
 | Unit | Topic and guide | Questions | Current status |
 |---:|---|---:|---|
 | 1 | [Discrete Structures and Optimization](docs/unit-1-discrete-structures-and-optimization.md) | 143 | Project-reviewed solutions |
-| 2 | [Computer System Architecture](docs/unit-2-computer-system-architecture.md) | 394 | Question inventory; not solved |
-| 3 | [Programming Languages and Computer Graphics](docs/unit-3-programming-languages-and-computer-graphics.md) | 176 | Question inventory; not solved |
-| 4 | [Database Management Systems](docs/unit-4-database-management-systems.md) | 178 | Question inventory; not solved |
+| 2 | [Computer System Architecture](docs/unit-2-computer-system-architecture.md) | 391 | Question inventory; not solved |
+| 3 | [Programming Languages and Computer Graphics](docs/unit-3-programming-languages-and-computer-graphics.md) | 184 | Inventory; 11 validated answers |
+| 4 | [Database Management Systems](docs/unit-4-database-management-systems.md) | 176 | Question inventory; not solved |
 | 5 | [System Software and Operating System](docs/unit-5-system-software-and-operating-system.md) | 184 | Question inventory; not solved |
-| 6 | [Software Engineering](docs/unit-6-software-engineering.md) | 178 | Question inventory; not solved |
-| 7 | [Data Structures and Algorithms](docs/unit-7-data-structures-and-algorithms.md) | 250 | Question inventory; not solved |
-| 8 | [Theory of Computation and Compilers](docs/unit-8-theory-of-computation-and-compilers.md) | 223 | Question inventory; not solved |
-| 9 | [Data Communication and Computer Networks](docs/unit-9-data-communication-and-computer-networks.md) | 257 | Question inventory; not solved |
-| 10 | [Artificial Intelligence](docs/unit-10-artificial-intelligence.md) | 98 | Question inventory; not solved |
+| 6 | [Software Engineering](docs/unit-6-software-engineering.md) | 180 | Inventory; 6 validated answers |
+| 7 | [Data Structures and Algorithms](docs/unit-7-data-structures-and-algorithms.md) | 251 | Question inventory; not solved |
+| 8 | [Theory of Computation and Compilers](docs/unit-8-theory-of-computation-and-compilers.md) | 220 | Question inventory; not solved |
+| 9 | [Data Communication and Computer Networks](docs/unit-9-data-communication-and-computer-networks.md) | 256 | Question inventory; not solved |
+| 10 | [Artificial Intelligence](docs/unit-10-artificial-intelligence.md) | 97 | Question inventory; not solved |
 
-There are **10 unit guides with 2,081 study records**. You can also use the
+There are **10 unit guides with 2,082 study records**. You can also use the
 [one-page guide index](docs/README.md) or read the [official syllabus
 transcription](docs/syllabus.md).
 
@@ -59,9 +60,10 @@ transcription](docs/syllabus.md).
 6. Study the “How to solve similar questions” section.
 7. Mark difficult questions and try them again during revision.
 
-For Units 2–10, chapter notes are general revision notes rather than detailed
-solutions to each question. Text saying that an answer is awaiting validation
-means the final answer has not been verified.
+For most records in Units 2–10, chapter notes are general revision notes rather
+than detailed solutions. A record with a **Correct answer** section has passed
+answer-key matching and independent concept checking; text saying an answer is
+awaiting validation means it has not passed those checks.
 
 ## Current coverage
 
@@ -70,12 +72,15 @@ means the final answer has not been verified.
 - **Corpus limitation:** this is not a complete collection of every session or
   every question. Several papers are missing, partial or damaged during
   extraction.
-- **Questions in the broad extraction index:** 2,102 Computer Science question
+- **Questions in the broad extraction index:** 2,103 Computer Science question
   blocks after removing Paper 1 material and coaching/promotional content.
-- **Questions in the readable unit guides:** 2,081.
+- **Questions in the readable unit guides:** 2,082.
 - **Unit 1:** 143 reviewed questions with answers and explanations.
 - **2021 and 2022:** all 100 Computer Science question positions were recovered
   from each paper.
+- **Official-key matching:** all 100 November 2021 Question IDs are mapped to
+  the NTA final key. They are not labelled as solved until independent reasoning
+  and a full conceptual lesson are also present.
 - **Rajasthan SET Computer Science:** no verifiable paper is present in the
   available local collection, so Rajasthan SET coverage is not claimed.
 - **Paper 1:** not covered; the repository focuses on Computer Science subject
@@ -101,6 +106,12 @@ Important structured files:
 - [data/questions.csv](data/questions.csv) — Unit 1 data in spreadsheet form;
 - [data/all-unit-question-index.json](data/all-unit-question-index.json) — the
   working question index for all units.
+- [data/verified-solutions.json](data/verified-solutions.json) — structured,
+  source-matched solutions rendered into Units 2–10 after verification.
+- [data/official-answer-keys.json](data/official-answer-keys.json) — official
+  Question-ID and Option-ID mappings, including dropped and multi-answer items.
+- [data/manual-classification-overrides.json](data/manual-classification-overrides.json)
+  — reviewed corrections to automated unit routing.
 
 ## Source papers
 

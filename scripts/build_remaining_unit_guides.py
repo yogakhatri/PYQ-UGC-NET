@@ -118,6 +118,13 @@ def syllabus_units() -> dict[int, list[dict[str, str]]]:
 
 
 def choose_chapter(question: str, chapters: list[dict[str, str]]) -> tuple[int, int]:
+    # A few syllabus terms are much more specific than generic distractor words.
+    # Route these before bag-of-words scoring so, for example, an XML option
+    # containing the word "language" cannot outrank the Web Programming chapter.
+    if re.search(r"\b(?:XML|HTML|DHTML|servlets?|applets?|javascript)\b", question, re.I):
+        for index, chapter in enumerate(chapters):
+            if chapter["title"] == "Web Programming":
+                return index, 100
     qwords = words(question)
     scored = []
     for index, chapter in enumerate(chapters):
@@ -147,6 +154,146 @@ def display_question(text: str) -> str:
     text = re.sub(r"\b(?:Personal Exam Guide|al Exams Guide)\b", " ", text, flags=re.I)
     text = re.sub(r"^\s*\d{1,3}[.)]\s*", "", text)
     return re.sub(r"\s+", " ", text).strip()
+
+
+OPTION_SCHEMES = (
+    (("A", "B", "C", "D"), re.compile(r"(?<!\w)\(\s*([A-D])\s*\)\s*", re.I)),
+    (("1", "2", "3", "4"), re.compile(r"(?<!\w)\(\s*([1-4])\s*\)\s*")),
+    (("A", "B", "C", "D"), re.compile(r"(?<![\w.])([A-D])\.\s+", re.I)),
+    (("1", "2", "3", "4"), re.compile(r"(?<![\w.])([1-4])\.\s+")),
+)
+LOOSE_OPTION_SCHEMES = (
+    (
+        ("A", "B", "C", "D"),
+        re.compile(
+            r"(?<!\w)\(\s*A\s*\)\s*(.*?)"
+            r"(?<!\w)\(\s*B\s*\)\s*(.*?)"
+            r"(?<!\w)\(\s*C\s*\)\s*(.*?)"
+            r"(?<!\w)\(\s*D\s*\)\s*(.*)$",
+            re.I,
+        ),
+    ),
+    (
+        ("1", "2", "3", "4"),
+        re.compile(
+            r"(?<!\w)\(\s*1\s*\)\s*(.*?)"
+            r"(?<!\w)\(\s*2\s*\)\s*(.*?)"
+            r"(?<!\w)\(\s*3\s*\)\s*(.*?)"
+            r"(?<!\w)\(\s*4\s*\)\s*(.*)$",
+        ),
+    ),
+)
+
+
+def split_options(text: str) -> tuple[str, tuple[str, ...], list[str]] | None:
+    """Return the last complete four-option sequence found in extracted text."""
+    candidates: list[tuple[int, str, tuple[str, ...], list[str]]] = []
+    for labels, pattern in OPTION_SCHEMES:
+        matches = list(pattern.finditer(text))
+        for index in range(len(matches) - 3):
+            sequence = matches[index:index + 4]
+            found_labels = tuple(match.group(1).upper() for match in sequence)
+            if found_labels != labels:
+                continue
+            start = sequence[0].start()
+            if start < 5:
+                continue
+            values = []
+            for option_index, match in enumerate(sequence):
+                end = sequence[option_index + 1].start() if option_index < 3 else len(text)
+                value = text[match.end():end].strip(" \t;|")
+                values.append(value)
+            if all(values):
+                # Prefer the final complete sequence. This correctly chooses
+                # numbered answer choices after an earlier A-D statement list.
+                candidates.append((start, labels[0], labels, values))
+    if not candidates:
+        return None
+    start, _, labels, values = max(candidates, key=lambda candidate: candidate[0])
+    stem = text[:start].strip()
+    stem = re.sub(r"\b(?:Options?|Code)\s*:\s*$", "", stem, flags=re.I).strip()
+    return stem, labels, values
+
+
+def split_damaged_options(text: str) -> tuple[str, tuple[str, ...], list[str]] | None:
+    """Recover visibly flattened choices even when OCR left an option empty."""
+    candidates = []
+    for labels, pattern in LOOSE_OPTION_SCHEMES:
+        match = pattern.search(text)
+        if match:
+            values = [value.strip(" \t;|") for value in match.groups()]
+            candidates.append((match.start(), text[:match.start()].strip(), labels, values))
+    if not candidates:
+        return None
+    _, stem, labels, values = max(candidates, key=lambda candidate: candidate[0])
+    return stem, labels, values
+
+
+def truncate_merged_next_question(text: str, question_number: int | str) -> str:
+    """Stop a recovered block when the next numbered question was merged into it."""
+    try:
+        next_number = int(question_number) + 1
+    except (TypeError, ValueError):
+        return text
+    pattern = re.compile(
+        rf"\s+Question\s+(?:Number|No\.?)[\s:=-]*{next_number}\b",
+        re.IGNORECASE,
+    )
+    match = pattern.search(text)
+    return text[:match.start()] if match else text
+
+
+def quoted_stem(stem: str) -> list[str]:
+    """Render a stem and expose any additional embedded choice set for review."""
+    embedded: list[tuple[tuple[str, ...], list[str]]] = []
+    remaining = stem
+    while True:
+        parsed = split_options(remaining)
+        if parsed is None:
+            break
+        remaining, labels, values = parsed
+        embedded.append((labels, values))
+
+    damaged = split_damaged_options(remaining)
+    if damaged is not None:
+        remaining, labels, values = damaged
+        embedded.append((labels, values))
+
+    lines = [f"> {remaining}"] if remaining else []
+    for labels, values in reversed(embedded):
+        lines.extend([
+            ">",
+            "> **Additional extracted choices — check the source page:**",
+            ">",
+        ])
+        if labels == ("1", "2", "3", "4"):
+            lines.extend(
+                f"> {label}. {value or '_Missing in extracted text_'}"
+                for label, value in zip(labels, values)
+            )
+        else:
+            lines.extend(
+                f"> - **{label}.** {value or '_Missing in extracted text_'}"
+                for label, value in zip(labels, values)
+            )
+    return lines
+
+
+def question_markdown(text: str, question_number: int | str) -> list[str]:
+    """Format a recovered question and its choices for direct GitHub reading."""
+    cleaned = display_question(truncate_merged_next_question(text, question_number))
+    parsed = split_options(cleaned)
+    if parsed is None:
+        return quoted_stem(cleaned)
+
+    stem, labels, options = parsed
+    lines = quoted_stem(stem)
+    lines.extend(["", "**Options**", ""])
+    if labels == ("1", "2", "3", "4"):
+        lines.extend(f"{label}. {option}" for label, option in zip(labels, options))
+    else:
+        lines.extend(f"- **{label}.** {option}" for label, option in zip(labels, options))
+    return lines
 
 
 def short_reference(item: dict) -> str:
@@ -183,6 +330,46 @@ def solution_route(unit: int, chapter: dict[str, str]) -> str:
     )
 
 
+def solution_key(item: dict) -> str:
+    return f"{item['sourceFile']}#{item['questionNumber']}"
+
+
+def solution_markdown(solution: dict) -> list[str]:
+    lines = [
+        "**Correct answer**",
+        "",
+        f"**Option {solution['correctOption']}: {solution['correctText']}**",
+        "",
+        f"*Verification: {solution['answerStatus']}.*",
+        "",
+        "**Step-by-step solution**",
+        "",
+    ]
+    lines.extend(f"{index}. {step}" for index, step in enumerate(solution["steps"], 1))
+    lines.extend(["", "**Why each option is right or wrong**", ""])
+    lines.extend(f"- {analysis}" for analysis in solution["optionAnalysis"])
+    lines.extend(["", "**Conceptual lesson**", ""])
+    for index, paragraph in enumerate(solution["conceptualLesson"]):
+        if index:
+            lines.append("")
+        lines.append(paragraph)
+    lines.extend([
+        "",
+        "**How to solve similar questions**",
+        "",
+        solution["similarQuestionMethod"],
+        "",
+        "**Verification references**",
+        "",
+    ])
+    labels = ("Final-answer-key archive", "Independent concept reference")
+    lines.extend(
+        f"- [{labels[index] if index < len(labels) else 'Additional verification source'}]({source})"
+        for index, source in enumerate(solution["verificationSources"])
+    )
+    return lines
+
+
 def chapter_note(unit: int, chapter: dict[str, str]) -> list[str]:
     p = PLAYBOOK[unit]
     return [
@@ -200,16 +387,28 @@ def chapter_note(unit: int, chapter: dict[str, str]) -> list[str]:
 
 def build() -> None:
     questions = json.loads((DATA / "all-unit-question-index.json").read_text())
+    solutions = json.loads((DATA / "verified-solutions.json").read_text())
     chapters_by_unit = syllabus_units()
     coverage = {}
 
     for unit, (title, filename) in UNITS.items():
         items = [q for q in questions if q["suggestedUnit"] == unit]
+        validated_count = sum(solution_key(item) in solutions for item in items)
+        pending_count = len(items) - validated_count
         chapters = chapters_by_unit[unit]
         grouped: dict[int, list[tuple[dict, int]]] = defaultdict(list)
         chapter_scores = Counter()
         for item in items:
-            chapter_index, score = choose_chapter(item["rawText"], chapters)
+            solution = solutions.get(solution_key(item))
+            chapter_title = solution.get("chapterTitle") if solution else None
+            if chapter_title:
+                chapter_index = next(
+                    index for index, chapter in enumerate(chapters)
+                    if chapter["title"] == chapter_title
+                )
+                score = 100
+            else:
+                chapter_index, score = choose_chapter(item["rawText"], chapters)
             grouped[chapter_index].append((item, score))
             chapter_scores["keyword-supported" if score else "fallback"] += 1
 
@@ -235,7 +434,7 @@ def build() -> None:
             f"This guide contains all **{len(items)} question blocks currently recoverable and assigned to Unit {unit}** from the local UGC NET archive. Questions are arranged chapter-wise and numbered continuously through the unit.",
             "",
             "> [!WARNING]",
-            "> This is a working extraction inventory, not a solved guide. All answers remain unvalidated. Some unit and chapter placements use fallback routing, and OCR or missing figures can make questions incomplete.",
+            f"> This is a working extraction inventory, not a complete solved guide. **{validated_count} answers are validated and {pending_count} remain pending** in this unit. Some unit and chapter placements use fallback routing, and OCR or missing figures can make questions incomplete.",
             "",
             "Use this file for question discovery and broad chapter revision. The chapter notes and exam methods are general, not question-specific solutions. Full source paths, PDF pages and classification states remain in the structured data for auditing.",
             "",
@@ -270,6 +469,7 @@ def build() -> None:
             entries.sort(key=lambda pair: (pair[0]["sourceFile"], pair[0]["questionNumber"], pair[0]["sourcePage"]))
             for item, chapter_score in entries:
                 unit_question_number += 1
+                verified_solution = solutions.get(solution_key(item))
                 lines.extend([
                     "---",
                     "",
@@ -277,23 +477,28 @@ def build() -> None:
                     "",
                     f"*{short_reference(item)}*",
                     "",
-                    f"> {display_question(item['rawText'])}",
-                    "",
-                    "**Chapter foundations**",
-                    "",
-                    f"This question belongs to the ideas covered by **{chapter['title']}**. Revise these foundations: {chapter['scope']}",
-                    "",
-                    "**Exam method**",
-                    "",
-                    f"1. Identify the exact definition, formula, algorithm or system property being tested.",
-                    f"2. {solution_route(unit, chapter)}",
-                    f"3. Check units, boundary cases and every statement before selecting an option.",
-                    "",
-                    "**Answer status**",
-                    "",
-                    "This item has not yet passed reliable answer-key matching and independent derivation, so no option is printed here. The omission is intentional: an unverified answer would make the guide unsafe for revision.",
+                    *question_markdown(item["rawText"], item["questionNumber"]),
                     "",
                 ])
+                if verified_solution:
+                    lines.extend([*solution_markdown(verified_solution), ""])
+                else:
+                    lines.extend([
+                        "**Chapter foundations**",
+                        "",
+                        f"This question belongs to the ideas covered by **{chapter['title']}**. Revise these foundations: {chapter['scope']}",
+                        "",
+                        "**Exam method**",
+                        "",
+                        "1. Identify the exact definition, formula, algorithm or system property being tested.",
+                        f"2. {solution_route(unit, chapter)}",
+                        "3. Check units, boundary cases and every statement before selecting an option.",
+                        "",
+                        "**Answer status**",
+                        "",
+                        "This item has not yet passed reliable answer-key matching and independent derivation, so no option is printed here. The omission is intentional: an unverified answer would make the guide unsafe for revision.",
+                        "",
+                    ])
 
         lines.extend([
             "## Coverage and quality notes",
@@ -301,7 +506,7 @@ def build() -> None:
             f"- Recovered question blocks in this unit: **{len(items)}**",
             f"- Chapter placements with direct keyword support: **{chapter_scores['keyword-supported']}**",
             f"- Chapter placements needing manual review: **{chapter_scores['fallback']}**",
-            f"- Questions with validated answers in this guide: **0**",
+            f"- Questions with validated answers in this guide: **{validated_count}**",
             "- OCR may flatten mathematical notation, tables, code indentation, and figures. Full audit references are retained in the structured data.",
             "- Some combined Paper 1/Paper 2 scans and older papers lack a trustworthy embedded key. Such questions remain pending rather than receiving guessed answers.",
             "",
@@ -317,7 +522,8 @@ def build() -> None:
             "questions": len(items),
             "chapterKeywordSupported": chapter_scores["keyword-supported"],
             "chapterManualReview": chapter_scores["fallback"],
-            "solutionStatus": "working inventory; no validated answers",
+            "validatedAnswers": validated_count,
+            "solutionStatus": "working inventory; validated answers are rendered where available",
         }
 
     (DATA / "units-2-10-working-coverage.json").write_text(

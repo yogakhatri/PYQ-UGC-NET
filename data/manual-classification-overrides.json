@@ -1,0 +1,42 @@
+{
+  "sources/ugc-net-cs-2021-nov-with-answers.pdf#2": {
+    "unit": 3,
+    "reason": "The stem asks for the result of a C function; binary representation appears only inside the program logic and options."
+  },
+  "sources/ugc-net-cs-2021-nov-with-answers.pdf#3": {
+    "unit": 3,
+    "reason": "The stem is a Java recursive-function trace, not computer arithmetic or architecture."
+  },
+  "sources/ugc-net-cs-2021-nov-with-answers.pdf#4": {
+    "unit": 3,
+    "reason": "JNDI, RMI, JDK and JRE are Java programming-platform concepts."
+  },
+  "sources/ugc-net-cs-2021-nov-with-answers.pdf#5": {
+    "unit": 3,
+    "reason": "Imperative, object-oriented, logic and functional paradigms belong to programming-language concepts."
+  },
+  "sources/ugc-net-cs-2021-nov-with-answers.pdf#6": {
+    "unit": 3,
+    "reason": "Image bit depth and raster storage are computer-graphics representation topics."
+  },
+  "sources/ugc-net-cs-2021-nov-with-answers.pdf#8": {
+    "unit": 3,
+    "reason": "The question asks for a 2-D affine transformation matrix in computer graphics."
+  },
+  "sources/ugc-net-cs-2021-nov-with-answers.pdf#9": {
+    "unit": 3,
+    "reason": "The question tests cubic Bezier-curve properties in computer graphics."
+  },
+  "sources/ugc-net-cs-2021-nov-with-answers.pdf#12": {
+    "unit": 6,
+    "reason": "MVC component responsibilities are a software architectural-design topic."
+  },
+  "sources/ugc-net-cs-2021-nov-with-answers.pdf#15": {
+    "unit": 6,
+    "reason": "Availability, MTBF and repair time are software reliability and quality metrics."
+  },
+  "sources/ugc-net-cs-2021-nov-with-answers.pdf#16": {
+    "unit": 6,
+    "reason": "Source-control repository contents are part of Software Configuration Management."
+  }
+}

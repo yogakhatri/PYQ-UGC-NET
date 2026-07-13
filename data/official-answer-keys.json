@@ -1,0 +1,993 @@
+{
+  "nta-ugc-net-dec-2020-june-2021-computer-science": {
+    "authority": "National Testing Agency (NTA)",
+    "title": "UGC NET December 2020 and June 2021 Final Answer Key",
+    "examDate": "2021-11-26",
+    "subject": "087 Computer Science and Applications",
+    "sourceFile": "sources/ugc-net-cs-2021-nov-with-answers.pdf",
+    "officialUrl": "https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2022/04/2022040888.pdf",
+    "officialKeyPdfPage": 61,
+    "entries": {
+      "1": {
+        "questionId": 2331,
+        "correctOptionIds": [
+          9324
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "2": {
+        "questionId": 2332,
+        "correctOptionIds": [
+          9326
+        ],
+        "correctOptions": [
+          2
+        ],
+        "keyStatus": "single-option"
+      },
+      "3": {
+        "questionId": 2333,
+        "correctOptionIds": [
+          9332
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "4": {
+        "questionId": 2334,
+        "correctOptionIds": [
+          9333
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "5": {
+        "questionId": 2335,
+        "correctOptionIds": [
+          9337
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "6": {
+        "questionId": 2336,
+        "correctOptionIds": [
+          9342
+        ],
+        "correctOptions": [
+          2
+        ],
+        "keyStatus": "single-option"
+      },
+      "7": {
+        "questionId": 2337,
+        "correctOptionIds": [
+          9348
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "8": {
+        "questionId": 2338,
+        "correctOptionIds": [
+          9349
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "9": {
+        "questionId": 2339,
+        "correctOptionIds": [
+          9353
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "10": {
+        "questionId": 2340,
+        "correctOptionIds": [
+          9360
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "11": {
+        "questionId": 2341,
+        "correctOptionIds": [
+          9362
+        ],
+        "correctOptions": [
+          2
+        ],
+        "keyStatus": "single-option"
+      },
+      "12": {
+        "questionId": 2342,
+        "correctOptionIds": [
+          9365
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "13": {
+        "questionId": 2343,
+        "correctOptionIds": [
+          9371
+        ],
+        "correctOptions": [
+          3
+        ],
+        "keyStatus": "single-option"
+      },
+      "14": {
+        "questionId": 2344,
+        "correctOptionIds": [
+          9375
+        ],
+        "correctOptions": [
+          3
+        ],
+        "keyStatus": "single-option"
+      },
+      "15": {
+        "questionId": 2345,
+        "correctOptionIds": [
+          9377
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "16": {
+        "questionId": 2346,
+        "correctOptionIds": [
+          9381
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "17": {
+        "questionId": 2347,
+        "correctOptionIds": [
+          9388
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "18": {
+        "questionId": 2348,
+        "correctOptionIds": [
+          9392
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "19": {
+        "questionId": 2349,
+        "correctOptionIds": [
+          9395
+        ],
+        "correctOptions": [
+          3
+        ],
+        "keyStatus": "single-option"
+      },
+      "20": {
+        "questionId": 2350,
+        "correctOptionIds": [
+          9397
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "21": {
+        "questionId": 2351,
+        "correctOptionIds": [
+          9401
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "22": {
+        "questionId": 2352,
+        "correctOptionIds": [
+          9407
+        ],
+        "correctOptions": [
+          3
+        ],
+        "keyStatus": "single-option"
+      },
+      "23": {
+        "questionId": 2353,
+        "correctOptionIds": [
+          9411
+        ],
+        "correctOptions": [
+          3
+        ],
+        "keyStatus": "single-option"
+      },
+      "24": {
+        "questionId": 2354,
+        "correctOptionIds": [
+          9416
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "25": {
+        "questionId": 2355,
+        "correctOptionIds": [
+          9420
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "26": {
+        "questionId": 2356,
+        "correctOptionIds": [
+          9422,
+          9423
+        ],
+        "correctOptions": [
+          2,
+          3
+        ],
+        "keyStatus": "multiple-options-accepted"
+      },
+      "27": {
+        "questionId": 2357,
+        "correctOptionIds": [
+          9425
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "28": {
+        "questionId": 2358,
+        "correctOptionIds": [
+          9431
+        ],
+        "correctOptions": [
+          3
+        ],
+        "keyStatus": "single-option"
+      },
+      "29": {
+        "questionId": 2359,
+        "correctOptionIds": [
+          9436
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "30": {
+        "questionId": 2360,
+        "correctOptionIds": [
+          9439
+        ],
+        "correctOptions": [
+          3
+        ],
+        "keyStatus": "single-option"
+      },
+      "31": {
+        "questionId": 2361,
+        "correctOptionIds": [
+          9444
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "32": {
+        "questionId": 2362,
+        "correctOptionIds": [
+          9448
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "33": {
+        "questionId": 2363,
+        "correctOptionIds": [
+          9449
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "34": {
+        "questionId": 2364,
+        "correctOptionIds": [
+          9453
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "35": {
+        "questionId": 2365,
+        "correctOptionIds": [
+          9459
+        ],
+        "correctOptions": [
+          3
+        ],
+        "keyStatus": "single-option"
+      },
+      "36": {
+        "questionId": 2366,
+        "correctOptionIds": [],
+        "correctOptions": [],
+        "keyStatus": "marks-awarded-to-all"
+      },
+      "37": {
+        "questionId": 2367,
+        "correctOptionIds": [
+          9468
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "38": {
+        "questionId": 2368,
+        "correctOptionIds": [],
+        "correctOptions": [],
+        "keyStatus": "marks-awarded-to-all"
+      },
+      "39": {
+        "questionId": 2369,
+        "correctOptionIds": [
+          9476
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "40": {
+        "questionId": 2370,
+        "correctOptionIds": [
+          9478
+        ],
+        "correctOptions": [
+          2
+        ],
+        "keyStatus": "single-option"
+      },
+      "41": {
+        "questionId": 2371,
+        "correctOptionIds": [
+          9483
+        ],
+        "correctOptions": [
+          3
+        ],
+        "keyStatus": "single-option"
+      },
+      "42": {
+        "questionId": 2372,
+        "correctOptionIds": [
+          9486
+        ],
+        "correctOptions": [
+          2
+        ],
+        "keyStatus": "single-option"
+      },
+      "43": {
+        "questionId": 2373,
+        "correctOptionIds": [
+          9490
+        ],
+        "correctOptions": [
+          2
+        ],
+        "keyStatus": "single-option"
+      },
+      "44": {
+        "questionId": 2374,
+        "correctOptionIds": [
+          9494
+        ],
+        "correctOptions": [
+          2
+        ],
+        "keyStatus": "single-option"
+      },
+      "45": {
+        "questionId": 2375,
+        "correctOptionIds": [
+          9500
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "46": {
+        "questionId": 2376,
+        "correctOptionIds": [
+          9501
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "47": {
+        "questionId": 2377,
+        "correctOptionIds": [
+          9505
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "48": {
+        "questionId": 2378,
+        "correctOptionIds": [
+          9509
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "49": {
+        "questionId": 2379,
+        "correctOptionIds": [
+          9515
+        ],
+        "correctOptions": [
+          3
+        ],
+        "keyStatus": "single-option"
+      },
+      "50": {
+        "questionId": 2380,
+        "correctOptionIds": [
+          9517
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "51": {
+        "questionId": 2381,
+        "correctOptionIds": [
+          9521
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "52": {
+        "questionId": 2382,
+        "correctOptionIds": [
+          9525
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "53": {
+        "questionId": 2383,
+        "correctOptionIds": [
+          9530
+        ],
+        "correctOptions": [
+          2
+        ],
+        "keyStatus": "single-option"
+      },
+      "54": {
+        "questionId": 2384,
+        "correctOptionIds": [
+          9535
+        ],
+        "correctOptions": [
+          3
+        ],
+        "keyStatus": "single-option"
+      },
+      "55": {
+        "questionId": 2385,
+        "correctOptionIds": [
+          9537
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "56": {
+        "questionId": 2386,
+        "correctOptionIds": [
+          9541
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "57": {
+        "questionId": 2387,
+        "correctOptionIds": [],
+        "correctOptions": [],
+        "keyStatus": "marks-awarded-to-all"
+      },
+      "58": {
+        "questionId": 2388,
+        "correctOptionIds": [],
+        "correctOptions": [],
+        "keyStatus": "marks-awarded-to-all"
+      },
+      "59": {
+        "questionId": 2389,
+        "correctOptionIds": [],
+        "correctOptions": [],
+        "keyStatus": "marks-awarded-to-all"
+      },
+      "60": {
+        "questionId": 2390,
+        "correctOptionIds": [],
+        "correctOptions": [],
+        "keyStatus": "marks-awarded-to-all"
+      },
+      "61": {
+        "questionId": 2391,
+        "correctOptionIds": [
+          9564
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "62": {
+        "questionId": 2392,
+        "correctOptionIds": [
+          9565
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "63": {
+        "questionId": 2393,
+        "correctOptionIds": [
+          9572
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "64": {
+        "questionId": 2394,
+        "correctOptionIds": [
+          9573
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "65": {
+        "questionId": 2395,
+        "correctOptionIds": [
+          9577
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "66": {
+        "questionId": 2396,
+        "correctOptionIds": [
+          9581
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "67": {
+        "questionId": 2397,
+        "correctOptionIds": [
+          9587
+        ],
+        "correctOptions": [
+          3
+        ],
+        "keyStatus": "single-option"
+      },
+      "68": {
+        "questionId": 2398,
+        "correctOptionIds": [
+          9589
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "69": {
+        "questionId": 2399,
+        "correctOptionIds": [
+          9594
+        ],
+        "correctOptions": [
+          2
+        ],
+        "keyStatus": "single-option"
+      },
+      "70": {
+        "questionId": 2400,
+        "correctOptionIds": [
+          9598
+        ],
+        "correctOptions": [
+          2
+        ],
+        "keyStatus": "single-option"
+      },
+      "71": {
+        "questionId": 2401,
+        "correctOptionIds": [
+          9601
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "72": {
+        "questionId": 2402,
+        "correctOptionIds": [
+          9606
+        ],
+        "correctOptions": [
+          2
+        ],
+        "keyStatus": "single-option"
+      },
+      "73": {
+        "questionId": 2403,
+        "correctOptionIds": [
+          9610
+        ],
+        "correctOptions": [
+          2
+        ],
+        "keyStatus": "single-option"
+      },
+      "74": {
+        "questionId": 2404,
+        "correctOptionIds": [
+          9614
+        ],
+        "correctOptions": [
+          2
+        ],
+        "keyStatus": "single-option"
+      },
+      "75": {
+        "questionId": 2405,
+        "correctOptionIds": [
+          9619
+        ],
+        "correctOptions": [
+          3
+        ],
+        "keyStatus": "single-option"
+      },
+      "76": {
+        "questionId": 2406,
+        "correctOptionIds": [
+          9621
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "77": {
+        "questionId": 2407,
+        "correctOptionIds": [
+          9626
+        ],
+        "correctOptions": [
+          2
+        ],
+        "keyStatus": "single-option"
+      },
+      "78": {
+        "questionId": 2408,
+        "correctOptionIds": [
+          9630
+        ],
+        "correctOptions": [
+          2
+        ],
+        "keyStatus": "single-option"
+      },
+      "79": {
+        "questionId": 2409,
+        "correctOptionIds": [
+          9633
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "80": {
+        "questionId": 2410,
+        "correctOptionIds": [
+          9640
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "81": {
+        "questionId": 2411,
+        "correctOptionIds": [
+          9642
+        ],
+        "correctOptions": [
+          2
+        ],
+        "keyStatus": "single-option"
+      },
+      "82": {
+        "questionId": 2412,
+        "correctOptionIds": [
+          9645
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "83": {
+        "questionId": 2413,
+        "correctOptionIds": [
+          9649
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "84": {
+        "questionId": 2414,
+        "correctOptionIds": [
+          9656
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "85": {
+        "questionId": 2415,
+        "correctOptionIds": [
+          9657
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "86": {
+        "questionId": 2416,
+        "correctOptionIds": [
+          9664
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "87": {
+        "questionId": 2417,
+        "correctOptionIds": [
+          9667
+        ],
+        "correctOptions": [
+          3
+        ],
+        "keyStatus": "single-option"
+      },
+      "88": {
+        "questionId": 2418,
+        "correctOptionIds": [
+          9670
+        ],
+        "correctOptions": [
+          2
+        ],
+        "keyStatus": "single-option"
+      },
+      "89": {
+        "questionId": 2419,
+        "correctOptionIds": [
+          9673
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "90": {
+        "questionId": 2420,
+        "correctOptionIds": [
+          9678
+        ],
+        "correctOptions": [
+          2
+        ],
+        "keyStatus": "single-option"
+      },
+      "91": {
+        "questionId": 2421,
+        "correctOptionIds": [
+          9681
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "92": {
+        "questionId": 2422,
+        "correctOptionIds": [
+          9685
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "93": {
+        "questionId": 2423,
+        "correctOptionIds": [
+          9690,
+          9691
+        ],
+        "correctOptions": [
+          2,
+          3
+        ],
+        "keyStatus": "multiple-options-accepted"
+      },
+      "94": {
+        "questionId": 2424,
+        "correctOptionIds": [
+          9693
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "95": {
+        "questionId": 2425,
+        "correctOptionIds": [
+          9700
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "96": {
+        "questionId": 2426,
+        "correctOptionIds": [
+          9704
+        ],
+        "correctOptions": [
+          4
+        ],
+        "keyStatus": "single-option"
+      },
+      "97": {
+        "questionId": 2427,
+        "correctOptionIds": [
+          9705
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "98": {
+        "questionId": 2428,
+        "correctOptionIds": [
+          9710
+        ],
+        "correctOptions": [
+          2
+        ],
+        "keyStatus": "single-option"
+      },
+      "99": {
+        "questionId": 2429,
+        "correctOptionIds": [
+          9713
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      },
+      "100": {
+        "questionId": 2430,
+        "correctOptionIds": [
+          9717
+        ],
+        "correctOptions": [
+          1
+        ],
+        "keyStatus": "single-option"
+      }
+    }
+  }
+}

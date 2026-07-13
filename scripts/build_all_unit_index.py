@@ -16,11 +16,14 @@ from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 
+from pypdf import PdfReader
+
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES = ROOT / "sources"
 TEXT = ROOT / "tmp" / "pdfs" / "text"
 OUT = ROOT / "data" / "all-unit-question-index.json"
+OVERRIDES = ROOT / "data" / "manual-classification-overrides.json"
 
 EXCLUDE = {
     "rpsc-computer-science-2012-paper-3.pdf",
@@ -44,6 +47,43 @@ UNIT_PATTERNS = {
 }
 COMPILED = {k: re.compile(v, re.I) for k, v in UNIT_PATTERNS.items()}
 STOP = {"the", "and", "for", "with", "which", "following", "given", "from", "that", "this", "are", "then", "what", "will", "option", "options", "question", "number", "correct", "answer", "choose", "below", "list", "statement", "statements", "consider"}
+
+# Visually confirmed corrections for source defects that OCR cannot infer.
+# Keep these narrow, source-addressed and traceable to the printed PDF page.
+KNOWN_SOURCE_CORRECTIONS = {
+    "sources/ugc-net-cs-2015-june-paper-3.pdf": {
+        41: [
+            {
+                "questionNumber": 41,
+                "sourcePage": 8,
+                "rawText": "41. In XML, DOCTYPE declaration specifies to include a reference to ______ file. (1) Document Type Definition (2) Document type declaration (3) Document transfer definition (4) Document type language",
+            },
+            {
+                "questionNumber": 42,
+                "sourcePage": 8,
+                "rawText": "42. Module design is used to maximize cohesion and minimize coupling. Which of the following is the key to implement this rule? (1) Inheritance (2) Polymorphism (3) Encapsulation (4) Abstraction",
+            },
+        ]
+    },
+    "sources/ugc-net-cs-2021-nov-with-answers.pdf": {
+        8: [
+            {
+                "questionNumber": 8,
+                "sourcePage": 1,
+                "questionId": 2338,
+                "rawText": "8. What is the transformation matrix M that transforms the square in the xy-plane defined by (1,1)^T, (-1,1)^T, (-1,-1)^T and (1,-1)^T to a parallelogram whose corresponding vertices are (2,1)^T, (0,1)^T, (-2,-1)^T and (0,-1)^T? 1. M = [[1,1,0],[0,1,0],[0,0,1]] 2. M = [[1,0,0],[1,1,0],[0,0,1]] 3. M = [[1,1,1],[0,1,0],[0,0,1]] 4. M = [[1,1,0],[1,1,0],[0,0,1]]",
+            }
+        ],
+        9: [
+            {
+                "questionNumber": 9,
+                "sourcePage": 1,
+                "questionId": 2339,
+                "rawText": "9. Suppose a Bezier curve P(t) is defined by the four control points P0=(-2,0), P1=(-2,4), P2=(2,4), and P3=(2,0). Which statements are correct? A. Bezier curve P(t) has degree 3. B. P(1/2)=(0,3). C. Bezier curve P(t) may extend outside the convex hull of its control points. 1. A and B only 2. A and C only 3. B and C only 4. A, B, and C",
+            }
+        ],
+    },
+}
 
 
 @dataclass
@@ -86,6 +126,7 @@ def subject_page_allowed(source: str, page: int, qno: int) -> bool:
 def clean(block: str) -> str:
     block = re.sub(r"https?://\S+", "", block)
     block = re.sub(r"\[Option ID[^\]]*\]|Options\s*:\s*\d+(?:\.\s*\d+)?", "", block, flags=re.I)
+    block = re.sub(r"(?:\b\d{1,3}\)\s*){3,}", " ", block)
     block = re.sub(r"\s+", " ", block).strip()
     return block
 
@@ -129,6 +170,17 @@ def extract_from_page(source: str, page: Page) -> list[dict]:
     return out
 
 
+def apply_known_source_corrections(source: str, records: list[dict]) -> list[dict]:
+    corrections = KNOWN_SOURCE_CORRECTIONS.get(source, {})
+    if not corrections:
+        return records
+    corrected = []
+    for record in records:
+        replacements = corrections.get(record["questionNumber"])
+        corrected.extend(replacements if replacements else [record])
+    return corrected
+
+
 def extract_id_delimited(path: Path, first_id: int, last_id: int) -> list[dict]:
     """Recover exported answer-bearing papers whose question text precedes its ID.
 
@@ -158,7 +210,15 @@ def extract_id_delimited(path: Path, first_id: int, last_id: int) -> list[dict]:
             question_text = before[previous_options[min(3, len(previous_options) - 1)].end():]
         else:
             question_text = before
-        question_text = re.sub(r"(?s)^.*?Correct Answer[^\n]*(?:\n|$)", "", question_text, count=1, flags=re.I)
+        # Remove the previous record's answer overlay.  Anchor the label so a
+        # question instruction such as "Choose the correct answer" is never
+        # mistaken for the answer-key boundary, and consume the answer line.
+        question_text = re.sub(
+            r"(?ims)^.*?^\s*Correct Answer\s*[:：][^\n]*(?:\n[^\n]*)?(?:\n|$)",
+            "",
+            question_text,
+            count=1,
+        )
 
         after_end = matches[index + 1].start() if index + 1 < len(matches) else len(raw)
         after = raw[marker.end():after_end]
@@ -182,6 +242,23 @@ def extract_id_delimited(path: Path, first_id: int, last_id: int) -> list[dict]:
     return records
 
 
+def extract_id_delimited_pdf(path: Path, first_id: int, last_id: int) -> list[dict]:
+    """Extract an ID-delimited paper directly when cached text has bad ordering."""
+    reader = PdfReader(path)
+    raw = "".join(
+        f"\n===== PAGE {page_number} =====\n{page.extract_text() or ''}"
+        for page_number, page in enumerate(reader.pages, 1)
+    )
+    temporary = ROOT / "tmp" / "pdfs" / "text" / ".direct-id-extraction.txt"
+    # Reuse the audited delimiter parser without leaving another public artifact.
+    temporary.parent.mkdir(parents=True, exist_ok=True)
+    temporary.write_text(raw, encoding="utf-8")
+    try:
+        return extract_id_delimited(temporary, first_id, last_id)
+    finally:
+        temporary.unlink(missing_ok=True)
+
+
 def score(text: str) -> tuple[int | None, dict[int, int]]:
     scores = {unit: len(pattern.findall(text)) for unit, pattern in COMPILED.items()}
     best = max(scores, key=scores.get)
@@ -191,6 +268,14 @@ def score(text: str) -> tuple[int | None, dict[int, int]]:
     if len(ordered) > 1 and ordered[0] == ordered[1]:
         return None, scores
     return best, scores
+
+
+def manual_unit(source: str, question_number: int) -> int | None:
+    if not OVERRIDES.exists():
+        return None
+    overrides = json.loads(OVERRIDES.read_text(encoding="utf-8"))
+    entry = overrides.get(f"{source}#{question_number}")
+    return int(entry["unit"]) if entry else None
 
 
 def tokens(text: str) -> list[str]:
@@ -236,21 +321,24 @@ def main() -> None:
     for pdf in sorted(SOURCES.glob("*.pdf")):
         if pdf.name in EXCLUDE or pdf.name == "ugc-net-computer-science-official-syllabus.pdf" or "final-answer-key" in pdf.name:
             continue
-        text_path = source_text(pdf)
-        if not text_path:
-            continue
         source = pdf.relative_to(ROOT).as_posix()
         if "2021-nov-with-answers" in source:
-            native = TEXT / f".__{source.replace('/', '__')}.txt"
-            candidates = extract_id_delimited(native, 2331, 2430) if native.exists() else []
+            candidates = extract_id_delimited_pdf(pdf, 2331, 2430)
         elif "2022-oct-with-answers" in source:
+            text_path = source_text(pdf)
+            if not text_path:
+                continue
             candidates = extract_id_delimited(text_path, 316, 415)
         else:
+            text_path = source_text(pdf)
+            if not text_path:
+                continue
             candidates = []
             for page in pages(text_path):
                 candidates.extend(extract_from_page(source, page))
         if "2023-june-paper-2" in source:
             candidates = [item for item in candidates if not is_third_party_explanation(item["rawText"])]
+        candidates = apply_known_source_corrections(source, candidates)
 
         # Repeated browser headers and page breaks can duplicate a question. Keep the
         # longest recovered version for a given displayed number and page neighbourhood.
@@ -261,6 +349,9 @@ def main() -> None:
                 best[key] = item
         for item in best.values():
             unit, scores = score(item["rawText"])
+            reviewed_unit = manual_unit(source, item["questionNumber"])
+            if reviewed_unit is not None:
+                unit = reviewed_unit
             all_records.append(
                 {
                     "exam": "UGC NET Computer Science and Applications",
@@ -268,7 +359,10 @@ def main() -> None:
                     **item,
                     "suggestedUnit": unit,
                     "classificationScores": scores,
-                    "classificationStatus": "high-confidence-keyword" if unit else "manual-review",
+                    "classificationStatus": (
+                        "manual-reviewed-override" if reviewed_unit is not None
+                        else "high-confidence-keyword" if unit else "manual-review"
+                    ),
                 }
             )
 
