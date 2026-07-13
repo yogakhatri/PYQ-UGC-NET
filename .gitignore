@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+tmp/
+
+# Source papers are kept locally for reproducible extraction, but are not
+# redistributed by this repository.
+sources/*.pdf
+!sources/README.md

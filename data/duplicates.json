@@ -1,0 +1,69 @@
+{
+  "exactFileDuplicateGroups": [],
+  "questionDuplicateGroups": [
+    {
+      "groupId": "U1-DUP-001",
+      "type": "near-duplicate",
+      "canonical": "UGCNET-CS-2013-december-2013-paper-ii-Q34",
+      "members": [
+        "UGCNET-CS-2013-december-2013-paper-ii-Q34",
+        "UGCNET-CS-2015-december-2015-paper-ii-Q7"
+      ],
+      "reason": "Same nested-quantifier divisibility test; notation and option grouping differ."
+    },
+    {
+      "groupId": "U1-DUP-002",
+      "type": "conceptual-repeat",
+      "canonical": "UGCNET-CS-2018-july-2018-Q26",
+      "members": [
+        "UGCNET-CS-2009-december-2009-paper-ii-Q21",
+        "UGCNET-CS-2018-july-2018-Q26"
+      ],
+      "reason": "Both reduce to the full-binary-tree identity N=2L−1."
+    },
+    {
+      "groupId": "U1-DUP-003",
+      "type": "conceptual-repeat",
+      "canonical": "UGCNET-CS-2018-december-2018-Q54",
+      "members": [
+        "UGCNET-CS-2018-december-2018-Q54",
+        "UGCNET-CS-2025-june-2025-Q51"
+      ],
+      "reason": "Three-set inclusion–exclusion with all singles, pairs and triple intersection supplied."
+    },
+    {
+      "groupId": "U1-DUP-004",
+      "type": "near-duplicate",
+      "canonical": "UGCNET-CS-2018-july-2018-Q85",
+      "members": [
+        "UGCNET-CS-2018-july-2018-Q85",
+        "UGCNET-CS-2023-dec-2022-mar-11-shift-2-Q1"
+      ],
+      "reason": "Both test ¬∃xP(x)≡∀x¬P(x); one is symbolic and one verbal."
+    },
+    {
+      "groupId": "U1-DUP-005",
+      "type": "near-duplicate",
+      "canonical": "UGCNET-CS-2019-december-2019-Q51",
+      "members": [
+        "UGCNET-CS-2015-december-2015-paper-iii-Q53",
+        "UGCNET-CS-2019-december-2019-Q51"
+      ],
+      "reason": "Same m+n−1 independent-allocation criterion for a non-degenerate transportation BFS."
+    },
+    {
+      "groupId": "U1-DUP-006",
+      "type": "conceptual-repeat",
+      "canonical": "UGCNET-CS-2016-july-2016-paper-ii-Q2",
+      "members": [
+        "UGCNET-CS-2016-july-2016-paper-ii-Q2",
+        "UGCNET-CS-2024-june-2024-Q88"
+      ],
+      "reason": "Both require Cayley and complete-bipartite spanning-tree counts."
+    }
+  ],
+  "notes": [
+    "All 40 PDFs were compared with complete SHA-256 hashes; no byte-identical files were found.",
+    "Question groups are conservative: exact wording is not asserted unless type is exact; conceptual repeats share a canonical explanation while retaining separate source records."
+  ]
+}

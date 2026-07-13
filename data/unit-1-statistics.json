@@ -1,0 +1,38 @@
+{
+  "unit": 1,
+  "title": "Discrete Structures and Optimization",
+  "status": "complete-with-documented-source-defect-exceptions",
+  "questionCount": 143,
+  "topicCounts": {
+    "Boolean Algebra": 16,
+    "Counting, Mathematical Induction and Discrete Probability": 27,
+    "Graph Theory": 29,
+    "Group Theory": 7,
+    "Mathematical Logic": 17,
+    "Optimization": 23,
+    "Sets and Relations": 24
+  },
+  "yearCounts": {
+    "2009": 3,
+    "2010": 2,
+    "2011": 2,
+    "2012": 4,
+    "2013": 7,
+    "2014": 3,
+    "2015": 12,
+    "2016": 7,
+    "2017": 3,
+    "2018": 23,
+    "2019": 15,
+    "2020": 8,
+    "2021": 2,
+    "2022": 5,
+    "2023": 20,
+    "2024": 12,
+    "2025": 5,
+    "2026": 10
+  },
+  "sourceFileCount": 31,
+  "rajasthanSetQuestionCount": 0,
+  "rajasthanSetLimitation": "No verifiable Rajasthan SET paper/key supplied."
+}

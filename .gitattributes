@@ -1,0 +1,6 @@
+* text=auto eol=lf
+
+*.pdf binary
+docs/unit-*.md linguist-documentation=true
+data/*.json linguist-generated=true
+data/*.csv linguist-generated=true
