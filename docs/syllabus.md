@@ -2,9 +2,9 @@
 
 **Subject:** Computer Science and Applications  
 **Code:** 87  
-**Primary source:** [Official Computer Science syllabus PDF](../sources/ugc-net-computer-science-official-syllabus.pdf)
+**Primary source:** [Official UGC NET syllabus page](https://www.ugcnetonline.in/syllabus-new.php), Subject 87, Computer Science and Applications
 
-This is a faithful, structured transcription of the ten-unit syllabus. Obvious PDF spacing and spelling artifacts have been normalized (for example, “Planner graph” is rendered as “Planar graph”); no topic has been added or removed.
+This is a structured transcription of the ten-unit syllabus applicable from June 2019 onward. Obvious PDF spacing and spelling artifacts have been normalized (for example, “Planner graph” is rendered as “Planar graph”); no topic has been intentionally added or removed. A local verification copy may be placed in the ignored `sources` directory, but the public guide links to the official syllabus page.
 
 ## Unit 1: Discrete Structures and Optimization
 

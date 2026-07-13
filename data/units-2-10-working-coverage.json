@@ -5,7 +5,7 @@
     "questions": 394,
     "chapterKeywordSupported": 327,
     "chapterManualReview": 67,
-    "solutionStatus": "pending question-specific validation"
+    "solutionStatus": "working inventory; no validated answers"
   },
   "3": {
     "title": "Programming Languages and Computer Graphics",
@@ -13,7 +13,7 @@
     "questions": 176,
     "chapterKeywordSupported": 157,
     "chapterManualReview": 19,
-    "solutionStatus": "pending question-specific validation"
+    "solutionStatus": "working inventory; no validated answers"
   },
   "4": {
     "title": "Database Management Systems",
@@ -21,7 +21,7 @@
     "questions": 178,
     "chapterKeywordSupported": 158,
     "chapterManualReview": 20,
-    "solutionStatus": "pending question-specific validation"
+    "solutionStatus": "working inventory; no validated answers"
   },
   "5": {
     "title": "System Software and Operating System",
@@ -29,7 +29,7 @@
     "questions": 184,
     "chapterKeywordSupported": 176,
     "chapterManualReview": 8,
-    "solutionStatus": "pending question-specific validation"
+    "solutionStatus": "working inventory; no validated answers"
   },
   "6": {
     "title": "Software Engineering",
@@ -37,7 +37,7 @@
     "questions": 178,
     "chapterKeywordSupported": 165,
     "chapterManualReview": 13,
-    "solutionStatus": "pending question-specific validation"
+    "solutionStatus": "working inventory; no validated answers"
   },
   "7": {
     "title": "Data Structures and Algorithms",
@@ -45,7 +45,7 @@
     "questions": 250,
     "chapterKeywordSupported": 200,
     "chapterManualReview": 50,
-    "solutionStatus": "pending question-specific validation"
+    "solutionStatus": "working inventory; no validated answers"
   },
   "8": {
     "title": "Theory of Computation and Compilers",
@@ -53,7 +53,7 @@
     "questions": 223,
     "chapterKeywordSupported": 192,
     "chapterManualReview": 31,
-    "solutionStatus": "pending question-specific validation"
+    "solutionStatus": "working inventory; no validated answers"
   },
   "9": {
     "title": "Data Communication and Computer Networks",
@@ -61,7 +61,7 @@
     "questions": 257,
     "chapterKeywordSupported": 188,
     "chapterManualReview": 69,
-    "solutionStatus": "pending question-specific validation"
+    "solutionStatus": "working inventory; no validated answers"
   },
   "10": {
     "title": "Artificial Intelligence",
@@ -69,6 +69,6 @@
     "questions": 98,
     "chapterKeywordSupported": 90,
     "chapterManualReview": 8,
-    "solutionStatus": "pending question-specific validation"
+    "solutionStatus": "working inventory; no validated answers"
   }
 }

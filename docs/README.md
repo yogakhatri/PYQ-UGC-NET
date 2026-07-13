@@ -2,21 +2,21 @@
 
 [Project home](../README.md) · [Official syllabus](syllabus.md) · [Contributing](../CONTRIBUTING.md)
 
-> [!NOTE]
-> Unit 1 is reviewed and solved. Units 2-10 are working question guides; unverified answers are deliberately omitted rather than guessed.
+> [!WARNING]
+> Unit 1 has project-reviewed solutions. Units 2–10 are working extraction inventories: all answers are withheld, some classifications use fallback routing, and OCR or missing figures can make questions incomplete.
 
 | Unit | Guide | Questions | Answer status |
 |---:|---|---:|---|
-| 1 | [Discrete Structures and Optimization](unit-1-discrete-structures-and-optimization.md) | 143 | Complete reviewed set |
-| 2 | [Computer System Architecture](unit-2-computer-system-architecture.md) | 394 | Under validation |
-| 3 | [Programming Languages and Computer Graphics](unit-3-programming-languages-and-computer-graphics.md) | 176 | Under validation |
-| 4 | [Database Management Systems](unit-4-database-management-systems.md) | 178 | Under validation |
-| 5 | [System Software and Operating System](unit-5-system-software-and-operating-system.md) | 184 | Under validation |
-| 6 | [Software Engineering](unit-6-software-engineering.md) | 178 | Under validation |
-| 7 | [Data Structures and Algorithms](unit-7-data-structures-and-algorithms.md) | 250 | Under validation |
-| 8 | [Theory of Computation and Compilers](unit-8-theory-of-computation-and-compilers.md) | 223 | Under validation |
-| 9 | [Data Communication and Computer Networks](unit-9-data-communication-and-computer-networks.md) | 257 | Under validation |
-| 10 | [Artificial Intelligence](unit-10-artificial-intelligence.md) | 98 | Under validation |
+| 1 | [Discrete Structures and Optimization](unit-1-discrete-structures-and-optimization.md) | 143 | Project-reviewed solutions |
+| 2 | [Computer System Architecture](unit-2-computer-system-architecture.md) | 394 | Inventory; no validated answers |
+| 3 | [Programming Languages and Computer Graphics](unit-3-programming-languages-and-computer-graphics.md) | 176 | Inventory; no validated answers |
+| 4 | [Database Management Systems](unit-4-database-management-systems.md) | 178 | Inventory; no validated answers |
+| 5 | [System Software and Operating System](unit-5-system-software-and-operating-system.md) | 184 | Inventory; no validated answers |
+| 6 | [Software Engineering](unit-6-software-engineering.md) | 178 | Inventory; no validated answers |
+| 7 | [Data Structures and Algorithms](unit-7-data-structures-and-algorithms.md) | 250 | Inventory; no validated answers |
+| 8 | [Theory of Computation and Compilers](unit-8-theory-of-computation-and-compilers.md) | 223 | Inventory; no validated answers |
+| 9 | [Data Communication and Computer Networks](unit-9-data-communication-and-computer-networks.md) | 257 | Inventory; no validated answers |
+| 10 | [Artificial Intelligence](unit-10-artificial-intelligence.md) | 98 | Inventory; no validated answers |
 
 ## Reading tips
 
@@ -35,4 +35,4 @@
 - [Classification review queue](../data/classification-review.md)
 - [Disputed questions](../data/disputed-questions.md)
 
-No verifiable Rajasthan SET Computer Science paper is present in the supplied corpus. The four RPSC recruitment papers are retained only in the local source inventory and are excluded from NET/SET coverage.
+This repository covers the Computer Science subject paper, not Paper 1. No verifiable Rajasthan SET Computer Science paper is present in the supplied corpus.

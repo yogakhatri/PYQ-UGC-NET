@@ -39,7 +39,7 @@
 ## Coverage and source limitation
 
 This guide contains **143 reviewed and solved Unit 1 questions** from the verified UGC NET corpus. See the [extraction audit](../data/unit-1-audit.md) for validation details and the explicitly accounted source-defect queue.
-No verifiable Rajasthan SET Computer Science question paper or official key is present in the supplied repository; four descriptively named Rajasthan PDFs are RPSC recruitment papers and are excluded rather than mislabelled as SET.
+This guide covers UGC NET sources only. No verifiable Rajasthan SET Computer Science question paper or official key is present, so Rajasthan SET coverage is not claimed.
 
 ### Topic counts
 

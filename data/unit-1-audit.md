@@ -14,7 +14,7 @@
 ## Workflow
 
 1. The exact Unit 1 taxonomy was transcribed from `sources/ugc-net-computer-science-official-syllabus.pdf`.
-2. All 40 PDFs were opened, page-counted and SHA-256 compared.
+2. All 36 retained UGC NET, answer-key and syllabus PDFs were opened, page-counted and SHA-256 compared.
 3. Native extraction was used where reliable; OCR was generated for scanned or broken-font papers.
 4. A broad topic filter produced 235 candidate pages from all 33 UGC question-paper PDFs.
 5. Candidate pages were manually classified against the official syllabus; cross-unit lookalikes were either retained with a secondary classification or excluded by the published boundary rules.
@@ -30,7 +30,7 @@ The CSV is a lossless tabular projection of the same 143 records; nested options
 
 ## Scope and exceptions
 
-Completeness is measured against the supplied, verifiable PDFs. The descriptively renamed Rajasthan scans are RPSC recruitment papers, not SET papers. Questions whose scans irretrievably lose operands, overbars or diagram cells are listed in `classification-review.md`; they are not silently guessed or counted as solved.
+Completeness is measured against the supplied, verifiable UGC NET PDFs, not against every examination session ever published. Questions whose scans irretrievably lose operands, overbars or diagram cells are listed in `classification-review.md`; they are not silently guessed or counted as solved.
 
 ## Rebuild
 

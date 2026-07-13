@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run lightweight, dependency-free checks before publishing the repository."""
+"""Run lightweight structural checks before publishing the repository."""
 
 from __future__ import annotations
 
@@ -32,6 +32,7 @@ REQUIRED_PUBLIC_FILES = (
     "CODE_OF_CONDUCT.md",
     ".gitignore",
     ".gitattributes",
+    "requirements.txt",
     "sources/README.md",
 )
 QUESTION_HEADING = re.compile(r"^#### Question (\d+)$", re.MULTILINE)
@@ -87,6 +88,21 @@ def check_links(errors: list[str]) -> None:
             # The project uses paths without link titles; reject a missing target
             # instead of guessing whether whitespace belongs to a title.
             destination = (path.parent / unquote(target)).resolve()
+            try:
+                public_relative = destination.relative_to(ROOT)
+            except ValueError:
+                public_relative = None
+            if (
+                public_relative is not None
+                and public_relative.parts
+                and public_relative.parts[0] == "sources"
+                and destination.suffix.lower() == ".pdf"
+            ):
+                fail(
+                    errors,
+                    f"Public Markdown links to an ignored source PDF in {path.relative_to(ROOT)}: {raw_target}",
+                )
+                continue
             if not destination.exists():
                 fail(
                     errors,
@@ -128,7 +144,7 @@ def main() -> int:
         for error in errors:
             print(f"- {error}")
         return 1
-    print("Release checks passed: ten guides, continuous numbering, short references, links and public files are valid.")
+    print("Structural release checks passed: ten guides, continuous numbering, short references, links and public files are valid. Academic accuracy is not certified.")
     return 0
 
 

@@ -4,18 +4,18 @@ Generated from the current workspace. SHA-256 prefixes are included for traceabi
 
 ## Summary
 
-- PDF files: **40**
-- Total PDF pages: **1786**
+- PDF files: **36**
+- Total PDF pages: **1690**
 - UGC NET question-paper files: **33**
 - Rajasthan SET question-paper files: **0 verifiable files**
-- RPSC Assistant Professor/Librarian/PTI supplemental papers: **4**
+- RPSC Assistant Professor/Librarian/PTI supplemental papers: **0**
 - Standalone official answer-key files: **2**
 - Exact duplicate groups: **0**
 - Files that failed to open: **0**
 
 ## Scope Finding
 
-The four descriptively named RPSC scans are not Rajasthan SET papers. Their covers and question-paper numbers identify them as Rajasthan Public Service Commission Assistant Professor/Librarian/PTI (College Education) papers from 2012 and 2013. They are retained as supplemental practice sources but excluded from UGC NET/Rajasthan SET statistics and question IDs.
+No RPSC recruitment scans are retained in the current UGC NET source collection.
 
 No locally available PDF can presently be verified as a Rajasthan SET Computer Science paper. This is a source gap, not an extraction failure.
 
@@ -23,10 +23,6 @@ No locally available PDF can presently be verified as a Rajasthan SET Computer S
 
 | Source file | Type | Pages | Native text chars | Extraction | Parse | SHA-256 prefix | Notes |
 |---|---|---:|---:|---|---|---|---|
-| `sources/rpsc-computer-science-2012-paper-2.pdf` | RPSC supplemental paper | 16 | 0 | OCR required | Openable | `7b62e8117e49` | RPSC Assistant Professor/Librarian/PTI 2012, Computer Science Application Paper II (supplemental; not SET) |
-| `sources/rpsc-computer-science-2012-paper-3.pdf` | RPSC supplemental paper | 32 | 0 | OCR required | Openable | `efccab5024ea` | RPSC Assistant Professor/Librarian/PTI 2012, Computer Science Application Paper III (supplemental; not SET) |
-| `sources/rpsc-computer-science-2013-paper-2.pdf` | RPSC supplemental paper | 16 | 0 | OCR required | Openable | `318d8302dfa5` | RPSC Assistant Professor/Librarian/PTI 2013, Computer Science Application Paper II (supplemental; not SET) |
-| `sources/rpsc-computer-science-2013-paper-3.pdf` | RPSC supplemental paper | 32 | 0 | OCR required | Openable | `0ea65196424a` | RPSC Assistant Professor/Librarian/PTI 2013, Computer Science Application Paper III (supplemental; not SET) |
 | `sources/ugc-net-computer-science-official-syllabus.pdf` | Official syllabus | 8 | 19641 | Native text | Openable | `60c40a7ca5e4` |  |
 | `sources/ugc-net-cs-2009-dec-paper-2.pdf` | UGC NET question paper | 8 | 25053 | Native text | Openable | `2dc49f8f5841` |  |
 | `sources/ugc-net-cs-2010-june-paper-2.pdf` | UGC NET question paper | 8 | 24992 | Native text | Openable | `ec530d05f592` |  |
@@ -70,7 +66,7 @@ No byte-identical PDFs were found.
 
 ## Parse and Extraction Issues
 
-All PDFs can be opened. Ten files have no usable native text layer and require OCR; the 2015 papers also require OCR because their embedded character maps extract as glyph codes.
+All PDFs can be opened. 6 files have no usable native text layer and require OCR; the 2015 papers also require OCR because their embedded character maps extract as glyph codes.
 
 ## Answer-Key Coverage
 

@@ -79,7 +79,6 @@ def main() -> None:
         rows.append((rel(path), kind, pages, text_chars, extraction, parse, note, digest[:12]))
 
     duplicates = [files for files in hash_groups.values() if len(files) > 1]
-    question_papers = [r for r in rows if r[1] in {"UGC NET question paper", "RPSC supplemental paper"}]
     ugc_papers = [r for r in rows if r[1] == "UGC NET question paper"]
     rpsc_papers = [r for r in rows if r[1] == "RPSC supplemental paper"]
     answer_keys = [r for r in rows if r[1] == "Official answer key"]
@@ -102,7 +101,7 @@ def main() -> None:
         "",
         "## Scope Finding",
         "",
-        "The four descriptively named RPSC scans are not Rajasthan SET papers. Their covers and question-paper numbers identify them as Rajasthan Public Service Commission Assistant Professor/Librarian/PTI (College Education) papers from 2012 and 2013. They are retained as supplemental practice sources but excluded from UGC NET/Rajasthan SET statistics and question IDs.",
+        (f"{len(rpsc_papers)} RPSC recruitment scans are retained only as excluded supplemental inputs; they are not UGC NET or Rajasthan SET papers." if rpsc_papers else "No RPSC recruitment scans are retained in the current UGC NET source collection."),
         "",
         "No locally available PDF can presently be verified as a Rajasthan SET Computer Science paper. This is a source gap, not an extraction failure.",
         "",
@@ -128,7 +127,8 @@ def main() -> None:
         for filename, error in failures:
             lines.append(f"- `{filename}`: {error}")
     else:
-        lines.append("All PDFs can be opened. Ten files have no usable native text layer and require OCR; the 2015 papers also require OCR because their embedded character maps extract as glyph codes.")
+        ocr_only = sum(row[4] == "OCR required" for row in rows)
+        lines.append(f"All PDFs can be opened. {ocr_only} files have no usable native text layer and require OCR; the 2015 papers also require OCR because their embedded character maps extract as glyph codes.")
 
     lines.extend(
         [

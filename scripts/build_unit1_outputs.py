@@ -890,7 +890,7 @@ def write_outputs() -> None:
         "## Coverage and source limitation",
         "",
         f"This guide contains **{len(RECORDS)} reviewed and solved Unit 1 questions** from the verified UGC NET corpus. See the [extraction audit](../data/unit-1-audit.md) for validation details and the explicitly accounted source-defect queue.",
-        "No verifiable Rajasthan SET Computer Science question paper or official key is present in the supplied repository; four descriptively named Rajasthan PDFs are RPSC recruitment papers and are excluded rather than mislabelled as SET.",
+        "This guide covers UGC NET sources only. No verifiable Rajasthan SET Computer Science question paper or official key is present, so Rajasthan SET coverage is not claimed.",
         "",
         "### Topic counts",
         "",
@@ -992,7 +992,7 @@ def write_outputs() -> None:
         "exactFileDuplicateGroups": [],
         "questionDuplicateGroups": DUPLICATE_GROUPS,
         "notes": [
-            "All 40 PDFs were compared with complete SHA-256 hashes; no byte-identical files were found.",
+            "The source inventory uses complete SHA-256 hashes for duplicate checking; no byte-identical files were found.",
             "Question groups are conservative: exact wording is not asserted unless type is exact; conceptual repeats share a canonical explanation while retaining separate source records.",
         ],
     }

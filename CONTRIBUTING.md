@@ -42,12 +42,17 @@ and place disputes in [data/disputed-questions.md](data/disputed-questions.md).
 
 ## Rebuilding generated files
 
-Run commands from the repository root:
+Use Python 3.10 or newer. Run commands from the repository root:
+
+    python3 -m pip install -r requirements.txt
 
     python3 scripts/build_unit1_outputs.py
     python3 scripts/build_remaining_unit_guides.py
     python3 scripts/build_source_report.py
     python3 scripts/check_release.py
+
+The release checker validates structure and links only. It does not certify an
+answer, OCR transcription or chapter classification.
 
 The source report requires the local, ignored PDFs described in
 [sources/README.md](sources/README.md). OCR extraction for image-only papers

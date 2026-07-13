@@ -2,8 +2,8 @@
 
 ## Source-scope decisions
 
-1. The four descriptively named RPSC scans are Assistant Professor/Librarian/PTI (College Education) papers from 2012 and 2013, not Rajasthan SET papers. They are excluded from NET/SET question counts and IDs.
-2. No local PDF is currently verifiable as a Rajasthan SET Computer Science question paper. Rajasthan SET coverage is therefore blocked by missing source papers, not by parsing.
+1. Non-UGC RPSC recruitment scans have been removed from the UGC NET source collection and are not part of any question count.
+2. No local PDF is currently verifiable as a Rajasthan SET Computer Science question paper. Rajasthan SET coverage is therefore absent because source papers are missing.
 
 ## Unit-boundary rules for manual review
 

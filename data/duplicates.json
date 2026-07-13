@@ -63,7 +63,7 @@
     }
   ],
   "notes": [
-    "All 40 PDFs were compared with complete SHA-256 hashes; no byte-identical files were found.",
+    "The source inventory uses complete SHA-256 hashes for duplicate checking; no byte-identical files were found.",
     "Question groups are conservative: exact wording is not asserted unless type is exact; conceptual repeats share a canonical explanation while retaining separate source records."
   ]
 }

@@ -7,25 +7,32 @@ Questions are arranged by syllabus unit and chapter. The aim is to explain the
 basic idea behind each question, solve it step by step, and teach a method that
 can also be used for similar questions.
 
+This repository covers the **subject-specific Computer Science paper only**. It
+does not cover Paper 1 (teaching and research aptitude), and it is not a
+complete replacement for textbooks, current official notices or full mock
+tests.
+
 > [!IMPORTANT]
-> **Unit 1 is reviewed, solved and explained. Units 2–10 are still being
-> completed.** Their questions and study notes are available, but an answer is
-> not shown unless it has been checked. This avoids teaching guessed answers.
+> **Unit 1 has project-reviewed solutions. Units 2–10 are working question
+> inventories, not solved guides.** All 1,938 answers in Units 2–10 are still
+> withheld. Some question placement, OCR text, formulas and missing figures
+> also require manual correction. Do not use Units 2–10 as your only source for
+> answer checking or final revision.
 
 ## Open a unit
 
 | Unit | Topic and guide | Questions | Current status |
 |---:|---|---:|---|
-| 1 | [Discrete Structures and Optimization](docs/unit-1-discrete-structures-and-optimization.md) | 143 | Solved and reviewed |
-| 2 | [Computer System Architecture](docs/unit-2-computer-system-architecture.md) | 394 | Answers being checked |
-| 3 | [Programming Languages and Computer Graphics](docs/unit-3-programming-languages-and-computer-graphics.md) | 176 | Answers being checked |
-| 4 | [Database Management Systems](docs/unit-4-database-management-systems.md) | 178 | Answers being checked |
-| 5 | [System Software and Operating System](docs/unit-5-system-software-and-operating-system.md) | 184 | Answers being checked |
-| 6 | [Software Engineering](docs/unit-6-software-engineering.md) | 178 | Answers being checked |
-| 7 | [Data Structures and Algorithms](docs/unit-7-data-structures-and-algorithms.md) | 250 | Answers being checked |
-| 8 | [Theory of Computation and Compilers](docs/unit-8-theory-of-computation-and-compilers.md) | 223 | Answers being checked |
-| 9 | [Data Communication and Computer Networks](docs/unit-9-data-communication-and-computer-networks.md) | 257 | Answers being checked |
-| 10 | [Artificial Intelligence](docs/unit-10-artificial-intelligence.md) | 98 | Answers being checked |
+| 1 | [Discrete Structures and Optimization](docs/unit-1-discrete-structures-and-optimization.md) | 143 | Project-reviewed solutions |
+| 2 | [Computer System Architecture](docs/unit-2-computer-system-architecture.md) | 394 | Question inventory; not solved |
+| 3 | [Programming Languages and Computer Graphics](docs/unit-3-programming-languages-and-computer-graphics.md) | 176 | Question inventory; not solved |
+| 4 | [Database Management Systems](docs/unit-4-database-management-systems.md) | 178 | Question inventory; not solved |
+| 5 | [System Software and Operating System](docs/unit-5-system-software-and-operating-system.md) | 184 | Question inventory; not solved |
+| 6 | [Software Engineering](docs/unit-6-software-engineering.md) | 178 | Question inventory; not solved |
+| 7 | [Data Structures and Algorithms](docs/unit-7-data-structures-and-algorithms.md) | 250 | Question inventory; not solved |
+| 8 | [Theory of Computation and Compilers](docs/unit-8-theory-of-computation-and-compilers.md) | 223 | Question inventory; not solved |
+| 9 | [Data Communication and Computer Networks](docs/unit-9-data-communication-and-computer-networks.md) | 257 | Question inventory; not solved |
+| 10 | [Artificial Intelligence](docs/unit-10-artificial-intelligence.md) | 98 | Question inventory; not solved |
 
 There are **10 unit guides with 2,081 study records**. You can also use the
 [one-page guide index](docs/README.md) or read the [official syllabus
@@ -36,9 +43,9 @@ transcription](docs/syllabus.md).
 - chapters arranged according to the UGC NET syllabus;
 - previous-year questions numbered continuously inside each unit;
 - a short reference showing the examination and original question number;
-- basic concepts needed to understand the question;
+- chapter-level foundations and exam methods;
 - formulas, rules and exam shortcuts;
-- step-by-step reasoning for checked solutions;
+- question-specific, step-by-step reasoning in the reviewed Unit 1 guide;
 - common mistakes and methods for solving similar questions;
 - no guessed answer when reliable verification is not available.
 
@@ -52,14 +59,17 @@ transcription](docs/syllabus.md).
 6. Study the “How to solve similar questions” section.
 7. Mark difficult questions and try them again during revision.
 
-For Units 2–10, text saying that an answer is awaiting validation means exactly
-that: the question is available for practice, but its final answer has not yet
-been safely verified.
+For Units 2–10, chapter notes are general revision notes rather than detailed
+solutions to each question. Text saying that an answer is awaiting validation
+means the final answer has not been verified.
 
 ## Current coverage
 
 - **UGC NET Computer Science:** 33 local paper files covering examinations from
   2009 to 2026.
+- **Corpus limitation:** this is not a complete collection of every session or
+  every question. Several papers are missing, partial or damaged during
+  extraction.
 - **Questions in the broad extraction index:** 2,102 Computer Science question
   blocks after removing Paper 1 material and coaching/promotional content.
 - **Questions in the readable unit guides:** 2,081.
@@ -68,8 +78,8 @@ been safely verified.
   from each paper.
 - **Rajasthan SET Computer Science:** no verifiable paper is present in the
   available local collection, so Rajasthan SET coverage is not claimed.
-- **RPSC papers:** four recruitment papers were identified and excluded from
-  NET/SET question counts.
+- **Paper 1:** not covered; the repository focuses on Computer Science subject
+  questions.
 
 For detailed evidence, see the [coverage audit](data/all-units-coverage-audit.md),
 [Unit 1 audit](data/unit-1-audit.md), [source inventory](data/source-files-report.md),
@@ -122,17 +132,20 @@ or source PDFs.
 
 ## Rebuilding and checking
 
-The project uses Python scripts to generate the guides and data. Run these
-commands from the repository root:
+The project uses Python 3.10 or newer. Install the PDF dependency, then run the
+build commands from the repository root:
+
+    python3 -m pip install -r requirements.txt
 
     python3 scripts/build_unit1_outputs.py
     python3 scripts/build_remaining_unit_guides.py
     python3 scripts/build_source_report.py
     python3 scripts/check_release.py
 
-The last command checks that all ten guides exist, question numbers are
-continuous, short references are present, links work and public files are safe
-to publish.
+The last command checks repository structure, numbering, references, links and
+public files. It does **not** prove that answers, OCR text or classifications
+are correct. Read the [readiness audit](data/all-units-coverage-audit.md) before
+using or publishing the guides.
 
 ## License
 
@@ -145,6 +158,6 @@ to publish.
 ## Disclaimer
 
 This is an independent educational project. It is not affiliated with or
-endorsed by UGC, NTA, RPSC, Rajasthan SET or any examination authority.
+endorsed by UGC, NTA or any examination authority.
 Always check the official syllabus, notification and final answer key for your
 examination session.
