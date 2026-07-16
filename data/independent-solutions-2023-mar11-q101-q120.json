@@ -1,0 +1,62 @@
+{
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#101": {
+    "answerLabel": "4", "explanation": "SRTF can indefinitely postpone a long job when shorter jobs keep arriving, so A is true. Priority-based preemptive policies can likewise starve low-priority work, so B's ‘may’ is true. Round robin gives every ready process an early time slice and normally improves interactive response time over FCFS, so C is true.", "whyOthersFail": "Options 1–3 omit at least one true statement.", "keyIdea": "Preemption improves responsiveness but does not itself guarantee freedom from starvation.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#102": {
+    "answerLabel": "2", "explanation": "A process executes its entry section to obtain permission, then its critical section, then its exit section to release permission, and finally its remainder section. The three requested blanks are therefore entry, exit, remainder.", "whyOthersFail": "The other orders perform ordinary remainder work before permission acquisition or postpone release until after the remainder work.", "keyIdea": "Protocol order: entry → critical → exit → remainder.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#103": {
+    "answerLabel": "3", "explanation": "Agile development manages uncertainty through short iterations that deliver working increments, obtain feedback, and permit priorities and design to adapt. Thus C is the defining practice.", "whyOthersFail": "Exhaustive up-front requirements or risk analysis cannot eliminate unpredictability, while D directly contradicts agile adaptation.", "keyIdea": "Short feedback cycles turn unpredictable change into manageable incremental decisions.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#104": {
+    "answerLabel": "1", "explanation": "A project manager plans work, tracks status, allocates resources, manages risks, and remains accountable for delivery within schedule and budget. All five listed duties belong to the role.", "whyOthersFail": "The restricted subsets omit genuine planning, risk, or delivery responsibilities.", "keyIdea": "Project management integrates scope, schedule, cost, resources, monitoring, and risk.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#105": {
+    "answerLabel": null, "answerText": "No listed option — A, B, and C are all compatible with the Open Source Definition", "explanation": "A matches free redistribution. B reflects the permitted integrity-of-author-source-code condition, under which modifications may be distributed as patches or under changed names/versions. C is also true: open-source software may be sold. None of A–C is false, but no ‘none’ option is supplied.", "whyOthersFail": "Options 1–3 each label a valid open-source condition false; option 4 incorrectly says all three are false.", "keyIdea": "Open source permits use, modification, redistribution, and sale; it does not mean zero price.", "confidence": "disputed-no-valid-option"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#106": {
+    "answerLabel": "3", "explanation": "Circuit-SAT is in NP because an assignment is checked in polynomial time (A), and it is NP-hard—at least as hard as every NP language (B). Hence it is NP-complete (C). D is not a general size law, and P≠NP is consistent with, not contradictory to, NP-completeness, so E is false.", "whyOthersFail": "Every other choice includes D or E and/or omits one of A–C.", "keyIdea": "Circuit-SAT is a canonical NP-complete decision problem.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#107": {
+    "answerLabel": "1", "explanation": "For ((A+B·D)/(E−F))+G, prefix is + / + A * B D − E F G, so A is true. Conversion moves operators but preserves operand order A,B,D,E,F,G, making C and D true. Prefix is not simply reversed postfix, so B is false.", "whyOthersFail": "Options 2 and 4 omit a true statement; option 3 includes the false reversal claim.", "keyIdea": "Prefix is expression-tree preorder and postfix is postorder; operand order remains stable.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#108": {
+    "answerLabel": "3", "explanation": "The displayed language description A is the intended set denoted by the expression, and grammar B generates its two component forms through S→AB|C. Statement C imposes one equality constraint across all four symbol counts, which is a different language. Thus A and B, but not C, are correct.", "whyOthersFail": "Options 1 and 2 omit one correct representation; option 4 incorrectly accepts C's all-counts-equal characterization.", "keyIdea": "Derive the exponent pattern of each grammar branch, then compare it with the stated language.", "confidence": "medium-source-notation-damaged"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#109": {
+    "answerLabel": "3", "explanation": "Basic-block leaders are the first instruction, every jump target, and every instruction immediately following a conditional or unconditional jump. Hence A, C, and D are true. Being physically in the middle of the code has no control-flow significance, so B is false.", "whyOthersFail": "Alternatives containing B invent a leader rule; the remaining alternative omits an actual rule.", "keyIdea": "Leaders are determined by control-flow entry points, not list position.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#110": {
+    "answerLabel": null, "answerText": "No listed option — A, B, C, and D are all correct", "questionText": "Which of the following identities for regular expressions/languages are correct? A. ∅ + L = L + ∅ = L. B. εL = Lε = L. C. ∅L = L∅ = ∅. D. ∅*L = L∅* = L.", "explanation": "For any language L: ∅+L=L; εL=L; ∅L=∅; and ∅*={ε}, so ∅*L=L. Thus all four printed identities are correct, but no option lists A,B,C,D.", "whyOthersFail": "Every offered choice omits at least one valid identity.", "keyIdea": "Distinguish ∅ from ε: ∅ annihilates concatenation, whereas {ε} is its identity.", "confidence": "disputed-no-valid-option"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#111": {
+    "answerLabel": "2", "explanation": "An 820-byte MTU permits 800 payload bytes, so a 1400-byte IP payload becomes 800- and 600-byte fragments; the second datagram is 620 bytes including its header (A). Routers do not retransmit lost fragments (B false). TCP at P eventually retransmits the segment (C), and only the first fragment contains the TCP ports (D false).", "whyOthersFail": "Options 1 and 4 assume router retransmission; option 3 says the TCP port can be obtained from a noninitial fragment.", "keyIdea": "Routers fragment, end hosts reassemble, and TCP endpoints recover loss.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#112": {
+    "answerLabel": "1", "explanation": "Nagle's algorithm prevents a sender from emitting many tiny segments, while Clark's solution prevents a receiver from advertising tiny window increments. Together they address sender- and receiver-created silly-window syndrome.", "whyOthersFail": "Jacobson's work concerns TCP timing/congestion; piggybacking combines acknowledgements with reverse data. Neither is the standard SWS pair.", "keyIdea": "SWS: Nagle at the sender, Clark at the receiver.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#113": {
+    "answerLabel": "3", "explanation": "A genetic algorithm evolves a population through selection, crossover, and mutation, retaining fitter candidates across generations. It directly mimics biological evolution.", "whyOthersFail": "The neural-network alternatives learn weights or representations but do not use population-level evolutionary operators.", "keyIdea": "Evolutionary optimization = population + fitness + selection + variation.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#114": {
+    "answerLabel": "3", "explanation": "Logistic regression directly models class probability. Backpropagation trains neural networks used for classification. Linear regression predicts continuous values, while forward propagation is an inference computation rather than a separate learning algorithm. Thus A and B apply.", "whyOthersFail": "Options containing C treat continuous regression as classification; those containing D misclassify an execution phase as a learning algorithm.", "keyIdea": "Backpropagation learns parameters; forward propagation computes outputs.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#115": {
+    "answerLabel": "3", "explanation": "AND, OR, and NOR have linearly separable truth-table classes, so a single perceptron layer can implement them. XOR is not linearly separable and requires a hidden layer or transformed features.", "whyOthersFail": "Options 1 and 2 omit a separable operation; option 4 incorrectly includes XOR.", "keyIdea": "A single perceptron represents a linear decision boundary.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#116": {
+    "answerLabel": "4", "explanation": "Planar graph→4-colorable (A–III); bipartite graph→2-colorable (B–IV); PERT→probabilistic model (C–I); CPM→deterministic model (D–II).", "whyOthersFail": "Other mappings swap graph-coloring bounds or reverse PERT and CPM.", "keyIdea": "PERT is probabilistic; CPM deterministic; bipartite means two-colorable.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#117": {
+    "answerLabel": "3", "explanation": "STA FFFFH uses direct addressing (A–III); MOV A,M obtains memory through HL, so indirect (B–IV); MOV A,B is register addressing (C–II); and MVI A,FFH embeds immediate data (D–I).", "whyOthersFail": "The other options mismatch at least one mnemonic with its operand source.", "keyIdea": "Immediate embeds data; register names a register; direct embeds an address; indirect obtains it from a register pair.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#118": {
+    "answerLabel": "2", "explanation": "Parameter-only variation suggests templates (A–III). Runtime-unknown types require a class hierarchy and dynamic polymorphism (B–I). Templates enable compile-time inlining and runtime efficiency (C–II). Recovering a derived instance through a base reference may require explicit casting (D–IV).", "whyOthersFail": "Other mappings confuse compile-time generic programming with runtime polymorphism.", "keyIdea": "Templates provide compile-time polymorphism; class hierarchies provide runtime polymorphism.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#119": {
+    "answerLabel": "3", "explanation": "Kafka was created at LinkedIn (A–III); Pig supplies data-flow/ETL processing (B–I); Mahout supplies scalable machine-learning algorithms (C–IV); MapReduce is a distributed computation model/runtime (D–II).", "whyOthersFail": "Other mappings interchange platforms with distinct origins and purposes.", "keyIdea": "Kafka: streaming; Pig: ETL; Mahout: ML; MapReduce: distributed computation.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#120": {
+    "answerLabel": "2", "explanation": "IPC enables cooperation/computational speedup (A–II); demand paging implements virtual memory (B–IV); Banker's algorithm handles safe resource allocation (C–I); PCB is the task/process control block (D–III).", "whyOthersFail": "Other choices confuse virtual memory with allocation or swap IPC and PCB roles.", "keyIdea": "Banker→allocation; demand paging→virtual memory; PCB→process metadata; IPC→cooperation.", "confidence": "high"
+  }
+}

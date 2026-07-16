@@ -18,10 +18,10 @@
 
 ## Status and use
 
-This guide contains all **256 question blocks currently recoverable and assigned to Unit 9** from the local UGC NET archive. Questions are arranged chapter-wise and numbered continuously through the unit.
+This guide contains all **255 question blocks currently recoverable and assigned to Unit 9** from the local UGC NET archive. Questions are arranged chapter-wise and numbered continuously through the unit.
 
 > [!WARNING]
-> This is a working extraction inventory, not a complete solved guide. **0 answers are validated and 256 remain pending** in this unit. Some unit and chapter placements use fallback routing, and OCR or missing figures can make questions incomplete.
+> This is a working extraction inventory, not a complete solved guide. **0 answers are validated and 255 remain pending** in this unit. Some unit and chapter placements use fallback routing, and OCR or missing figures can make questions incomplete.
 
 Use this file for question discovery and broad chapter revision. The chapter notes and exam methods are general, not question-specific solutions. Full source paths, PDF pages and classification states remain in the structured data for auditing.
 
@@ -1345,7 +1345,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 <a id="chapter-3"></a>
 
-### 3. Network Models (11 questions)
+### 3. Network Models (10 questions)
 
 **What to master:** Layered Architecture; OSI and Protocols; TCP/IP Suite; Physical, Logical, Port and Specific Addresses; Switching.
 
@@ -1564,35 +1564,6 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 #### Question 51
 
-*UGC NET Nov 2021, original Q55*
-
-> Consider the sentence below. There is a country that borders both India and Pakistan. Which of the following logical expressions express the above sentence correctly when the predicate Country(x) represents that x is a country and Borders(x, y) represents that the countries x and y share the border?
-
-**Options**
-
-1. ∃c Country(c) ∧ Border (c, India) ∧ Border (c,Pakistan)
-2. ∃c Country(c) ⇒ [Border (c, India) ∧ Border (c,Pakistan)]
-3. [∃c Country(c)] ⇒ [Border (c, India) ∧ Border (c,Pakistan)]
-4. ∃c Border (Country(c), India ∧ Pakistan)
-
-**Chapter foundations**
-
-This question belongs to the ideas covered by **Network Models**. Revise these foundations: Layered Architecture; OSI and Protocols; TCP/IP Suite; Physical, Logical, Port and Specific Addresses; Switching.
-
-**Exam method**
-
-1. Identify the exact definition, formula, algorithm or system property being tested.
-2. For Network Models questions: Normalize bit/byte and second units. For subnetting split prefix and host bits; for error control perform modulo-2 arithmetic; for sliding windows trace sequence numbers. Use the chapter rules below and eliminate options that violate definitions, units, or boundary cases.
-3. Check units, boundary cases and every statement before selecting an option.
-
-**Answer status**
-
-This item has not yet passed reliable answer-key matching and independent derivation, so no option is printed here. The omission is intentional: an unverified answer would make the guide unsafe for revision.
-
----
-
-#### Question 52
-
 *UGC NET Oct 2022, original Q39*
 
 > Which layer divides each message into packets at the source and re-assembles them at the destination?
@@ -1620,7 +1591,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 53
+#### Question 52
 
 *UGC NET June 2023, Paper II, original Q53*
 
@@ -1649,7 +1620,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 54
+#### Question 53
 
 *UGC NET Aug 2024, original Q134*
 
@@ -1713,7 +1684,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 55
+#### Question 54
 
 *UGC NET Dec 2009, Paper II, original Q3*
 
@@ -1742,7 +1713,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 56
+#### Question 55
 
 *UGC NET Dec 2009, Paper II, original Q28*
 
@@ -1764,7 +1735,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 57
+#### Question 56
 
 *UGC NET Dec 2009, Paper II, original Q30*
 
@@ -1800,7 +1771,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 58
+#### Question 57
 
 *UGC NET June 2010, Paper II, original Q29*
 
@@ -1822,7 +1793,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 59
+#### Question 58
 
 *UGC NET Dec 2011, Paper III, original Q1*
 
@@ -1844,7 +1815,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 60
+#### Question 59
 
 *UGC NET Dec 2011, Paper III, original Q6*
 
@@ -1866,7 +1837,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 61
+#### Question 60
 
 *UGC NET June 2012, Paper II, original Q6*
 
@@ -1895,7 +1866,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 62
+#### Question 61
 
 *UGC NET June 2012, Paper II, original Q14*
 
@@ -1924,7 +1895,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 63
+#### Question 62
 
 *UGC NET June 2012, Paper II, original Q15*
 
@@ -1953,7 +1924,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 64
+#### Question 63
 
 *UGC NET June 2012, Paper II, original Q41*
 
@@ -1982,7 +1953,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 65
+#### Question 64
 
 *UGC NET Dec 2013, Paper II, original Q37*
 
@@ -2011,7 +1982,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 66
+#### Question 65
 
 *UGC NET Dec 2013, Paper II, original Q42*
 
@@ -2047,7 +2018,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 67
+#### Question 66
 
 *UGC NET Dec 2013, Paper II, original Q44*
 
@@ -2076,7 +2047,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 68
+#### Question 67
 
 *UGC NET Dec 2013, Paper III, original Q45*
 
@@ -2105,7 +2076,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 69
+#### Question 68
 
 *UGC NET June 2013, Paper III, original Q18*
 
@@ -2141,7 +2112,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 70
+#### Question 69
 
 *UGC NET June 2013, Paper III, original Q34*
 
@@ -2170,7 +2141,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 71
+#### Question 70
 
 *UGC NET Dec 2014, Paper III, original Q27*
 
@@ -2199,7 +2170,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 72
+#### Question 71
 
 *UGC NET Dec 2015, Paper II, original Q21*
 
@@ -2228,7 +2199,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 73
+#### Question 72
 
 *UGC NET Dec 2015, Paper II, original Q22*
 
@@ -2250,7 +2221,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 74
+#### Question 73
 
 *UGC NET Dec 2015, Paper II, original Q40*
 
@@ -2272,7 +2243,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 75
+#### Question 74
 
 *UGC NET Dec 2015, Paper III, original Q12*
 
@@ -2301,7 +2272,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 76
+#### Question 75
 
 *UGC NET June 2015, Paper II, original Q28*
 
@@ -2330,7 +2301,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 77
+#### Question 76
 
 *UGC NET June 2015, Paper II, original Q29*
 
@@ -2359,7 +2330,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 78
+#### Question 77
 
 *UGC NET June 2015, Paper III, original Q26*
 
@@ -2388,7 +2359,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 79
+#### Question 78
 
 *UGC NET June 2015, Paper III, original Q28*
 
@@ -2417,7 +2388,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 80
+#### Question 79
 
 *UGC NET June 2015, Paper III, original Q30*
 
@@ -2446,7 +2417,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 81
+#### Question 80
 
 *UGC NET July 2016, Paper II, original Q28*
 
@@ -2475,7 +2446,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 82
+#### Question 81
 
 *UGC NET Jan 2017, Paper II, original Q26*
 
@@ -2511,7 +2482,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 83
+#### Question 82
 
 *UGC NET Jan 2017, Paper II, original Q27*
 
@@ -2540,7 +2511,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 84
+#### Question 83
 
 *UGC NET Jan 2017, Paper II, original Q28*
 
@@ -2569,7 +2540,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 85
+#### Question 84
 
 *UGC NET Jan 2017, Paper III, original Q13*
 
@@ -2598,7 +2569,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 86
+#### Question 85
 
 *UGC NET Jan 2017, Paper III, original Q26*
 
@@ -2627,7 +2598,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 87
+#### Question 86
 
 *UGC NET Jan 2017, Paper III, original Q27*
 
@@ -2656,7 +2627,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 88
+#### Question 87
 
 *UGC NET Nov 2017, Paper II, original Q28*
 
@@ -2685,7 +2656,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 89
+#### Question 88
 
 *UGC NET Nov 2017, Paper II, original Q29*
 
@@ -2714,7 +2685,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 90
+#### Question 89
 
 *UGC NET Dec 2018, original Q138*
 
@@ -2736,7 +2707,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 91
+#### Question 90
 
 *UGC NET Dec 2018, original Q139*
 
@@ -2758,7 +2729,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 92
+#### Question 91
 
 *UGC NET July 2018, Paper II, original Q43*
 
@@ -2787,7 +2758,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 93
+#### Question 92
 
 *UGC NET Dec 2019, original Q132*
 
@@ -2844,7 +2815,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 94
+#### Question 93
 
 *UGC NET June 2019, original Q133*
 
@@ -2866,7 +2837,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 95
+#### Question 94
 
 *UGC NET June 2019, original Q136*
 
@@ -2888,7 +2859,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 96
+#### Question 95
 
 *UGC NET June 2019, original Q138*
 
@@ -2910,7 +2881,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 97
+#### Question 96
 
 *UGC NET Nov 2020, original Q110*
 
@@ -2946,7 +2917,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 98
+#### Question 97
 
 *UGC NET Nov 2020, original Q122*
 
@@ -2982,7 +2953,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 99
+#### Question 98
 
 *UGC NET Nov 2021, original Q91*
 
@@ -3018,7 +2989,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 100
+#### Question 99
 
 *UGC NET Nov 2021, original Q92*
 
@@ -3047,7 +3018,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 101
+#### Question 100
 
 *UGC NET Nov 2021, original Q93*
 
@@ -3076,7 +3047,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 102
+#### Question 101
 
 *UGC NET Oct 2022, original Q36*
 
@@ -3098,7 +3069,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 103
+#### Question 102
 
 *UGC NET Oct 2022, original Q96*
 
@@ -3127,7 +3098,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 104
+#### Question 103
 
 *UGC NET Oct 2022, original Q97*
 
@@ -3156,7 +3127,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 105
+#### Question 104
 
 *UGC NET Oct 2022, original Q98*
 
@@ -3178,7 +3149,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 106
+#### Question 105
 
 *UGC NET Oct 2022, original Q99*
 
@@ -3207,7 +3178,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 107
+#### Question 106
 
 *UGC NET Oct 2022, original Q100*
 
@@ -3236,7 +3207,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 108
+#### Question 107
 
 *UGC NET June 2023, Paper II, original Q97*
 
@@ -3265,7 +3236,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 109
+#### Question 108
 
 *UGC NET June 2023, Paper II, original Q98*
 
@@ -3294,7 +3265,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 110
+#### Question 109
 
 *UGC NET Aug 2024, original Q63*
 
@@ -3316,7 +3287,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 111
+#### Question 110
 
 *UGC NET Aug 2024, original Q115*
 
@@ -3352,7 +3323,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 112
+#### Question 111
 
 *UGC NET Aug 2024, original Q143*
 
@@ -3381,7 +3352,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 113
+#### Question 112
 
 *UGC NET June 2024, original Q10*
 
@@ -3410,7 +3381,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 114
+#### Question 113
 
 *UGC NET June 2024, original Q11*
 
@@ -3432,7 +3403,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 115
+#### Question 114
 
 *UGC NET June 2025, original Q85*
 
@@ -3461,7 +3432,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 116
+#### Question 115
 
 *UGC NET Dec 2025 session (Jan 2026), original Q109*
 
@@ -3483,7 +3454,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 117
+#### Question 116
 
 *UGC NET Dec 2025 session (Jan 2026), original Q114*
 
@@ -3505,7 +3476,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 118
+#### Question 117
 
 *UGC NET Dec 2025 session (Jan 2026), original Q116*
 
@@ -3527,7 +3498,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 119
+#### Question 118
 
 *UGC NET Dec 2025 session (Jan 2026), original Q134*
 
@@ -3563,7 +3534,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 120
+#### Question 119
 
 *UGC NET June 2010, Paper II, original Q27*
 
@@ -3592,7 +3563,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 121
+#### Question 120
 
 *UGC NET Dec 2015, Paper III, original Q14*
 
@@ -3621,7 +3592,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 122
+#### Question 121
 
 *UGC NET June 2015, Paper II, original Q27*
 
@@ -3657,7 +3628,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 123
+#### Question 122
 
 *UGC NET July 2016, Paper II, original Q29*
 
@@ -3686,7 +3657,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 124
+#### Question 123
 
 *UGC NET June 2019, original Q132*
 
@@ -3708,7 +3679,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 125
+#### Question 124
 
 *UGC NET Nov 2020, original Q109*
 
@@ -3744,7 +3715,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 126
+#### Question 125
 
 *UGC NET Nov 2021, original Q96*
 
@@ -3773,7 +3744,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 127
+#### Question 126
 
 *UGC NET Oct 2022, original Q35*
 
@@ -3795,7 +3766,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 128
+#### Question 127
 
 *UGC NET Aug 2024, original Q103*
 
@@ -3831,7 +3802,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 129
+#### Question 128
 
 *UGC NET June 2025, original Q102*
 
@@ -3867,7 +3838,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 130
+#### Question 129
 
 *UGC NET June 2025, original Q104*
 
@@ -3910,7 +3881,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 131
+#### Question 130
 
 *UGC NET Dec 2009, Paper II, original Q26*
 
@@ -3939,7 +3910,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 132
+#### Question 131
 
 *UGC NET Dec 2009, Paper II, original Q27*
 
@@ -3968,7 +3939,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 133
+#### Question 132
 
 *UGC NET June 2010, Paper II, original Q28*
 
@@ -3997,7 +3968,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 134
+#### Question 133
 
 *UGC NET Dec 2012, Paper II, original Q41*
 
@@ -4026,7 +3997,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 135
+#### Question 134
 
 *UGC NET Dec 2013, Paper II, original Q45*
 
@@ -4055,7 +4026,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 136
+#### Question 135
 
 *UGC NET Dec 2013, Paper III, original Q12*
 
@@ -4084,7 +4055,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 137
+#### Question 136
 
 *UGC NET Dec 2013, Paper III, original Q32*
 
@@ -4113,7 +4084,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 138
+#### Question 137
 
 *UGC NET Dec 2013, Paper III, original Q46*
 
@@ -4142,7 +4113,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 139
+#### Question 138
 
 *UGC NET June 2013, Paper III, original Q46*
 
@@ -4178,7 +4149,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 140
+#### Question 139
 
 *UGC NET Dec 2014, Paper II, original Q28*
 
@@ -4207,7 +4178,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 141
+#### Question 140
 
 *UGC NET Dec 2014, Paper III, original Q25*
 
@@ -4236,7 +4207,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 142
+#### Question 141
 
 *UGC NET Dec 2014, Paper III, original Q30*
 
@@ -4265,7 +4236,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 143
+#### Question 142
 
 *UGC NET Dec 2015, Paper III, original Q11*
 
@@ -4287,7 +4258,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 144
+#### Question 143
 
 *UGC NET June 2015, Paper III, original Q27*
 
@@ -4316,7 +4287,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 145
+#### Question 144
 
 *UGC NET July 2016, Paper II, original Q27*
 
@@ -4345,7 +4316,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 146
+#### Question 145
 
 *UGC NET July 2016, Paper III, original Q27*
 
@@ -4374,7 +4345,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 147
+#### Question 146
 
 *UGC NET July 2016, Paper III, original Q30*
 
@@ -4403,7 +4374,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 148
+#### Question 147
 
 *UGC NET Jan 2017, Paper III, original Q30*
 
@@ -4432,7 +4403,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 149
+#### Question 148
 
 *UGC NET Nov 2017, Paper II, original Q26*
 
@@ -4468,7 +4439,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 150
+#### Question 149
 
 *UGC NET Dec 2018, original Q111*
 
@@ -4525,7 +4496,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 151
+#### Question 150
 
 *UGC NET Dec 2018, original Q116*
 
@@ -4547,7 +4518,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 152
+#### Question 151
 
 *UGC NET July 2018, Paper II, original Q41*
 
@@ -4576,7 +4547,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 153
+#### Question 152
 
 *UGC NET July 2018, Paper II, original Q45*
 
@@ -4612,7 +4583,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 154
+#### Question 153
 
 *UGC NET July 2018, Paper II, original Q48*
 
@@ -4641,7 +4612,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 155
+#### Question 154
 
 *UGC NET Dec 2019, original Q75*
 
@@ -4670,7 +4641,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 156
+#### Question 155
 
 *UGC NET Dec 2019, original Q106*
 
@@ -4699,7 +4670,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 157
+#### Question 156
 
 *UGC NET Dec 2019, original Q129*
 
@@ -4728,7 +4699,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 158
+#### Question 157
 
 *UGC NET June 2019, original Q119*
 
@@ -4750,7 +4721,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 159
+#### Question 158
 
 *UGC NET June 2019, original Q131*
 
@@ -4772,7 +4743,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 160
+#### Question 159
 
 *UGC NET June 2019, original Q135*
 
@@ -4801,7 +4772,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 161
+#### Question 160
 
 *UGC NET June 2019, original Q137*
 
@@ -4830,7 +4801,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 162
+#### Question 161
 
 *UGC NET June 2019, original Q148*
 
@@ -4852,7 +4823,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 163
+#### Question 162
 
 *UGC NET Nov 2020, original Q139*
 
@@ -4881,7 +4852,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 164
+#### Question 163
 
 *UGC NET Nov 2021, original Q97*
 
@@ -4910,7 +4881,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 165
+#### Question 164
 
 *UGC NET Nov 2021, original Q99*
 
@@ -4946,7 +4917,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 166
+#### Question 165
 
 *UGC NET Oct 2022, original Q4*
 
@@ -4975,7 +4946,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 167
+#### Question 166
 
 *UGC NET Aug 2024, original Q64*
 
@@ -5004,7 +4975,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 168
+#### Question 167
 
 *UGC NET Aug 2024, original Q65*
 
@@ -5033,7 +5004,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 169
+#### Question 168
 
 *UGC NET Aug 2024, original Q66*
 
@@ -5062,7 +5033,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 170
+#### Question 169
 
 *UGC NET Aug 2024, original Q67*
 
@@ -5084,7 +5055,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 171
+#### Question 170
 
 *UGC NET Aug 2024, original Q144*
 
@@ -5113,7 +5084,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 172
+#### Question 171
 
 *UGC NET June 2024, original Q79*
 
@@ -5135,7 +5106,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 173
+#### Question 172
 
 *UGC NET June 2025, original Q123*
 
@@ -5171,7 +5142,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 174
+#### Question 173
 
 *UGC NET Dec 2025 session (Jan 2026), original Q111*
 
@@ -5207,7 +5178,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 175
+#### Question 174
 
 *UGC NET Dec 2009, Paper II, original Q29*
 
@@ -5236,7 +5207,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 176
+#### Question 175
 
 *UGC NET Dec 2009, Paper II, original Q48*
 
@@ -5265,7 +5236,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 177
+#### Question 176
 
 *UGC NET Dec 2012, Paper II, original Q7*
 
@@ -5301,7 +5272,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 178
+#### Question 177
 
 *UGC NET June 2012, Paper II, original Q39*
 
@@ -5330,7 +5301,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 179
+#### Question 178
 
 *UGC NET July 2016, Paper III, original Q25*
 
@@ -5359,7 +5330,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 180
+#### Question 179
 
 *UGC NET July 2016, Paper III, original Q58*
 
@@ -5388,7 +5359,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 181
+#### Question 180
 
 *UGC NET Jan 2017, Paper II, original Q48*
 
@@ -5417,7 +5388,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 182
+#### Question 181
 
 *UGC NET Dec 2019, original Q127*
 
@@ -5446,7 +5417,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 183
+#### Question 182
 
 *UGC NET June 2025, original Q137*
 
@@ -5496,7 +5467,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 184
+#### Question 183
 
 *UGC NET Dec 2009, Paper II, original Q49*
 
@@ -5525,7 +5496,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 185
+#### Question 184
 
 *UGC NET Dec 2009, Paper II, original Q50*
 
@@ -5554,7 +5525,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 186
+#### Question 185
 
 *UGC NET June 2010, Paper II, original Q47*
 
@@ -5583,7 +5554,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 187
+#### Question 186
 
 *UGC NET Dec 2012, Paper II, original Q3*
 
@@ -5619,7 +5590,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 188
+#### Question 187
 
 *UGC NET Dec 2012, Paper II, original Q10*
 
@@ -5641,7 +5612,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 189
+#### Question 188
 
 *UGC NET Dec 2012, Paper II, original Q25*
 
@@ -5663,7 +5634,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 190
+#### Question 189
 
 *UGC NET Dec 2012, Paper II, original Q47*
 
@@ -5685,7 +5656,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 191
+#### Question 190
 
 *UGC NET June 2012, Paper II, original Q17*
 
@@ -5714,7 +5685,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 192
+#### Question 191
 
 *UGC NET June 2012, Paper II, original Q19*
 
@@ -5743,7 +5714,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 193
+#### Question 192
 
 *UGC NET Dec 2013, Paper II, original Q34*
 
@@ -5772,7 +5743,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 194
+#### Question 193
 
 *UGC NET Dec 2013, Paper III, original Q43*
 
@@ -5801,7 +5772,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 195
+#### Question 194
 
 *UGC NET Dec 2013, Paper III, original Q56*
 
@@ -5830,7 +5801,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 196
+#### Question 195
 
 *UGC NET Dec 2013, Paper III, original Q61*
 
@@ -5859,7 +5830,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 197
+#### Question 196
 
 *UGC NET Dec 2013, Paper III, original Q66*
 
@@ -5888,7 +5859,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 198
+#### Question 197
 
 *UGC NET June 2013, Paper III, original Q17*
 
@@ -5917,7 +5888,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 199
+#### Question 198
 
 *UGC NET June 2013, Paper III, original Q19*
 
@@ -5946,7 +5917,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 200
+#### Question 199
 
 *UGC NET June 2013, Paper III, original Q22*
 
@@ -5975,7 +5946,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 201
+#### Question 200
 
 *UGC NET June 2013, Paper III, original Q28*
 
@@ -6004,7 +5975,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 202
+#### Question 201
 
 *UGC NET June 2013, Paper III, original Q54*
 
@@ -6033,7 +6004,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 203
+#### Question 202
 
 *UGC NET Dec 2014, Paper II, original Q26*
 
@@ -6062,7 +6033,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 204
+#### Question 203
 
 *UGC NET Dec 2014, Paper II, original Q46*
 
@@ -6091,7 +6062,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 205
+#### Question 204
 
 *UGC NET Dec 2014, Paper III, original Q3*
 
@@ -6120,7 +6091,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 206
+#### Question 205
 
 *UGC NET Dec 2014, Paper III, original Q26*
 
@@ -6149,7 +6120,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 207
+#### Question 206
 
 *UGC NET Dec 2014, Paper III, original Q57*
 
@@ -6178,7 +6149,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 208
+#### Question 207
 
 *UGC NET Dec 2014, Paper III, original Q75*
 
@@ -6207,7 +6178,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 209
+#### Question 208
 
 *UGC NET Dec 2015, Paper II, original Q6*
 
@@ -6250,7 +6221,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 210
+#### Question 209
 
 *UGC NET Dec 2015, Paper II, original Q9*
 
@@ -6279,7 +6250,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 211
+#### Question 210
 
 *UGC NET Dec 2015, Paper III, original Q31*
 
@@ -6315,7 +6286,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 212
+#### Question 211
 
 *UGC NET June 2015, Paper II, original Q9*
 
@@ -6344,7 +6315,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 213
+#### Question 212
 
 *UGC NET June 2015, Paper II, original Q10*
 
@@ -6373,7 +6344,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 214
+#### Question 213
 
 *UGC NET June 2015, Paper III, original Q9*
 
@@ -6402,7 +6373,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 215
+#### Question 214
 
 *UGC NET June 2015, Paper III, original Q24*
 
@@ -6431,7 +6402,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 216
+#### Question 215
 
 *UGC NET June 2015, Paper III, original Q65*
 
@@ -6453,7 +6424,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 217
+#### Question 216
 
 *UGC NET July 2016, Paper III, original Q29*
 
@@ -6482,7 +6453,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 218
+#### Question 217
 
 *UGC NET July 2016, Paper III, original Q39*
 
@@ -6511,7 +6482,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 219
+#### Question 218
 
 *UGC NET July 2016, Paper III, original Q53*
 
@@ -6540,7 +6511,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 220
+#### Question 219
 
 *UGC NET July 2016, Paper III, original Q59*
 
@@ -6569,7 +6540,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 221
+#### Question 220
 
 *UGC NET Jan 2017, Paper II, original Q7*
 
@@ -6598,7 +6569,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 222
+#### Question 221
 
 *UGC NET Jan 2017, Paper II, original Q29*
 
@@ -6627,7 +6598,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 223
+#### Question 222
 
 *UGC NET Nov 2017, Paper II, original Q30*
 
@@ -6656,7 +6627,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 224
+#### Question 223
 
 *UGC NET Nov 2017, Paper II, original Q49*
 
@@ -6685,7 +6656,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 225
+#### Question 224
 
 *UGC NET Dec 2018, original Q51*
 
@@ -6735,7 +6706,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 226
+#### Question 225
 
 *UGC NET Dec 2018, original Q52*
 
@@ -6792,7 +6763,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 227
+#### Question 226
 
 *UGC NET Dec 2018, original Q61*
 
@@ -6813,7 +6784,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 228
+#### Question 227
 
 *UGC NET Dec 2018, original Q95*
 
@@ -6835,7 +6806,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 229
+#### Question 228
 
 *UGC NET Dec 2018, original Q148*
 
@@ -6857,7 +6828,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 230
+#### Question 229
 
 *UGC NET July 2018, Paper II, original Q10*
 
@@ -6886,7 +6857,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 231
+#### Question 230
 
 *UGC NET July 2018, Paper II, original Q25*
 
@@ -6915,7 +6886,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 232
+#### Question 231
 
 *UGC NET July 2018, Paper II, original Q42*
 
@@ -6944,7 +6915,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 233
+#### Question 232
 
 *UGC NET July 2018, Paper II, original Q50*
 
@@ -6973,7 +6944,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 234
+#### Question 233
 
 *UGC NET July 2018, Paper II, original Q75*
 
@@ -7002,7 +6973,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 235
+#### Question 234
 
 *UGC NET Dec 2019, original Q104*
 
@@ -7031,7 +7002,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 236
+#### Question 235
 
 *UGC NET June 2019, original Q53*
 
@@ -7053,7 +7024,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 237
+#### Question 236
 
 *UGC NET June 2019, original Q58*
 
@@ -7103,7 +7074,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 238
+#### Question 237
 
 *UGC NET June 2019, original Q80*
 
@@ -7132,7 +7103,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 239
+#### Question 238
 
 *UGC NET Nov 2020, original Q51*
 
@@ -7161,7 +7132,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 240
+#### Question 239
 
 *UGC NET Nov 2020, original Q53*
 
@@ -7190,7 +7161,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 241
+#### Question 240
 
 *UGC NET Nov 2020, original Q84*
 
@@ -7219,7 +7190,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 242
+#### Question 241
 
 *UGC NET Nov 2020, original Q133*
 
@@ -7248,7 +7219,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 243
+#### Question 242
 
 *UGC NET Nov 2020, original Q144*
 
@@ -7277,7 +7248,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 244
+#### Question 243
 
 *UGC NET Nov 2021, original Q95*
 
@@ -7306,7 +7277,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 245
+#### Question 244
 
 *UGC NET Oct 2022, original Q41*
 
@@ -7335,7 +7306,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 246
+#### Question 245
 
 *UGC NET Aug 2024, original Q80*
 
@@ -7364,7 +7335,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 247
+#### Question 246
 
 *UGC NET June 2024, original Q58*
 
@@ -7393,7 +7364,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 248
+#### Question 247
 
 *UGC NET June 2024, original Q89*
 
@@ -7415,7 +7386,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 249
+#### Question 248
 
 *UGC NET June 2024, original Q108*
 
@@ -7451,7 +7422,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 250
+#### Question 249
 
 *UGC NET June 2025, original Q53*
 
@@ -7480,7 +7451,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 251
+#### Question 250
 
 *UGC NET June 2025, original Q107*
 
@@ -7516,7 +7487,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 252
+#### Question 251
 
 *UGC NET June 2025, original Q126*
 
@@ -7552,7 +7523,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 253
+#### Question 252
 
 *UGC NET June 2025, original Q147*
 
@@ -7581,7 +7552,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 254
+#### Question 253
 
 *UGC NET June 2025, original Q149*
 
@@ -7610,7 +7581,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 255
+#### Question 254
 
 *UGC NET Dec 2025 session (Jan 2026), original Q115*
 
@@ -7632,7 +7603,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 256
+#### Question 255
 
 *UGC NET Dec 2025 session (Jan 2026), original Q131*
 
@@ -7654,8 +7625,8 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ## Coverage and quality notes
 
-- Recovered question blocks in this unit: **256**
-- Chapter placements with direct keyword support: **187**
+- Recovered question blocks in this unit: **255**
+- Chapter placements with direct keyword support: **186**
 - Chapter placements needing manual review: **69**
 - Questions with validated answers in this guide: **0**
 - OCR may flatten mathematical notation, tables, code indentation, and figures. Full audit references are retained in the structured data.

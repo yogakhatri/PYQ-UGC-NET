@@ -11,13 +11,11 @@ from __future__ import annotations
 import json
 import math
 import re
+import argparse
 from bisect import bisect_right
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
-
-from pypdf import PdfReader
-
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES = ROOT / "sources"
@@ -107,6 +105,19 @@ def pages(path: Path) -> list[Page]:
     return [Page(int(parts[i]), parts[i + 1]) for i in range(1, len(parts), 2)]
 
 
+def pages_from_pdf(path: Path) -> list[Page]:
+    """Read native PDF text when the optional extraction cache is absent."""
+    # Keep PDF support optional for callers that only import the shared
+    # classification rules.  A cached-text index build does not need pypdf.
+    from pypdf import PdfReader
+
+    reader = PdfReader(path)
+    return [
+        Page(number, page.extract_text() or "")
+        for number, page in enumerate(reader.pages, 1)
+    ]
+
+
 def subject_page_allowed(source: str, page: int, qno: int) -> bool:
     if "2023-mar-15-shift-1-dec-2022-session" in source:
         return page >= 40
@@ -141,6 +152,11 @@ def is_boilerplate(block: str) -> bool:
         "rough work is to be done",
         "negative marks for incorrect answers",
         "responses to the items",
+        "this paper consists of",
+        "if you write your name",
+        "if you write your name or put any mark",
+        "name, roll number, phone number or put any mark",
+        "test booklet, except for the space allotted",
     ]
     return any(p in low for p in phrases)
 
@@ -317,7 +333,22 @@ def statistical_fallback(records: list[dict]) -> None:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=OUT,
+        help="Candidate index path; defaults to the canonical index",
+    )
+    args = parser.parse_args()
     all_records = []
+    source_papers = {
+        pdf.relative_to(ROOT).as_posix()
+        for pdf in SOURCES.glob("*.pdf")
+        if pdf.name not in EXCLUDE
+        and pdf.name != "ugc-net-computer-science-official-syllabus.pdf"
+        and "final-answer-key" not in pdf.name
+    }
     for pdf in sorted(SOURCES.glob("*.pdf")):
         if pdf.name in EXCLUDE or pdf.name == "ugc-net-computer-science-official-syllabus.pdf" or "final-answer-key" in pdf.name:
             continue
@@ -326,15 +357,16 @@ def main() -> None:
             candidates = extract_id_delimited_pdf(pdf, 2331, 2430)
         elif "2022-oct-with-answers" in source:
             text_path = source_text(pdf)
-            if not text_path:
-                continue
-            candidates = extract_id_delimited(text_path, 316, 415)
+            candidates = (
+                extract_id_delimited(text_path, 316, 415)
+                if text_path
+                else extract_id_delimited_pdf(pdf, 316, 415)
+            )
         else:
             text_path = source_text(pdf)
-            if not text_path:
-                continue
             candidates = []
-            for page in pages(text_path):
+            source_pages = pages(text_path) if text_path else pages_from_pdf(pdf)
+            for page in source_pages:
                 candidates.extend(extract_from_page(source, page))
         if "2023-june-paper-2" in source:
             candidates = [item for item in candidates if not is_third_party_explanation(item["rawText"])]
@@ -367,8 +399,27 @@ def main() -> None:
             )
 
     statistical_fallback(all_records)
-    OUT.parent.mkdir(exist_ok=True)
-    OUT.write_text(json.dumps(all_records, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    recovered_sources = {record["sourceFile"] for record in all_records}
+    # A missing text-extraction cache previously allowed this command to replace
+    # the 2,103-record index with the 100 records read directly from one PDF.
+    # Refuse a partial rebuild instead of silently destroying the canonical data.
+    missing_sources = sorted(source_papers - recovered_sources)
+    if missing_sources:
+        preview = ", ".join(missing_sources[:3])
+        remainder = len(missing_sources) - min(len(missing_sources), 3)
+        suffix = f" (and {remainder} more)" if remainder else ""
+        raise RuntimeError(
+            "Refusing to overwrite the question index because extracted text is "
+            f"missing for {len(missing_sources)} source papers: {preview}{suffix}. "
+            "Recreate tmp/pdfs/text first."
+        )
+    if len(all_records) < 2000:
+        raise RuntimeError(
+            f"Refusing to overwrite the question index with only {len(all_records)} records."
+        )
+    output = args.output if args.output.is_absolute() else ROOT / args.output
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(json.dumps(all_records, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     counts = Counter(r["suggestedUnit"] for r in all_records)
     print(f"Wrote {len(all_records)} recovered question blocks from {len(set(r['sourceFile'] for r in all_records))} papers")
     print("Unit counts:", dict(sorted(counts.items(), key=lambda x: (x[0] is None, x[0] or 0))))

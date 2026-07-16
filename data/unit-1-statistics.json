@@ -2,15 +2,15 @@
   "unit": 1,
   "title": "Discrete Structures and Optimization",
   "status": "complete-with-documented-source-defect-exceptions",
-  "questionCount": 143,
+  "questionCount": 151,
   "topicCounts": {
     "Boolean Algebra": 16,
-    "Counting, Mathematical Induction and Discrete Probability": 27,
-    "Graph Theory": 29,
-    "Group Theory": 7,
-    "Mathematical Logic": 17,
+    "Counting, Mathematical Induction and Discrete Probability": 30,
+    "Graph Theory": 31,
+    "Group Theory": 8,
+    "Mathematical Logic": 18,
     "Optimization": 23,
-    "Sets and Relations": 24
+    "Sets and Relations": 25
   },
   "yearCounts": {
     "2009": 3,
@@ -25,7 +25,7 @@
     "2018": 23,
     "2019": 15,
     "2020": 8,
-    "2021": 2,
+    "2021": 10,
     "2022": 5,
     "2023": 20,
     "2024": 12,

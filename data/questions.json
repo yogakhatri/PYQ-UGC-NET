@@ -261,8 +261,8 @@
       "Therefore the assertion is false.",
       "The reason correctly states the three defining properties of a partial order."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -1422,8 +1422,8 @@
       "Count top-level elements, not the numbers inside them: |A₁|=2, |A₂|=4, |A₃|=1, |A₄|=3, |A₅|=5.",
       "Increasing order is A₃,A₁,A₄,A₂,A₅."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -1712,8 +1712,8 @@
       "R₃ and R₅ contain (1,1),(2,2),(3,3),(4,4). Each of R₁,R₂,R₄ misses at least one.",
       "Therefore R₃,R₅ only."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -2002,8 +2002,8 @@
       "Symmetric difference is III. De Morgan set laws give A−(B∪C)=(A−B)∩(A−C)=II and A−(B∩C)=(A−B)∪(A−C)=I.",
       "A∩(B−C)=(A∩B)−(A∩C)=IV."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -2075,8 +2075,8 @@
       "Equality of the value f(a,b)=1/a+1/b is reflexive, symmetric and transitive.",
       "Therefore R is an equivalence relation."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -2874,8 +2874,8 @@
       "(2,2) is absent, so R is not reflexive. (1,2) is present but (2,1) absent, so not symmetric.",
       "(3,1) and (1,2) occur but (3,2) does not, so it is not transitive."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -3090,8 +3090,8 @@
       "R is irreflexive because x<x is false; hence it is not a (reflexive) partial order and not an equivalence relation.",
       "It is a strict partial order in terminology that uses irreflexive+transitive; the options use the non-strict convention."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -3599,8 +3599,8 @@
       "Transitivity fails: choose x=0,y=0.0004,z=0.0008. The first two gaps are <ε but |x−z| is not.",
       "Thus A and B only."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -3776,6 +3776,517 @@
     "sourceAnchor": "../sources/ugc-net-cs-2022-oct-with-answers.pdf#page=31"
   },
   {
+    "id": "UGCNET-CS-2021-november-2021-Q21",
+    "exam": "UGC NET Computer Science and Applications",
+    "year": 2021,
+    "session": "November 2021",
+    "shift": null,
+    "paper": "Paper II",
+    "questionNumber": "21",
+    "questionId": "2351",
+    "sourceFile": "sources/ugc-net-cs-2021-nov-with-answers.pdf",
+    "sourcePage": 2,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "topic": "Mathematical Logic",
+    "subtopic": "Logical equivalence",
+    "secondaryUnit": null,
+    "question": "Which pairs are logically equivalent? A. ¬p→(q→r) and q→(p∨r). B. (p→q)→r and p→(q→r). C. (p→q)→(r→s) and (p→r)→(q→s).",
+    "options": [
+      {
+        "number": 1,
+        "text": "A only"
+      },
+      {
+        "number": 2,
+        "text": "A and B only"
+      },
+      {
+        "number": 3,
+        "text": "B and C only"
+      },
+      {
+        "number": 4,
+        "text": "A and C only"
+      }
+    ],
+    "correctOption": 1,
+    "correctAnswer": "A only",
+    "answerStatus": "official-final-key-matched",
+    "officialAnswer": "NTA final key: Question ID 2351, option 1",
+    "solutionSteps": [
+      "¬p→(q→r) simplifies to p∨¬q∨r. The other formula in A, q→(p∨r), simplifies to the same expression, so A is equivalent.",
+      "In B, (p→q)→r becomes (p∧¬q)∨r, whereas p→(q→r) becomes ¬p∨¬q∨r. Taking p=false and r=false separates them, so B is not equivalent.",
+      "C is not an equivalence; for example p=false, q=true, r=true, s=false makes the left formula false and the right formula true. Therefore only A holds."
+    ],
+    "concept": "Replace implication by ¬p ∨ q, push negations through quantifiers, and test validity by searching for a counterexample. A tautology is true under every valuation; an argument is valid when the conjunction of its premises implies its conclusion.",
+    "formulaOrRule": "p→q ≡ ¬p∨q; ¬∀x P(x) ≡ ∃x ¬P(x); ¬∃x P(x) ≡ ∀x ¬P(x).",
+    "shortcut": "For a proposed tautology, first try to make the consequent false and see whether the antecedent can still be true.",
+    "commonTrap": "The converse q→p is not the contrapositive ¬q→¬p, and quantifier order generally cannot be swapped.",
+    "optionAnalysis": [
+      {
+        "number": 1,
+        "verdict": "correct option",
+        "explanation": "This matches the independently derived result: A only."
+      },
+      {
+        "number": 2,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (A only); the decisive computation or defining property is shown in the solution steps."
+      },
+      {
+        "number": 3,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (A only); the decisive computation or defining property is shown in the solution steps."
+      },
+      {
+        "number": 4,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (A only); the decisive computation or defining property is shown in the solution steps."
+      }
+    ],
+    "canonicalExplanation": "UGCNET-CS-2021-november-2021-Q21",
+    "reviewNote": "The stem and formulas were recovered by visual inspection of PDF page 2 because the broad text index retained only the choices.",
+    "sourceAnchor": "../sources/ugc-net-cs-2021-nov-with-answers.pdf#page=2"
+  },
+  {
+    "id": "UGCNET-CS-2021-november-2021-Q22",
+    "exam": "UGC NET Computer Science and Applications",
+    "year": 2021,
+    "session": "November 2021",
+    "shift": null,
+    "paper": "Paper II",
+    "questionNumber": "22",
+    "questionId": "2352",
+    "sourceFile": "sources/ugc-net-cs-2021-nov-with-answers.pdf",
+    "sourcePage": 2,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "topic": "Sets and Relations",
+    "subtopic": "Floor and ceiling functions",
+    "secondaryUnit": null,
+    "question": "Which statements are correct? I. ⌊2x⌋=⌊x⌋+⌊x+1/2⌋ for every real x. II. ⌊x+y⌋=⌊x⌋+⌊y⌋ for every real x and y.",
+    "options": [
+      {
+        "number": 1,
+        "text": "Both I and II are true"
+      },
+      {
+        "number": 2,
+        "text": "Both I and II are false"
+      },
+      {
+        "number": 3,
+        "text": "I is true but II is false"
+      },
+      {
+        "number": 4,
+        "text": "I is false but II is true"
+      }
+    ],
+    "correctOption": 3,
+    "correctAnswer": "I is true but II is false",
+    "answerStatus": "official-final-key-matched",
+    "officialAnswer": "NTA final key: Question ID 2352, option 3",
+    "solutionSteps": [
+      "Write x=n+f with n=⌊x⌋ and 0≤f<1. Then ⌊2x⌋=2n+⌊2f⌋ and ⌊x⌋+⌊x+1/2⌋=2n+⌊f+1/2⌋. Both added floors are 0 for f<1/2 and 1 for f≥1/2, so I is true.",
+      "II is not an identity because fractional parts can carry into the next integer. With x=y=0.6, ⌊x+y⌋=1 but ⌊x⌋+⌊y⌋=0.",
+      "Thus Statement I is true and Statement II is false, giving option 3."
+    ],
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
+    "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
+    "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
+    "optionAnalysis": [
+      {
+        "number": 1,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (I is true but II is false); the decisive computation or defining property is shown in the solution steps."
+      },
+      {
+        "number": 2,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (I is true but II is false); the decisive computation or defining property is shown in the solution steps."
+      },
+      {
+        "number": 3,
+        "verdict": "correct option",
+        "explanation": "This matches the independently derived result: I is true but II is false."
+      },
+      {
+        "number": 4,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (I is true but II is false); the decisive computation or defining property is shown in the solution steps."
+      }
+    ],
+    "canonicalExplanation": "UGCNET-CS-2021-november-2021-Q22",
+    "reviewNote": "The embedded answer overlay says both statements are true, but the final NTA key and the counterexample establish option 3.",
+    "sourceAnchor": "../sources/ugc-net-cs-2021-nov-with-answers.pdf#page=2"
+  },
+  {
+    "id": "UGCNET-CS-2021-november-2021-Q23",
+    "exam": "UGC NET Computer Science and Applications",
+    "year": 2021,
+    "session": "November 2021",
+    "shift": null,
+    "paper": "Paper II",
+    "questionNumber": "23",
+    "questionId": "2353",
+    "sourceFile": "sources/ugc-net-cs-2021-nov-with-answers.pdf",
+    "sourcePage": 2,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "topic": "Counting, Mathematical Induction and Discrete Probability",
+    "subtopic": "Onto assignments",
+    "secondaryUnit": null,
+    "question": "How many ways are there to assign five different jobs to four different employees if every employee receives at least one job?",
+    "options": [
+      {
+        "number": 1,
+        "text": "1024"
+      },
+      {
+        "number": 2,
+        "text": "625"
+      },
+      {
+        "number": 3,
+        "text": "240"
+      },
+      {
+        "number": 4,
+        "text": "20"
+      }
+    ],
+    "correctOption": 3,
+    "correctAnswer": "240",
+    "answerStatus": "official-final-key-matched",
+    "officialAnswer": "NTA final key: Question ID 2353, option 3",
+    "solutionSteps": [
+      "Because five distinct jobs go to four employees and none may be empty, exactly one employee must receive two jobs and each other employee one.",
+      "Choose the employee receiving two jobs in 4 ways, choose that employee's two jobs in C(5,2)=10 ways, and biject the remaining three jobs to the remaining three employees in 3!=6 ways.",
+      "The product is 4·10·6=240. Equivalently, inclusion-exclusion gives 4^5-4·3^5+6·2^5-4=240."
+    ],
+    "concept": "Counting problems reduce to product/sum rules, stars-and-bars, inclusion–exclusion, permutations or combinations. Probability is favourable equally likely outcomes divided by all outcomes; conditional probability changes the sample space, and Bayes reverses a condition.",
+    "formulaOrRule": "nPr=n!/(n−r)!; nCr=n!/[r!(n−r)!]; P(A|B)=P(A∩B)/P(B); P(A|B)=P(B|A)P(A)/P(B).",
+    "shortcut": "Decide first whether order matters and whether replacement is allowed; that usually eliminates most options immediately.",
+    "commonTrap": "Pairwise intersections are added back only after being subtracted, and a three-way intersection is then added once.",
+    "optionAnalysis": [
+      {
+        "number": 1,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (240); the decisive computation or defining property is shown in the solution steps."
+      },
+      {
+        "number": 2,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (240); the decisive computation or defining property is shown in the solution steps."
+      },
+      {
+        "number": 3,
+        "verdict": "correct option",
+        "explanation": "This matches the independently derived result: 240."
+      },
+      {
+        "number": 4,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (240); the decisive computation or defining property is shown in the solution steps."
+      }
+    ],
+    "canonicalExplanation": "UGCNET-CS-2021-november-2021-Q23",
+    "reviewNote": "The embedded answer overlay marks 1024, which counts all functions and ignores the nonempty-employee condition; the final key corrects it to 240.",
+    "sourceAnchor": "../sources/ugc-net-cs-2021-nov-with-answers.pdf#page=2"
+  },
+  {
+    "id": "UGCNET-CS-2021-november-2021-Q24",
+    "exam": "UGC NET Computer Science and Applications",
+    "year": 2021,
+    "session": "November 2021",
+    "shift": null,
+    "paper": "Paper II",
+    "questionNumber": "24",
+    "questionId": "2354",
+    "sourceFile": "sources/ugc-net-cs-2021-nov-with-answers.pdf",
+    "sourcePage": 2,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "topic": "Counting, Mathematical Induction and Discrete Probability",
+    "subtopic": "Pigeonhole principle",
+    "secondaryUnit": null,
+    "question": "A warehouse has 50 aisles, 85 horizontal locations per aisle, and 5 shelves. What is the least number of products that guarantees two products in the same bin?",
+    "options": [
+      {
+        "number": 1,
+        "text": "251"
+      },
+      {
+        "number": 2,
+        "text": "426"
+      },
+      {
+        "number": 3,
+        "text": "4251"
+      },
+      {
+        "number": 4,
+        "text": "21251"
+      }
+    ],
+    "correctOption": 4,
+    "correctAnswer": "21251",
+    "answerStatus": "official-final-key-matched",
+    "officialAnswer": "NTA final key: Question ID 2354, option 4",
+    "solutionSteps": [
+      "A bin is identified by one choice from each coordinate, so the number of bins is 50·85·5=21,250.",
+      "With 21,250 products it is still possible to put one product in every bin, so a collision is not yet forced.",
+      "The next product must reuse a bin by the pigeonhole principle. Hence the least guaranteed number is 21,250+1=21,251."
+    ],
+    "concept": "Counting problems reduce to product/sum rules, stars-and-bars, inclusion–exclusion, permutations or combinations. Probability is favourable equally likely outcomes divided by all outcomes; conditional probability changes the sample space, and Bayes reverses a condition.",
+    "formulaOrRule": "nPr=n!/(n−r)!; nCr=n!/[r!(n−r)!]; P(A|B)=P(A∩B)/P(B); P(A|B)=P(B|A)P(A)/P(B).",
+    "shortcut": "Decide first whether order matters and whether replacement is allowed; that usually eliminates most options immediately.",
+    "commonTrap": "Pairwise intersections are added back only after being subtracted, and a three-way intersection is then added once.",
+    "optionAnalysis": [
+      {
+        "number": 1,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (21251); the decisive computation or defining property is shown in the solution steps."
+      },
+      {
+        "number": 2,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (21251); the decisive computation or defining property is shown in the solution steps."
+      },
+      {
+        "number": 3,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (21251); the decisive computation or defining property is shown in the solution steps."
+      },
+      {
+        "number": 4,
+        "verdict": "correct option",
+        "explanation": "This matches the independently derived result: 21251."
+      }
+    ],
+    "canonicalExplanation": "UGCNET-CS-2021-november-2021-Q24",
+    "reviewNote": "The source OCR says 'self'; visual inspection shows the intended warehouse coordinate is shelf. The embedded answer overlay is superseded by the final key.",
+    "sourceAnchor": "../sources/ugc-net-cs-2021-nov-with-answers.pdf#page=2"
+  },
+  {
+    "id": "UGCNET-CS-2021-november-2021-Q25",
+    "exam": "UGC NET Computer Science and Applications",
+    "year": 2021,
+    "session": "November 2021",
+    "shift": null,
+    "paper": "Paper II",
+    "questionNumber": "25",
+    "questionId": "2355",
+    "sourceFile": "sources/ugc-net-cs-2021-nov-with-answers.pdf",
+    "sourcePage": 2,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "topic": "Counting, Mathematical Induction and Discrete Probability",
+    "subtopic": "Recurrence relations",
+    "secondaryUnit": null,
+    "question": "A person may climb either one stair or two stairs at a time. In how many ways can the person climb eight stairs?",
+    "options": [
+      {
+        "number": 1,
+        "text": "21"
+      },
+      {
+        "number": 2,
+        "text": "24"
+      },
+      {
+        "number": 3,
+        "text": "31"
+      },
+      {
+        "number": 4,
+        "text": "34"
+      }
+    ],
+    "correctOption": 4,
+    "correctAnswer": "34",
+    "answerStatus": "official-final-key-matched",
+    "officialAnswer": "NTA final key: Question ID 2355, option 4",
+    "solutionSteps": [
+      "Let a_n be the number of ways to reach stair n. The last move is either one stair after a_{n-1} or two stairs after a_{n-2}, so a_n=a_{n-1}+a_{n-2}.",
+      "Use a_0=1 (the empty sequence) and a_1=1. The values are a_2=2, a_3=3, a_4=5, a_5=8, a_6=13, a_7=21 and a_8=34.",
+      "Therefore eight stairs can be climbed in 34 ways, option 4. The distractor 21 is the count for seven stairs."
+    ],
+    "concept": "Counting problems reduce to product/sum rules, stars-and-bars, inclusion–exclusion, permutations or combinations. Probability is favourable equally likely outcomes divided by all outcomes; conditional probability changes the sample space, and Bayes reverses a condition.",
+    "formulaOrRule": "nPr=n!/(n−r)!; nCr=n!/[r!(n−r)!]; P(A|B)=P(A∩B)/P(B); P(A|B)=P(B|A)P(A)/P(B).",
+    "shortcut": "Decide first whether order matters and whether replacement is allowed; that usually eliminates most options immediately.",
+    "commonTrap": "Pairwise intersections are added back only after being subtracted, and a three-way intersection is then added once.",
+    "optionAnalysis": [
+      {
+        "number": 1,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (34); the decisive computation or defining property is shown in the solution steps."
+      },
+      {
+        "number": 2,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (34); the decisive computation or defining property is shown in the solution steps."
+      },
+      {
+        "number": 3,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (34); the decisive computation or defining property is shown in the solution steps."
+      },
+      {
+        "number": 4,
+        "verdict": "correct option",
+        "explanation": "This matches the independently derived result: 34."
+      }
+    ],
+    "canonicalExplanation": "UGCNET-CS-2021-november-2021-Q25",
+    "reviewNote": "The embedded answer overlay marks 21, but the final NTA key and the recurrence both give 34.",
+    "sourceAnchor": "../sources/ugc-net-cs-2021-nov-with-answers.pdf#page=2"
+  },
+  {
+    "id": "UGCNET-CS-2021-november-2021-Q26",
+    "exam": "UGC NET Computer Science and Applications",
+    "year": 2021,
+    "session": "November 2021",
+    "shift": null,
+    "paper": "Paper II",
+    "questionNumber": "26",
+    "questionId": "2356",
+    "sourceFile": "sources/ugc-net-cs-2021-nov-with-answers.pdf",
+    "sourcePage": 2,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "topic": "Graph Theory",
+    "subtopic": "Regular and wheel graphs",
+    "secondaryUnit": null,
+    "question": "For which value of n is the wheel graph W_n regular?",
+    "options": [
+      {
+        "number": 1,
+        "text": "2"
+      },
+      {
+        "number": 2,
+        "text": "3"
+      },
+      {
+        "number": 3,
+        "text": "4"
+      },
+      {
+        "number": 4,
+        "text": "5"
+      }
+    ],
+    "correctOption": 2,
+    "correctAnswer": "n=3 (option 2) or n=4 (option 3), depending on the wheel-indexing convention",
+    "answerStatus": "official-final-key-multiple-options",
+    "officialAnswer": "NTA final key: Question ID 2356, options 2 and 3 accepted",
+    "solutionSteps": [
+      "Under the convention W_n=K_1+C_n, every rim vertex has degree 3 and the hub has degree n. Equality of all degrees requires n=3, so option 2 is correct under this convention.",
+      "Another common convention uses W_n for a wheel of total order n, namely K_1+C_{n-1}. Then the hub has degree n-1, and regularity requires n-1=3, giving n=4 (option 3). In either notation the graph is K_4.",
+      "The NTA final key accepts both options 2 and 3 because both wheel-indexing conventions are standard; the mathematical invariant is that the unique regular wheel is K_4."
+    ],
+    "concept": "Use degree sums, Euler’s formula, colouring criteria and standard tree identities. A connected graph has an Euler circuit iff every degree is even; a graph is bipartite iff it has no odd cycle. A tree with n vertices has n−1 edges.",
+    "formulaOrRule": "Σdeg(v)=2|E|; planar connected V−E+F=2; τ(Kn)=n^(n−2); full m-ary leaves=(m−1)i+1.",
+    "shortcut": "Parity, degree sum and V−E+F often solve a graph MCQ without drawing the whole graph.",
+    "commonTrap": "Euler questions concern edges; Hamilton questions concern vertices. Necessary and sufficient degree conditions must not be confused.",
+    "optionAnalysis": [
+      {
+        "number": 1,
+        "verdict": "incorrect",
+        "explanation": "A cycle C_2 is not a simple cycle in the standard wheel definition."
+      },
+      {
+        "number": 2,
+        "verdict": "accepted",
+        "explanation": "For W_n=K_1+C_n, n=3 makes both the hub and rim degrees equal to 3, producing K_4."
+      },
+      {
+        "number": 3,
+        "verdict": "accepted",
+        "explanation": "For the convention where W_n has n total vertices, W_4=K_1+C_3=K_4, which is 3-regular."
+      },
+      {
+        "number": 4,
+        "verdict": "incorrect",
+        "explanation": "Under either convention this wheel has a hub degree larger than the rim degree 3."
+      }
+    ],
+    "canonicalExplanation": "UGCNET-CS-2021-november-2021-Q26",
+    "reviewNote": "Option 2 is stored as the primary answer because the stem's W_n notation often means K_1+C_n; option 3 is equally accepted under the order-n convention.",
+    "sourceAnchor": "../sources/ugc-net-cs-2021-nov-with-answers.pdf#page=2"
+  },
+  {
+    "id": "UGCNET-CS-2021-november-2021-Q27",
+    "exam": "UGC NET Computer Science and Applications",
+    "year": 2021,
+    "session": "November 2021",
+    "shift": null,
+    "paper": "Paper II",
+    "questionNumber": "27",
+    "questionId": "2357",
+    "sourceFile": "sources/ugc-net-cs-2021-nov-with-answers.pdf",
+    "sourcePage": 2,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "topic": "Graph Theory",
+    "subtopic": "Planarity and graph redrawings",
+    "secondaryUnit": null,
+    "question": "The source shows three graphs A, B and C. Which are planar? Graph A is a six-vertex crossing drawing with outer triangle a-d-f and vertices b,c,e subdividing its sides; graph B is the six-vertex octahedral graph; graph C contains a subdivision of K3,3.",
+    "options": [
+      {
+        "number": 1,
+        "text": "A and B only"
+      },
+      {
+        "number": 2,
+        "text": "B and C only"
+      },
+      {
+        "number": 3,
+        "text": "A only"
+      },
+      {
+        "number": 4,
+        "text": "B only"
+      }
+    ],
+    "correctOption": 1,
+    "correctAnswer": "A and B only",
+    "answerStatus": "official-final-key-matched",
+    "officialAnswer": "NTA final key: Question ID 2357, option 1",
+    "solutionSteps": [
+      "A's displayed edge crossing is not a vertex and does not prove nonplanarity. Moving one of the two crossing chords outside the outer triangle gives an embedding without crossings, so A is planar.",
+      "B is the octahedral graph, isomorphic to K_{2,2,2}. It is the edge graph of a convex octahedron and therefore has a planar embedding, even though the supplied straight-line drawing has crossings.",
+      "In C, suppressing the degree-2 subdivision vertices exposes a K3,3 subdivision. Kuratowski's theorem therefore makes C nonplanar. Exactly A and B are planar, so option 1 is correct."
+    ],
+    "concept": "Use degree sums, Euler’s formula, colouring criteria and standard tree identities. A connected graph has an Euler circuit iff every degree is even; a graph is bipartite iff it has no odd cycle. A tree with n vertices has n−1 edges.",
+    "formulaOrRule": "Σdeg(v)=2|E|; planar connected V−E+F=2; τ(Kn)=n^(n−2); full m-ary leaves=(m−1)i+1.",
+    "shortcut": "Parity, degree sum and V−E+F often solve a graph MCQ without drawing the whole graph.",
+    "commonTrap": "Euler questions concern edges; Hamilton questions concern vertices. Necessary and sufficient degree conditions must not be confused.",
+    "optionAnalysis": [
+      {
+        "number": 1,
+        "verdict": "correct option",
+        "explanation": "This matches the independently derived result: A and B only."
+      },
+      {
+        "number": 2,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (A and B only); the decisive computation or defining property is shown in the solution steps."
+      },
+      {
+        "number": 3,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (A and B only); the decisive computation or defining property is shown in the solution steps."
+      },
+      {
+        "number": 4,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (A and B only); the decisive computation or defining property is shown in the solution steps."
+      }
+    ],
+    "canonicalExplanation": "UGCNET-CS-2021-november-2021-Q27",
+    "reviewNote": "The three drawings were visually inspected at high resolution. The learning point is that crossings in a particular drawing do not by themselves establish nonplanarity.",
+    "sourceAnchor": "../sources/ugc-net-cs-2021-nov-with-answers.pdf#page=2"
+  },
+  {
     "id": "UGCNET-CS-2021-november-2021-Q28",
     "exam": "UGC NET Computer Science and Applications",
     "year": 2021,
@@ -3783,7 +4294,7 @@
     "shift": null,
     "paper": "Paper II",
     "questionNumber": "28",
-    "questionId": null,
+    "questionId": "2358",
     "sourceFile": "sources/ugc-net-cs-2021-nov-with-answers.pdf",
     "sourcePage": 3,
     "unit": "Unit 1: Discrete Structures and Optimization",
@@ -3811,8 +4322,8 @@
     ],
     "correctOption": 3,
     "correctAnswer": "A-III,B-I,C-IV,D-II",
-    "answerStatus": "disputed-official-answer",
-    "officialAnswer": "option 1 in the supplied answered PDF",
+    "answerStatus": "official-final-key-matched",
+    "officialAnswer": "NTA final key: Question ID 2358, option 3",
     "solutionSteps": [
       "x+x=x is idempotent (III); x+0=x is identity (I).",
       "x+1=1 is domination (IV); x+xy=x is absorption (II).",
@@ -3845,7 +4356,80 @@
       }
     ],
     "canonicalExplanation": "UGCNET-CS-2021-november-2021-Q28",
-    "reviewNote": "The supplied answer marks option 1, which swaps domination and absorption. Independent Boolean-algebra verification gives option 3.",
+    "reviewNote": "The embedded answer overlay marks option 1, but the NTA final key agrees with the independent Boolean-algebra derivation: option 3.",
+    "sourceAnchor": "../sources/ugc-net-cs-2021-nov-with-answers.pdf#page=3"
+  },
+  {
+    "id": "UGCNET-CS-2021-november-2021-Q29",
+    "exam": "UGC NET Computer Science and Applications",
+    "year": 2021,
+    "session": "November 2021",
+    "shift": null,
+    "paper": "Paper II",
+    "questionNumber": "29",
+    "questionId": "2359",
+    "sourceFile": "sources/ugc-net-cs-2021-nov-with-answers.pdf",
+    "sourcePage": 3,
+    "unit": "Unit 1: Discrete Structures and Optimization",
+    "topic": "Group Theory",
+    "subtopic": "Semigroups and rectangular bands",
+    "secondaryUnit": null,
+    "question": "Let (X,*) be a semigroup in which a≠b implies a*b≠b*a. Which identities hold? A. a*a=a. B. (a*b)*a=a. C. (a*b)*c=a*c.",
+    "options": [
+      {
+        "number": 1,
+        "text": "A and B only"
+      },
+      {
+        "number": 2,
+        "text": "A and C only"
+      },
+      {
+        "number": 3,
+        "text": "B and C only"
+      },
+      {
+        "number": 4,
+        "text": "A, B and C"
+      }
+    ],
+    "correctOption": 4,
+    "correctAnswer": "A, B and C",
+    "answerStatus": "official-final-key-matched",
+    "officialAnswer": "NTA final key: Question ID 2359, option 4",
+    "solutionSteps": [
+      "First prove idempotence. If a*a differed from a, the hypothesis would require (a*a)*a≠a*(a*a), but associativity makes these expressions equal. Hence a*a=a, proving A.",
+      "Let x=a*b. Idempotence gives a*x=a*(a*b)=(a*a)*b=x. Now a and x*a commute: a*(x*a)=(a*x)*a=x*a, while (x*a)*a=x*(a*a)=x*a. The hypothesis forces a=x*a=(a*b)*a, proving B.",
+      "To prove C, set x=(a*b)*c and y=a*c. Using B twice, x*y=a*b*(c*a*c)=a*b*c=x and y*x=(a*c*a)*b*c=a*b*c=x. Thus x and y commute; the hypothesis forces x=y, so (a*b)*c=a*c. All three identities hold and option 4 is correct."
+    ],
+    "concept": "A group has closure, associativity, an identity and inverses; an abelian group also commutes. Homomorphisms preserve the operation, automorphisms are isomorphisms from a structure to itself, and fields are commutative integral domains in which every nonzero element is invertible.",
+    "formulaOrRule": "For finite G and H≤G, |H| divides |G| (Lagrange). Every finite integral domain is a field.",
+    "shortcut": "To refute an ideal claim, multiply a typical element on the left and right by a completely general ring element.",
+    "commonTrap": "A numerical divisibility fact does not establish that one group is a subgroup of another.",
+    "optionAnalysis": [
+      {
+        "number": 1,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (A, B and C); the decisive computation or defining property is shown in the solution steps."
+      },
+      {
+        "number": 2,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (A, B and C); the decisive computation or defining property is shown in the solution steps."
+      },
+      {
+        "number": 3,
+        "verdict": "not the correct option",
+        "explanation": "This does not match the independently derived result (A, B and C); the decisive computation or defining property is shown in the solution steps."
+      },
+      {
+        "number": 4,
+        "verdict": "correct option",
+        "explanation": "This matches the independently derived result: A, B and C."
+      }
+    ],
+    "canonicalExplanation": "UGCNET-CS-2021-november-2021-Q29",
+    "reviewNote": "Here 'anti-commutative' means distinct elements never commute; it is not the ring identity ab=-ba.",
     "sourceAnchor": "../sources/ugc-net-cs-2021-nov-with-answers.pdf#page=3"
   },
   {
@@ -3856,7 +4440,7 @@
     "shift": null,
     "paper": "Paper II",
     "questionNumber": "30",
-    "questionId": null,
+    "questionId": "2360",
     "sourceFile": "sources/ugc-net-cs-2021-nov-with-answers.pdf",
     "sourcePage": 3,
     "unit": "Unit 1: Discrete Structures and Optimization",
@@ -3884,8 +4468,8 @@
     ],
     "correctOption": 3,
     "correctAnswer": "349/11",
-    "answerStatus": "disputed-official-answer",
-    "officialAnswer": "15 in the supplied answered PDF",
+    "answerStatus": "official-final-key-matched",
+    "officialAnswer": "NTA final key: Question ID 2360, option 3",
     "solutionSteps": [
       "The binding intersection x+3y=11 and 4x+y=15 gives x=34/11,y=29/11.",
       "It satisfies 2x−3y≤5.",
@@ -3918,7 +4502,7 @@
       }
     ],
     "canonicalExplanation": "UGCNET-CS-2021-november-2021-Q30",
-    "reviewNote": "The marked answer 15 is inconsistent with direct evaluation; (34/11,29/11) is feasible and yields 349/11.",
+    "reviewNote": "The embedded answer overlay marks 15, but the NTA final key agrees with direct optimization: 349/11.",
     "sourceAnchor": "../sources/ugc-net-cs-2021-nov-with-answers.pdf#page=3"
   },
   {
@@ -4328,8 +4912,8 @@
       "No distinct pair appears in both directions, hence antisymmetric.",
       "(c,d) lacks (d,c), so not symmetric. Thus B and not A."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -4764,8 +5348,8 @@
       "In the positive-integer divisibility poset, GLB is gcd and LUB is lcm.",
       "gcd(A)=3,lcm(A)=36; gcd(B)=1,lcm(B)=20."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -4837,8 +5421,8 @@
       "Sibling relations are not transitive: two people may each be siblings of b without being siblings of one another (e.g. blended families).",
       "It is neither reflexive/equivalence nor a partial order."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -4983,8 +5567,8 @@
       "The remaining 16−4=12 ordered pairs may each be included or excluded independently.",
       "Count=2¹²."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -5273,8 +5857,8 @@
       "A greatest element must be divisible by every member; none is divisible by both 24 and 45.",
       "Therefore neither exists."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -6862,8 +7446,8 @@
       "Every integer k occurs once i≥|k|.",
       "No non-integer occurs in any Aᵢ, so the union is exactly Z."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -6934,8 +7518,8 @@
       "A is injectivity (II), B surjectivity (III), C constancy (I).",
       "Hence A-II,B-III,C-I."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -7006,8 +7590,8 @@
       "The identity relation contains every diagonal pair and no off-diagonal pairs.",
       "It is reflexive, symmetric and transitive; each other printed option misses a required property."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -7078,8 +7662,8 @@
       "Option 4 says functions differ by a constant. Difference 0 gives reflexivity; negating k gives symmetry; adding constants gives transitivity.",
       "Options 1 and 3 are not reflexive; the OR in option 2 breaks transitivity."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -7150,8 +7734,8 @@
       "Inclusion is reflexive, antisymmetric and transitive, hence a partial order.",
       "Integers under ≤ are totally ordered, and ≠ is not reflexive; these eliminate 1 and 3."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -7511,8 +8095,8 @@
       "Such relations correspond to partitions of five labelled elements into three nonempty unlabeled blocks.",
       "The Stirling number S(5,3)=25."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -7655,8 +8239,8 @@
       "Every diagonal pair belongs to both R and S.",
       "It therefore belongs to both their union and their intersection."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -8591,8 +9175,8 @@
       "Each listed integer subset has a simple enumeration and is countable.",
       "Every nonempty real interval is uncountable by a scaling/bijection argument."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -9311,8 +9895,8 @@
       "f(g(x))=2(3x+2)+3=6x+7.",
       "g(f(x))=3(2x+3)+2=6x+11."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -9815,8 +10399,8 @@
       "The set {∅} has one element, so its power set has two subsets.",
       "They are ∅ and {∅}, hence {∅,{∅}}."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [
@@ -10211,8 +10795,8 @@
       "Equality of an attribute tuple is reflexive, symmetric and transitive.",
       "Because the attribute set is stipulated to be complete for this definition, cloning is an equivalence relation."
     ],
-    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+    "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+    "formulaOrRule": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
     "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
     "commonTrap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     "optionAnalysis": [

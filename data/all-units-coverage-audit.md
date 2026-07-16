@@ -10,18 +10,18 @@ It is **not yet suitable as a complete or standalone UGC NET preparation guide**
 
 | Unit | Records | Chapter placement | Answer and explanation status |
 |---|---:|---|---|
-| 1 | 143 | Manually curated | Project-reviewed solutions |
-| 2 | 391 | 326 keyword-supported; 65 review | No validated answers |
-| 3 | 184 | 168 keyword-supported; 16 review | 11 validated answers |
-| 4 | 176 | 156 keyword-supported; 20 review | No validated answers |
-| 5 | 184 | 176 keyword-supported; 8 review | No validated answers |
-| 6 | 180 | 167 keyword-supported; 13 review | 6 validated answers |
-| 7 | 251 | 201 keyword-supported; 50 review | No validated answers |
-| 8 | 220 | 191 keyword-supported; 29 review | No validated answers |
-| 9 | 256 | 187 keyword-supported; 69 review | No validated answers |
+| 1 | 151 | Manually curated | Project-reviewed solutions |
+| 2 | 386 | 325 keyword-supported; 61 review | No validated answers |
+| 3 | 189 | 169 keyword-supported; 20 review | 12 validated answers |
+| 4 | 178 | 157 keyword-supported; 21 review | No validated answers |
+| 5 | 182 | 173 keyword-supported; 9 review | No validated answers |
+| 6 | 180 | 167 keyword-supported; 13 review | 10 validated answers |
+| 7 | 248 | 198 keyword-supported; 50 review | No validated answers |
+| 8 | 219 | 193 keyword-supported; 26 review | 4 validated answers |
+| 9 | 255 | 186 keyword-supported; 69 review | No validated answers |
 | 10 | 97 | 89 keyword-supported; 8 review | No validated answers |
 
-The ten guides contain **2,082 records**: 143 curated Unit 1 records and 1,939 working records in Units 2–10.
+The ten guides contain **2,085 records**: 151 curated Unit 1 records and 1,934 working records in Units 2–10.
 
 ## Suitability for preparation
 
@@ -29,7 +29,7 @@ The ten guides contain **2,082 records**: 143 curated Unit 1 records and 1,939 w
 |---|---|
 | Understanding and practising reviewed Unit 1 topics | Useful, with the dispute notes checked |
 | Finding older questions by broad subject area | Useful as a working inventory |
-| Checking answers in Units 2–10 | Suitable only for the seventeen explicitly validated records; 1,922 answers remain withheld |
+| Checking answers in Units 2–10 | Suitable only for the twenty-six explicitly validated records; 1,908 answers remain withheld |
 | Last-minute revision from Units 2–10 | Not safe because placement and OCR are not fully reviewed |
 | Complete UGC NET preparation | Not suitable by itself; Paper 1, full theory coverage, verified mock tests and many answers are absent |
 | Research or contribution starting point | Useful because source references, structured data and review queues are retained |
@@ -38,20 +38,20 @@ The ten guides contain **2,082 records**: 143 curated Unit 1 records and 1,939 w
 
 ### 1. Answer completeness
 
-Seventeen of the **1,939 questions in Units 2–10** now have answer-key matching, independent concept checks, step-by-step solutions, option analysis and conceptual lessons. The remaining **1,922** show no answer. Their repeated chapter foundations and exam methods are general notes, not question-specific explanations.
+Twenty-six of the **1,934 questions in Units 2–10** now have answer-key matching, independent concept checks, step-by-step solutions, option analysis and conceptual lessons. The remaining **1,908** show no answer. Their repeated chapter foundations and exam methods are general notes, not question-specific explanations.
 
-Unit 1 contains 143 project-reviewed solutions. In the structured records, 132 are marked independently verified, six come from an unofficial paper, two dispute a supplied answer, and three carry another scan, source-defect or typography warning. Only two Unit 1 records currently store a non-null `officialAnswer`, so official-key matching is much less complete than independent solution coverage.
+Unit 1 contains 151 project-reviewed solutions. In the structured records, 132 are marked independently verified, nine match a single-option NTA final key, one records two officially accepted options, six come from an unofficial paper, and three carry a scan, source-defect or typography warning. Ten Unit 1 records now store non-null `officialAnswer` evidence.
 
 ### 2. Unit and chapter classification
 
 The broad index contains 2,103 records with these routing statuses:
 
-- 1,225 high-confidence keyword assignments;
-- 484 statistical fallback assignments;
+- 1,223 high-confidence keyword assignments;
+- 474 statistical fallback assignments;
 - 386 manual-review fallback assignments.
-- 8 manually reviewed unit overrides.
+- 20 manually reviewed unit overrides.
 
-Therefore **870 records still lack reviewed unit placement**. Eight additional records have explicit human-reviewed overrides. Separately, 278 chapter placements inside Units 2–10 have no direct chapter-keyword support. Both unit routing and chapter routing require continued human review.
+Therefore **860 records still lack reviewed unit placement**. Twenty records have explicit human-reviewed overrides. Separately, 277 chapter placements inside Units 2–10 have no direct chapter-keyword support. Both unit routing and chapter routing require continued human review.
 
 ### 3. OCR, tables and figures
 

@@ -20,7 +20,7 @@
 This guide contains all **180 question blocks currently recoverable and assigned to Unit 6** from the local UGC NET archive. Questions are arranged chapter-wise and numbered continuously through the unit.
 
 > [!WARNING]
-> This is a working extraction inventory, not a complete solved guide. **6 answers are validated and 174 remain pending** in this unit. Some unit and chapter placements use fallback routing, and OCR or missing figures can make questions incomplete.
+> This is a working extraction inventory, not a complete solved guide. **10 answers are validated and 170 remain pending** in this unit. Some unit and chapter placements use fallback routing, and OCR or missing figures can make questions incomplete.
 
 Use this file for question discovery and broad chapter revision. The chapter notes and exam methods are general, not question-specific solutions. Full source paths, PDF pages and classification states remain in the structured data for auditing.
 
@@ -1251,19 +1251,46 @@ Look for the feature that enables proof and unambiguous semantics. If the questi
 3. A ‐ II, B ‐ III, C ‐ I, D ‐ IV
 4. A ‐ IV, B ‐ I, C ‐ II, D ‐ III
 
-**Chapter foundations**
+**Correct answer**
 
-This question belongs to the ideas covered by **Software Process Models**. Revise these foundations: Software Process; Generic Process Model; Framework Activities; Task Sets and Patterns; Lifecycle; Prescriptive Models; Project Management; Component-Based and Aspect-Oriented Development; Formal Methods; Agile Models - XP, Adaptive Software Development, Scrum, DSDM, Feature-Driven Development, Crystal; Web Engineering.
+**Option 4: A-IV, B-I, C-II, D-III**
 
-**Exam method**
+*Verification: Official NTA final key matched by Question ID 2347 and Option ID 9388; independently verified by the defining properties of the four process models.*
 
-1. Identify the exact definition, formula, algorithm or system property being tested.
-2. For Software Process Models questions: Write the model formula before substitution. For testing construct the control-flow graph or equivalence/boundary classes; for process models match risk and change characteristics. Use the chapter rules below and eliminate options that violate definitions, units, or boundary cases.
-3. Check units, boundary cases and every statement before selecting an option.
+**Step-by-step solution**
 
-**Answer status**
+1. Match the strongest defining phrase first. Waterfall partitions work into sequential stages and is difficult to revisit, so A matches IV (inflexible partitioning into stages).
+2. Evolutionary development builds and refines working versions, so software can be developed incrementally; B matches I.
+3. Component-based software engineering assembles available reusable components. Because an exact component may not exist, requirements often have to be adjusted or compromised; C matches II.
+4. The spiral model makes risk identification, analysis and reduction explicit in every cycle, so D matches III.
+5. The complete mapping is A-IV, B-I, C-II, D-III, which appears in option 4.
 
-This item has not yet passed reliable answer-key matching and independent derivation, so no option is printed here. The omission is intentional: an unverified answer would make the guide unsafe for revision.
+**Why each option is right or wrong**
+
+- **1. A-IV, B-I, C-III, D-II — Incorrect.** Its Waterfall and Evolutionary matches are right, but it swaps the final two: explicit risk belongs to Spiral, not CBSE.
+- **2. A-I, B-IV, C-II, D-III — Incorrect.** CBSE and Spiral are right, but Waterfall and Evolutionary are reversed; Waterfall is stage-driven, while Evolutionary is incremental.
+- **3. A-II, B-III, C-I, D-IV — Incorrect.** None of these is the characteristic association: it assigns risk to Evolutionary and rigid stages to Spiral.
+- **4. A-IV, B-I, C-II, D-III — Correct.** Every model is paired with its distinguishing property.
+
+**Conceptual lesson**
+
+A software process model organizes development activities and feedback. Waterfall emphasizes planned sequential phases; evolutionary or incremental development delivers and refines the system in portions; spiral organizes cycles around risk; CBSE organizes construction around finding, evaluating and integrating reusable components.
+
+Do not identify a model merely because it can contain iterations—many modern processes can. Use the unique signal: fixed stages suggests Waterfall, successive versions suggests Evolutionary, explicit risk analysis suggests Spiral, and adaptation to available components suggests CBSE.
+
+Requirement compromise in CBSE is not careless engineering. It is a trade-off: adapting a noncritical requirement may be cheaper and safer than building and maintaining a completely new component.
+
+In matching questions, lock the most distinctive pair first. Here 'explicit recognition of risk' uniquely fixes Spiral-III, sharply reducing the plausible options.
+
+**How to solve similar questions**
+
+Circle signature words before evaluating whole options: stages→Waterfall, increments/versions→Evolutionary, available reusable components→CBSE, risk analysis→Spiral. Eliminate any option that violates even one signature pair.
+
+**Verification references**
+
+- [Final-answer-key archive](https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2022/04/2022040888.pdf)
+- [Independent concept reference](https://doi.org/10.1109/2.59)
+- [Additional verification source](https://www.sei.cmu.edu/library/component-based-software-engineering/)
 
 ---
 
@@ -1287,19 +1314,45 @@ This item has not yet passed reliable answer-key matching and independent deriva
 3. C, B, D, E, A
 4. C, E, A, D, B
 
-**Chapter foundations**
+**Correct answer**
 
-This question belongs to the ideas covered by **Software Process Models**. Revise these foundations: Software Process; Generic Process Model; Framework Activities; Task Sets and Patterns; Lifecycle; Prescriptive Models; Project Management; Component-Based and Aspect-Oriented Development; Formal Methods; Agile Models - XP, Adaptive Software Development, Scrum, DSDM, Feature-Driven Development, Crystal; Web Engineering.
+**Option 4: C, E, A, D, B**
 
-**Exam method**
+*Verification: Official NTA final key matched by Question ID 2348 and Option ID 9392; independently verified against the classic Software CMM maturity-level order.*
 
-1. Identify the exact definition, formula, algorithm or system property being tested.
-2. For Software Process Models questions: Write the model formula before substitution. For testing construct the control-flow graph or equivalence/boundary classes; for process models match risk and change characteristics. Use the chapter rules below and eliminate options that violate definitions, units, or boundary cases.
-3. Check units, boundary cases and every statement before selecting an option.
+**Step-by-step solution**
 
-**Answer status**
+1. Recognize that the word Repeatable identifies the classic five-level Software Capability Maturity Model (SW-CMM), not the later CMMI naming scheme.
+2. From lowest to highest, the classic SW-CMM levels are Initial, Repeatable, Defined, Managed and Optimizing.
+3. Substitute the question's letters: Initial=C, Repeatable=E, Defined=A, Managed=D and Optimizing=B.
+4. The required ascending order is therefore C, E, A, D, B.
+5. That sequence is printed in option 4.
 
-This item has not yet passed reliable answer-key matching and independent derivation, so no option is printed here. The omission is intentional: an unverified answer would make the guide unsafe for revision.
+**Why each option is right or wrong**
+
+- **1. C, A, E, D, B — Incorrect.** It puts Defined before Repeatable; a repeatable managed process precedes organization-wide definition in classic SW-CMM.
+- **2. C, E, A, B, D — Incorrect.** Its first three levels are right, but Optimizing must follow Managed, not precede it.
+- **3. C, B, D, E, A — Incorrect.** Optimizing is the highest level, so placing it immediately after Initial is impossible.
+- **4. C, E, A, D, B — Correct.** It exactly follows Initial → Repeatable → Defined → Managed → Optimizing.
+
+**Conceptual lesson**
+
+A maturity model describes how systematically an organization manages and improves its software process. In classic SW-CMM: Initial is ad hoc, Repeatable establishes basic project management, Defined standardizes an organizational process, Managed controls it quantitatively, and Optimizing drives continuous improvement.
+
+The progression is cumulative. A higher level does not discard the lower-level discipline; it adds broader standardization, measurement or improvement capability.
+
+Watch the terminology. Classic SW-CMM uses level 2 Repeatable and level 4 Managed. CMMI uses level 2 Managed and level 4 Quantitatively Managed. The option word Repeatable tells you which ladder the examiner expects.
+
+A memory chain is: chaos → repeat → define → measure/manage → optimize. Convert that meaning chain to the exact labels before mapping letters.
+
+**How to solve similar questions**
+
+First identify SW-CMM versus CMMI from the labels, write the five-level ladder independently, and only then replace each name with its question letter. This avoids being misled by shuffled options.
+
+**Verification references**
+
+- [Final-answer-key archive](https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2022/04/2022040888.pdf)
+- [Independent concept reference](https://resources.sei.cmu.edu/asset_files/TechnicalReport/1993_005_001_16214.pdf)
 
 ---
 
@@ -1316,19 +1369,46 @@ This item has not yet passed reliable answer-key matching and independent deriva
 3. Statement I is true but Statement II is false
 4. Statement I is false but Statement II is true
 
-**Chapter foundations**
+**Correct answer**
 
-This question belongs to the ideas covered by **Software Process Models**. Revise these foundations: Software Process; Generic Process Model; Framework Activities; Task Sets and Patterns; Lifecycle; Prescriptive Models; Project Management; Component-Based and Aspect-Oriented Development; Formal Methods; Agile Models - XP, Adaptive Software Development, Scrum, DSDM, Feature-Driven Development, Crystal; Web Engineering.
+**Option 3: Statement I is true, but Statement II is false**
 
-**Exam method**
+*Verification: Official NTA final key matched by Question ID 2349 and Option ID 9395; independently verified from foundational Cleanroom principles.*
 
-1. Identify the exact definition, formula, algorithm or system property being tested.
-2. For Software Process Models questions: Write the model formula before substitution. For testing construct the control-flow graph or equivalence/boundary classes; for process models match risk and change characteristics. Use the chapter rules below and eliminate options that violate definitions, units, or boundary cases.
-3. Check units, boundary cases and every statement before selecting an option.
+**Step-by-step solution**
 
-**Answer status**
+1. Evaluate Statement I: Cleanroom develops verified increments and uses usage-based statistical testing to certify their reliability as the product accumulates. Statement I is true.
+2. Evaluate the first part of Statement II: Cleanroom is deliberately different from the classic code-test-debug cycle. Developers use specification, structured design and correctness verification rather than relying on execution and debugging to clean up code.
+3. Evaluate the second part: Cleanroom emphasizes defect prevention, not defect removal. Statistical testing is performed for quality certification, not as the developers' primary debugging mechanism.
+4. Because Statement II reverses this central philosophy, it is false.
+5. Therefore I is true and II is false, making option 3 correct.
 
-This item has not yet passed reliable answer-key matching and independent derivation, so no option is printed here. The omission is intentional: an unverified answer would make the guide unsafe for revision.
+**Why each option is right or wrong**
+
+- **1. Both Statement I and Statement II are true — Incorrect.** Statement I is true, but Statement II incorrectly describes a conventional test-and-debug process.
+- **2. Both Statement I and Statement II are false — Incorrect.** Cleanroom really does use statistical certification of software increments, so Statement I is not false.
+- **3. Statement I is true, but Statement II is false — Correct.** It captures statistical certification and rejects the false defect-removal description.
+- **4. Statement I is false, but Statement II is true — Incorrect.** It reverses both truth values and contradicts Cleanroom's defining practices.
+
+**Conceptual lesson**
+
+Cleanroom software engineering borrows its name from hardware cleanrooms: prevent contamination instead of finding it after production. Its software equivalent is preventing defects through precise specification, structured design, reviews and correctness reasoning.
+
+The process commonly uses box-structure specifications, function-theoretic correctness verification, incremental development and usage-based statistical testing. The testing team samples operations from an expected usage profile to estimate and certify reliability.
+
+Verification and certification play different roles. Developers reason that the design and code correctly implement the specification; an independent certification activity executes statistically selected tests to measure fitness for use.
+
+Cleanroom does not claim that software is never executed or that failures cannot occur. The exam distinction is purpose: testing certifies reliability, while disciplined construction aims to prevent defects instead of depending on debugging to remove them.
+
+**How to solve similar questions**
+
+When a Cleanroom statement mentions formal/structured specification, correctness verification, increments, usage profiles or statistical certification, it is likely true. Treat developer unit-test-and-debug and defect-removal-first claims as contrary to the model.
+
+**Verification references**
+
+- [Final-answer-key archive](https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2022/04/2022040888.pdf)
+- [Independent concept reference](https://doi.org/10.1002/0471028959.sof040)
+- [Additional verification source](https://doi.org/10.1016/0164-1212(87)90015-X)
 
 ---
 
@@ -2072,7 +2152,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 <a id="chapter-3"></a>
 
-### 3. Software Design (37 questions)
+### 3. Software Design (36 questions)
 
 **What to master:** Abstraction; Architecture; Patterns; Separation of Concerns; Modularity; Information Hiding; Functional Independence; Cohesion and Coupling; Object-Oriented, Data, Architectural, UI and Component-Level Design.
 
@@ -2415,58 +2495,6 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 #### Question 79
 
-*UGC NET June 2015, Paper III, original Q42*
-
-> Module design is used to maximize cohesion and minimize coupling. Which of the following is the key to implement this rule?
-
-**Options**
-
-1. Inheritance
-2. Polymorphism
-3. Encapsulation
-4. Abstraction
-
-**Correct answer**
-
-**Option 3: Encapsulation**
-
-*Verification: Final CBSE key matched through an archived transcription; independently verified from the information-hiding effect of encapsulation.*
-
-**Step-by-step solution**
-
-1. High cohesion means the responsibilities inside one module strongly belong together. Low coupling means a module depends as little as possible on other modules' internal details.
-2. Encapsulation bundles related state and behaviour behind a controlled interface and hides the internal representation.
-3. Bundling related responsibilities supports cohesion; hiding representation means clients depend on the interface instead of implementation details, which reduces coupling.
-4. Therefore encapsulation is the option that most directly implements the stated module-design rule, so option 3 is correct.
-
-**Why each option is right or wrong**
-
-- **1. Inheritance — Incorrect.** Inheritance supports reuse and specialization, but it creates a dependency between subclass and superclass and does not by itself guarantee high cohesion or low coupling.
-- **2. Polymorphism — Incorrect.** Polymorphism lets one interface represent several implementations and can reduce conditional logic, but it is not the primary rule that hides a module's internals.
-- **3. Encapsulation — Correct.** It groups related data and operations and restricts access through a stable interface. This directly supports information hiding, high cohesion and low coupling.
-- **4. Abstraction — Incorrect for this key.** Abstraction presents essential behaviour while suppressing unnecessary detail, so it also helps modular design. However, the implementation mechanism emphasized by the question is encapsulation: placing state and behaviour inside a boundary and controlling access.
-
-**Conceptual lesson**
-
-Cohesion looks inside a module: do its elements work toward one focused purpose? Higher cohesion is better. Coupling looks between modules: how much knowledge or dependency crosses their boundaries? Lower coupling is better.
-
-Abstraction answers 'what service is offered?' Encapsulation answers 'where are the state and implementation kept, and who may access them?' They cooperate: abstraction gives a small interface; encapsulation protects the implementation behind it.
-
-A useful design test is change impact. If a module's internal representation changes, well-encapsulated clients should not need changes. That limited ripple effect is evidence of low coupling. If the module contains only responsibilities needed for its single purpose, that is evidence of high cohesion.
-
-**How to solve similar questions**
-
-For exam questions, evaluate cohesion within a module and coupling across modules. Choose information hiding or encapsulation when the wording stresses controlled access, hiding implementation, or preventing ripple effects. Choose abstraction when it stresses essential features, a simplified view, or what an interface promises.
-
-**Verification references**
-
-- [Final-answer-key archive](https://www.cbse-net.in/2015/08/net-answer-key-of-computer-science-june-2015.html)
-- [Independent concept reference](https://docs.oracle.com/javase/tutorial/java/concepts/object.html)
-
----
-
-#### Question 80
-
 *UGC NET June 2015, Paper III, original Q44*
 
 > Which design matric is used to measure the compactness of the program in terms of lines of code? (1) Consistency Conciseness (3) Efficiency (4) Accuracy
@@ -2487,7 +2515,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 81
+#### Question 80
 
 *UGC NET June 2015, Paper III, original Q47*
 
@@ -2516,7 +2544,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 82
+#### Question 81
 
 *UGC NET June 2015, Paper III, original Q48*
 
@@ -2545,7 +2573,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 83
+#### Question 82
 
 *UGC NET June 2015, Paper III, original Q55*
 
@@ -2581,7 +2609,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 84
+#### Question 83
 
 *UGC NET June 2015, Paper III, original Q60*
 
@@ -2617,7 +2645,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 85
+#### Question 84
 
 *UGC NET July 2016, Paper II, original Q41*
 
@@ -2646,7 +2674,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 86
+#### Question 85
 
 *UGC NET July 2016, Paper II, original Q43*
 
@@ -2675,7 +2703,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 87
+#### Question 86
 
 *UGC NET July 2016, Paper II, original Q46*
 
@@ -2704,7 +2732,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 88
+#### Question 87
 
 *UGC NET July 2016, Paper III, original Q45*
 
@@ -2740,7 +2768,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 89
+#### Question 88
 
 *UGC NET Jan 2017, Paper II, original Q43*
 
@@ -2769,7 +2797,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 90
+#### Question 89
 
 *UGC NET Jan 2017, Paper II, original Q45*
 
@@ -2798,7 +2826,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 91
+#### Question 90
 
 *UGC NET July 2018, Paper II, original Q12*
 
@@ -2834,7 +2862,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 92
+#### Question 91
 
 *UGC NET July 2018, Paper II, original Q16*
 
@@ -2863,7 +2891,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 93
+#### Question 92
 
 *UGC NET July 2018, Paper II, original Q17*
 
@@ -2892,7 +2920,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 94
+#### Question 93
 
 *UGC NET July 2018, Paper II, original Q18*
 
@@ -2921,7 +2949,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 95
+#### Question 94
 
 *UGC NET June 2019, original Q104*
 
@@ -2943,7 +2971,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 96
+#### Question 95
 
 *UGC NET Nov 2021, original Q12*
 
@@ -2995,7 +3023,7 @@ Translate the option into one of three verbs: store/compute → Model; display/r
 
 ---
 
-#### Question 97
+#### Question 96
 
 *UGC NET Oct 2022, original Q34*
 
@@ -3024,7 +3052,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 98
+#### Question 97
 
 *UGC NET Aug 2024, original Q91*
 
@@ -3053,7 +3081,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 99
+#### Question 98
 
 *UGC NET Aug 2024, original Q136*
 
@@ -3110,7 +3138,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 100
+#### Question 99
 
 *UGC NET June 2024, original Q68*
 
@@ -3138,7 +3166,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 101
+#### Question 100
 
 *UGC NET June 2025, original Q114*
 
@@ -3174,7 +3202,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 102
+#### Question 101
 
 *UGC NET Dec 2025 session (Jan 2026), original Q136*
 
@@ -3196,7 +3224,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 103
+#### Question 102
 
 *UGC NET Dec 2025 session (Jan 2026), original Q139*
 
@@ -3232,7 +3260,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 104
+#### Question 103
 
 *UGC NET June 2012, Paper II, original Q43*
 
@@ -3275,7 +3303,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 105
+#### Question 104
 
 *UGC NET June 2013, Paper III, original Q6*
 
@@ -3304,7 +3332,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 106
+#### Question 105
 
 *UGC NET Dec 2015, Paper III, original Q25*
 
@@ -3326,7 +3354,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 107
+#### Question 106
 
 *UGC NET June 2015, Paper II, original Q41*
 
@@ -3362,7 +3390,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 108
+#### Question 107
 
 *UGC NET July 2016, Paper II, original Q45*
 
@@ -3391,7 +3419,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 109
+#### Question 108
 
 *UGC NET July 2016, Paper III, original Q43*
 
@@ -3420,7 +3448,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 110
+#### Question 109
 
 *UGC NET July 2016, Paper III, original Q46*
 
@@ -3449,7 +3477,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 111
+#### Question 110
 
 *UGC NET Jan 2017, Paper II, original Q42*
 
@@ -3478,7 +3506,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 112
+#### Question 111
 
 *UGC NET Dec 2019, original Q133*
 
@@ -3535,7 +3563,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 113
+#### Question 112
 
 *UGC NET Nov 2020, original Q99*
 
@@ -3564,7 +3592,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 114
+#### Question 113
 
 *UGC NET Nov 2020, original Q135*
 
@@ -3593,7 +3621,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 115
+#### Question 114
 
 *UGC NET Nov 2021, original Q15*
 
@@ -3645,7 +3673,7 @@ Write the availability equation before inserting values, isolate the requested v
 
 ---
 
-#### Question 116
+#### Question 115
 
 *UGC NET Oct 2022, original Q31*
 
@@ -3674,7 +3702,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 117
+#### Question 116
 
 *UGC NET Oct 2022, original Q33*
 
@@ -3703,7 +3731,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 118
+#### Question 117
 
 *UGC NET Oct 2022, original Q84*
 
@@ -3732,7 +3760,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 119
+#### Question 118
 
 *UGC NET June 2025, original Q115*
 
@@ -3768,7 +3796,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 120
+#### Question 119
 
 *UGC NET June 2025, original Q133*
 
@@ -3818,7 +3846,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 121
+#### Question 120
 
 *UGC NET Dec 2013, Paper III, original Q5*
 
@@ -3847,7 +3875,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 122
+#### Question 121
 
 *UGC NET July 2016, Paper III, original Q48*
 
@@ -3876,7 +3904,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 123
+#### Question 122
 
 *UGC NET Aug 2024, original Q61*
 
@@ -3905,7 +3933,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 124
+#### Question 123
 
 *UGC NET Aug 2024, original Q62*
 
@@ -3934,7 +3962,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 125
+#### Question 124
 
 *UGC NET June 2025, original Q72*
 
@@ -3963,7 +3991,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 126
+#### Question 125
 
 *UGC NET June 2025, original Q73*
 
@@ -4006,7 +4034,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 127
+#### Question 126
 
 *UGC NET Dec 2009, Paper II, original Q42*
 
@@ -4035,7 +4063,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 128
+#### Question 127
 
 *UGC NET Dec 2009, Paper II, original Q44*
 
@@ -4064,7 +4092,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 129
+#### Question 128
 
 *UGC NET Dec 2012, Paper II, original Q35*
 
@@ -4093,7 +4121,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 130
+#### Question 129
 
 *UGC NET June 2012, Paper II, original Q22*
 
@@ -4122,7 +4150,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 131
+#### Question 130
 
 *UGC NET Dec 2013, Paper II, original Q10*
 
@@ -4151,7 +4179,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 132
+#### Question 131
 
 *UGC NET Dec 2013, Paper III, original Q6*
 
@@ -4187,7 +4215,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 133
+#### Question 132
 
 *UGC NET Dec 2013, Paper III, original Q67*
 
@@ -4216,7 +4244,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 134
+#### Question 133
 
 *UGC NET June 2013, Paper III, original Q4*
 
@@ -4245,7 +4273,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 135
+#### Question 134
 
 *UGC NET Dec 2015, Paper II, original Q2*
 
@@ -4267,7 +4295,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 136
+#### Question 135
 
 *UGC NET Dec 2015, Paper II, original Q46*
 
@@ -4296,7 +4324,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 137
+#### Question 136
 
 *UGC NET Dec 2015, Paper III, original Q72*
 
@@ -4325,7 +4353,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 138
+#### Question 137
 
 *UGC NET June 2015, Paper II, original Q2*
 
@@ -4347,7 +4375,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 139
+#### Question 138
 
 *UGC NET June 2015, Paper II, original Q42*
 
@@ -4376,7 +4404,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 140
+#### Question 139
 
 *UGC NET June 2015, Paper III, original Q46*
 
@@ -4405,7 +4433,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 141
+#### Question 140
 
 *UGC NET Jan 2017, Paper III, original Q43*
 
@@ -4434,7 +4462,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 142
+#### Question 141
 
 *UGC NET Jan 2017, Paper III, original Q44*
 
@@ -4463,7 +4491,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 143
+#### Question 142
 
 *UGC NET Jan 2017, Paper III, original Q47*
 
@@ -4499,7 +4527,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 144
+#### Question 143
 
 *UGC NET Nov 2017, Paper II, original Q43*
 
@@ -4528,7 +4556,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 145
+#### Question 144
 
 *UGC NET Nov 2017, Paper II, original Q44*
 
@@ -4564,7 +4592,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 146
+#### Question 145
 
 *UGC NET Nov 2017, Paper II, original Q45*
 
@@ -4593,7 +4621,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 147
+#### Question 146
 
 *UGC NET Dec 2018, original Q110*
 
@@ -4615,7 +4643,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 148
+#### Question 147
 
 *UGC NET July 2018, Paper II, original Q19*
 
@@ -4644,7 +4672,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 149
+#### Question 148
 
 *UGC NET June 2019, original Q103*
 
@@ -4673,7 +4701,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 150
+#### Question 149
 
 *UGC NET Nov 2021, original Q11*
 
@@ -4725,7 +4753,7 @@ Build a two-column comparison: alpha = controlled/developer site; beta = externa
 
 ---
 
-#### Question 151
+#### Question 150
 
 *UGC NET Nov 2021, original Q20*
 
@@ -4738,23 +4766,49 @@ Build a two-column comparison: alpha = controlled/developer site; beta = externa
 3. A is true but R is false
 4. A is false but R is true
 
-**Chapter foundations**
+**Correct answer**
 
-This question belongs to the ideas covered by **Software Testing**. Revise these foundations: Verification and Validation; Error, Fault, Bug and Failure; Unit and Integration Testing; White-Box and Black-Box Testing; Basis-Path and Control-Structure Testing; Test-Case Derivation; Alpha, Beta, Regression, Performance and Stress Testing.
+**Option 1: Both Assertion and Reason are true, and Reason is the correct explanation of Assertion**
 
-**Exam method**
+*Verification: Official NTA final key matched by Question ID 2350 and Option ID 9397; independently verified from the exhaustive-testing principle.*
 
-1. Identify the exact definition, formula, algorithm or system property being tested.
-2. For Software Testing questions: Write the model formula before substitution. For testing construct the control-flow graph or equivalence/boundary classes; for process models match risk and change characteristics. Use the chapter rules below and eliminate options that violate definitions, units, or boundary cases.
-3. Check units, boundary cases and every statement before selecting an option.
+**Step-by-step solution**
 
-**Answer status**
+1. Exhaustive testing means exercising every relevant combination of inputs, preconditions, states, paths, timings and configurations—not merely running many test cases.
+2. For realistic software, these combinations grow combinatorially. Even a modest number of binary conditions gives `2^n` combinations, and loops or long event sequences can make the path/state space vastly larger.
+3. Therefore developers do not perform exhaustive testing in practice except for trivial cases, so the Assertion is true.
+4. The Reason is also true: executing and checking the entire space requires prohibitive computation and time, even when each individual input looks small.
+5. That computational explosion is precisely why exhaustive testing is impractical, so the Reason correctly explains the Assertion. Option 1 is correct.
 
-This item has not yet passed reliable answer-key matching and independent derivation, so no option is printed here. The omission is intentional: an unverified answer would make the guide unsafe for revision.
+**Why each option is right or wrong**
+
+- **1. Both are true, and the Reason correctly explains the Assertion — Correct.** Exhaustive spaces become computationally infeasible, which directly explains the practical testing limit.
+- **2. Both are true, but the Reason does not explain the Assertion — Incorrect.** The prohibitive number and cost of tests is the central causal explanation.
+- **3. Assertion is true, but Reason is false — Incorrect.** Combinatorial explosion and path growth make the Reason true.
+- **4. Assertion is false, but Reason is true — Incorrect.** In nontrivial systems developers necessarily sample and prioritize; they do not cover every possible case.
+
+**Conceptual lesson**
+
+Testing is a sampling activity over a usually enormous behaviour space. Passing a suite provides evidence about tested cases; it does not prove the absence of every defect in every untested case.
+
+The explosion can come from several dimensions at once: input values, input order, internal states, branches, loop counts, platforms, permissions and concurrent schedules. Multiplying these dimensions makes full enumeration infeasible.
+
+Because exhaustive testing is impossible except for trivial programs, testers use equivalence partitioning, boundary-value analysis, decision tables, state-transition testing, coverage measures, risk-based prioritization and automation to choose high-value cases.
+
+Do not confuse exhaustive testing with complete requirement coverage or 100% statement coverage. A suite can execute every statement yet miss input combinations, paths, timing interactions and incorrect results.
+
+**How to solve similar questions**
+
+In assertion-reason questions, first judge each sentence independently, then test causality by inserting 'because' between them. For exhaustive testing, look for combinatorial input/state/path growth and remember the exception: only trivial cases may be fully enumerated.
+
+**Verification references**
+
+- [Final-answer-key archive](https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2022/04/2022040888.pdf)
+- [Independent concept reference](https://www.istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf)
 
 ---
 
-#### Question 152
+#### Question 151
 
 *UGC NET Oct 2022, original Q27*
 
@@ -4783,7 +4837,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 153
+#### Question 152
 
 *UGC NET Oct 2022, original Q28*
 
@@ -4812,7 +4866,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 154
+#### Question 153
 
 *UGC NET Aug 2024, original Q137*
 
@@ -4869,7 +4923,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 155
+#### Question 154
 
 *UGC NET June 2024, original Q121*
 
@@ -4891,7 +4945,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 156
+#### Question 155
 
 *UGC NET June 2025, original Q98*
 
@@ -4927,7 +4981,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 157
+#### Question 156
 
 *UGC NET Dec 2025 session (Jan 2026), original Q137*
 
@@ -4949,7 +5003,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 <a id="chapter-7"></a>
 
-### 7. Software Configuration Management (23 questions)
+### 7. Software Configuration Management (24 questions)
 
 **What to master:** Change and Version Control; Reuse; Re-engineering; Reverse Engineering.
 
@@ -4963,7 +5017,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 158
+#### Question 157
 
 *UGC NET June 2010, Paper II, original Q7*
 
@@ -4992,7 +5046,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 159
+#### Question 158
 
 *UGC NET Dec 2012, Paper II, original Q19*
 
@@ -5014,7 +5068,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 160
+#### Question 159
 
 *UGC NET Dec 2013, Paper III, original Q7*
 
@@ -5050,7 +5104,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 161
+#### Question 160
 
 *UGC NET June 2013, Paper III, original Q11*
 
@@ -5079,7 +5133,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 162
+#### Question 161
 
 *UGC NET Dec 2014, Paper II, original Q45*
 
@@ -5108,7 +5162,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 163
+#### Question 162
 
 *UGC NET Dec 2014, Paper III, original Q43*
 
@@ -5137,7 +5191,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 164
+#### Question 163
 
 *UGC NET Dec 2014, Paper III, original Q59*
 
@@ -5173,7 +5227,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 165
+#### Question 164
 
 *UGC NET Dec 2015, Paper II, original Q39*
 
@@ -5202,7 +5256,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 166
+#### Question 165
 
 *UGC NET Dec 2015, Paper III, original Q48*
 
@@ -5231,7 +5285,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 167
+#### Question 166
 
 *UGC NET Dec 2015, Paper III, original Q71*
 
@@ -5267,7 +5321,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 168
+#### Question 167
 
 *UGC NET June 2015, Paper II, original Q26*
 
@@ -5296,7 +5350,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 169
+#### Question 168
 
 *UGC NET July 2016, Paper II, original Q44*
 
@@ -5325,7 +5379,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 170
+#### Question 169
 
 *UGC NET July 2016, Paper III, original Q2*
 
@@ -5347,7 +5401,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 171
+#### Question 170
 
 *UGC NET July 2016, Paper III, original Q75*
 
@@ -5376,7 +5430,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 172
+#### Question 171
 
 *UGC NET Jan 2017, Paper III, original Q45*
 
@@ -5405,7 +5459,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 173
+#### Question 172
 
 *UGC NET July 2018, Paper II, original Q13*
 
@@ -5434,7 +5488,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 174
+#### Question 173
 
 *UGC NET July 2018, Paper II, original Q47*
 
@@ -5463,7 +5517,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 175
+#### Question 174
 
 *UGC NET Dec 2019, original Q142*
 
@@ -5489,6 +5543,68 @@ This question belongs to the ideas covered by **Software Configuration Managemen
 **Answer status**
 
 This item has not yet passed reliable answer-key matching and independent derivation, so no option is printed here. The omission is intentional: an unverified answer would make the guide unsafe for revision.
+
+---
+
+#### Question 175
+
+*UGC NET Nov 2021, original Q16*
+
+> In the context of Software Configuration Management (SCM), what kind of files should be committed to your source control repository?
+>
+> **Additional extracted choices — check the source page:**
+>
+> - **A.** Code files
+> - **B.** Documentation files
+> - **C.** Output files
+> - **D.** Automatically generated files that are required for your system to be used Choose the correct answer from the options given below:
+
+**Options**
+
+1. A and B only
+2. B and C only
+3. C and D only
+4. D and A only
+
+**Correct answer**
+
+**Option 1: A and B only**
+
+*Verification: Official NTA final key matched by Question ID 2346 and Option ID 9381; independently verified from source-control and generated-file practices.*
+
+**Step-by-step solution**
+
+1. Classify each file by whether it is a human-maintained project source or a reproducible product of another source.
+2. Code files (A) are primary development artifacts, so their history must be committed. Documentation files (B), such as requirements and README material, are also human-maintained project sources and should be versioned.
+3. Output files (C), such as compiled objects, logs and test output, are derived or transient. Committing them usually duplicates information and creates noisy or conflicting revisions.
+4. Automatically generated files (D) should normally be regenerated from committed source, configuration and build instructions, even when the running system later needs them. The exam is testing this default reproducible-build rule.
+5. Thus A and B are the intended repository contents, so option 1 is correct.
+
+**Why each option is right or wrong**
+
+- **1. A and B only — Correct.** Code and documentation are primary, human-maintained artifacts whose revision history is valuable.
+- **2. B and C only — Incorrect.** It includes derived output while excluding the essential code files.
+- **3. C and D only — Incorrect.** Both selections are generated or derived artifacts under the normal SCM rule, while the primary sources are omitted.
+- **4. D and A only — Incorrect.** It includes generated material but omits documentation, which should evolve under configuration control with the code.
+
+**Conceptual lesson**
+
+Software Configuration Management controls the identities, versions and approved changes of project artifacts. Version control is one SCM mechanism: it records meaningful source changes and lets a team reproduce or audit an earlier state.
+
+A useful exam rule is: commit sources, not products. Source code, documentation, build scripts, schemas and configuration templates are inputs. Object files, executables, caches, logs and test reports are usually products and belong in build or release storage instead.
+
+Generated files have real-world exceptions—for example, vendored code or a release artifact needed when users lack a generator. But unless a question states such an exception, assume a reproducible build: commit the generator and its inputs, then regenerate the output.
+
+A `.gitignore` file prevents accidental tracking of predictable build products. Ignoring a file is not the same as deleting it; it only keeps irrelevant local artifacts out of repository history.
+
+**How to solve similar questions**
+
+For each artifact ask: Is it intentionally edited, or can it be recreated deterministically? Track intentional sources and shared documentation; ignore reproducible outputs, caches and temporary files unless an explicit distribution constraint creates an exception.
+
+**Verification references**
+
+- [Final-answer-key archive](https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2022/04/2022040888.pdf)
+- [Independent concept reference](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
 
 ---
 
@@ -5646,7 +5762,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 - Recovered question blocks in this unit: **180**
 - Chapter placements with direct keyword support: **167**
 - Chapter placements needing manual review: **13**
-- Questions with validated answers in this guide: **6**
+- Questions with validated answers in this guide: **10**
 - OCR may flatten mathematical notation, tables, code indentation, and figures. Full audit references are retained in the structured data.
 - Some combined Paper 1/Paper 2 scans and older papers lack a trustworthy embedded key. Such questions remain pending rather than receiving guessed answers.
 

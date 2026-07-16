@@ -143,14 +143,29 @@ def display_question(text: str) -> str:
         text,
         flags=re.I,
     )
-    text = re.sub(r"\[?Question ID\s*[=:-]+\s*\d+[^\]\n)]*[\])]*", " ", text, flags=re.I)
-    text = re.sub(r"\[?Question Description\s*[=:-]+[^\]\n)]*[\])]*", " ", text, flags=re.I)
+    # Newer NTA exports flatten the entire metadata header onto the same line as
+    # the question.  Remove each field and its short value separately; consuming
+    # to end-of-line here would also consume the stem and all four choices.
+    text = re.sub(r"\bQuestion Number\s*:\s*\d+", " ", text, flags=re.I)
+    text = re.sub(r"\bQuestion Id\s*:\s*\d+", " ", text, flags=re.I)
+    text = re.sub(r"\bQuestion Type\s*:\s*[A-Za-z]+", " ", text, flags=re.I)
     text = re.sub(
-        r"\b(?:Single Line Question Option|Option Orientation|Option Shuffling|Display Question Number|Is Question Mandatory)\s*:.*$",
+        r"\b(?:Option Shuffling|Display Question Number|Is Question Mandatory|"
+        r"Single Line Question Option)\s*:\s*(?:Yes|No)",
         " ",
         text,
         flags=re.I,
     )
+    text = re.sub(
+        r"\bOption Orientation\s*:\s*(?:Vertical|Horizontal)",
+        " ",
+        text,
+        flags=re.I,
+    )
+    text = re.sub(r"\[?Question ID\s*[=:-]+\s*\d+[^\]\n)]*[\])]*", " ", text, flags=re.I)
+    text = re.sub(r"\[?Question Description\s*[=:-]+[^\]\n)]*[\])]*", " ", text, flags=re.I)
+    # Option-ID mappings are export metadata, not answer information or choices.
+    text = re.sub(r"\b\d{9,}\s*\.\s*[1-4]\b", " ", text)
     text = re.sub(r"\b(?:Personal Exam Guide|al Exams Guide)\b", " ", text, flags=re.I)
     text = re.sub(r"^\s*\d{1,3}[.)]\s*", "", text)
     return re.sub(r"\s+", " ", text).strip()
@@ -161,6 +176,10 @@ OPTION_SCHEMES = (
     (("1", "2", "3", "4"), re.compile(r"(?<!\w)\(\s*([1-4])\s*\)\s*")),
     (("A", "B", "C", "D"), re.compile(r"(?<![\w.])([A-D])\.\s+", re.I)),
     (("1", "2", "3", "4"), re.compile(r"(?<![\w.])([1-4])\.\s+")),
+    # OCR frequently removes the space between a numeric label and its value
+    # (for example ``2.13``).  Requiring a full 1-2-3-4 sequence keeps this
+    # compact fallback from treating an isolated decimal as a choice marker.
+    (("1", "2", "3", "4"), re.compile(r"(?<![\w.])([1-4])\.\s*")),
 )
 LOOSE_OPTION_SCHEMES = (
     (

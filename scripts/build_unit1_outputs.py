@@ -24,8 +24,8 @@ TOPICS = {
         "trap": "The converse q→p is not the contrapositive ¬q→¬p, and quantifier order generally cannot be swapped.",
     },
     "Sets and Relations": {
-        "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.",
-        "formula": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.",
+        "concept": "A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.",
+        "formula": "|P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.",
         "shortcut": "Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.",
         "trap": "Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.",
     },
@@ -379,14 +379,85 @@ add(2022, "October 2022", "89", 31, "Mathematical Logic", "First-order predicate
     ["Statement I gives the usual defining condition.", "Statement II correctly says that whenever g is c's grandparent, an intermediate parent p exists.", "Both statements are correct (though a biconditional would be needed for a complete definition)."], source=SRC22, question_id="404", secondary="Unit 10: Artificial Intelligence")
 
 SRC21 = "sources/ugc-net-cs-2021-nov-with-answers.pdf"
+add(2021, "November 2021", "21", 2, "Mathematical Logic", "Logical equivalence",
+    "Which pairs are logically equivalent? A. ¬p→(q→r) and q→(p∨r). B. (p→q)→r and p→(q→r). C. (p→q)→(r→s) and (p→r)→(q→s).",
+    ["A only", "A and B only", "B and C only", "A and C only"], 1,
+    ["¬p→(q→r) simplifies to p∨¬q∨r. The other formula in A, q→(p∨r), simplifies to the same expression, so A is equivalent.",
+     "In B, (p→q)→r becomes (p∧¬q)∨r, whereas p→(q→r) becomes ¬p∨¬q∨r. Taking p=false and r=false separates them, so B is not equivalent.",
+     "C is not an equivalence; for example p=false, q=true, r=true, s=false makes the left formula false and the right formula true. Therefore only A holds."],
+    source=SRC21, question_id="2351", status="official-final-key-matched", official="NTA final key: Question ID 2351, option 1",
+    note="The stem and formulas were recovered by visual inspection of PDF page 2 because the broad text index retained only the choices.")
+add(2021, "November 2021", "22", 2, "Sets and Relations", "Floor and ceiling functions",
+    "Which statements are correct? I. ⌊2x⌋=⌊x⌋+⌊x+1/2⌋ for every real x. II. ⌊x+y⌋=⌊x⌋+⌊y⌋ for every real x and y.",
+    ["Both I and II are true", "Both I and II are false", "I is true but II is false", "I is false but II is true"], 3,
+    ["Write x=n+f with n=⌊x⌋ and 0≤f<1. Then ⌊2x⌋=2n+⌊2f⌋ and ⌊x⌋+⌊x+1/2⌋=2n+⌊f+1/2⌋. Both added floors are 0 for f<1/2 and 1 for f≥1/2, so I is true.",
+     "II is not an identity because fractional parts can carry into the next integer. With x=y=0.6, ⌊x+y⌋=1 but ⌊x⌋+⌊y⌋=0.",
+     "Thus Statement I is true and Statement II is false, giving option 3."],
+    source=SRC21, question_id="2352", status="official-final-key-matched", official="NTA final key: Question ID 2352, option 3",
+    note="The embedded answer overlay says both statements are true, but the final NTA key and the counterexample establish option 3.")
+add(2021, "November 2021", "23", 2, "Counting, Mathematical Induction and Discrete Probability", "Onto assignments",
+    "How many ways are there to assign five different jobs to four different employees if every employee receives at least one job?",
+    ["1024", "625", "240", "20"], 3,
+    ["Because five distinct jobs go to four employees and none may be empty, exactly one employee must receive two jobs and each other employee one.",
+     "Choose the employee receiving two jobs in 4 ways, choose that employee's two jobs in C(5,2)=10 ways, and biject the remaining three jobs to the remaining three employees in 3!=6 ways.",
+     "The product is 4·10·6=240. Equivalently, inclusion-exclusion gives 4^5-4·3^5+6·2^5-4=240."],
+    source=SRC21, question_id="2353", status="official-final-key-matched", official="NTA final key: Question ID 2353, option 3",
+    note="The embedded answer overlay marks 1024, which counts all functions and ignores the nonempty-employee condition; the final key corrects it to 240.")
+add(2021, "November 2021", "24", 2, "Counting, Mathematical Induction and Discrete Probability", "Pigeonhole principle",
+    "A warehouse has 50 aisles, 85 horizontal locations per aisle, and 5 shelves. What is the least number of products that guarantees two products in the same bin?",
+    ["251", "426", "4251", "21251"], 4,
+    ["A bin is identified by one choice from each coordinate, so the number of bins is 50·85·5=21,250.",
+     "With 21,250 products it is still possible to put one product in every bin, so a collision is not yet forced.",
+     "The next product must reuse a bin by the pigeonhole principle. Hence the least guaranteed number is 21,250+1=21,251."],
+    source=SRC21, question_id="2354", status="official-final-key-matched", official="NTA final key: Question ID 2354, option 4",
+    note="The source OCR says 'self'; visual inspection shows the intended warehouse coordinate is shelf. The embedded answer overlay is superseded by the final key.")
+add(2021, "November 2021", "25", 2, "Counting, Mathematical Induction and Discrete Probability", "Recurrence relations",
+    "A person may climb either one stair or two stairs at a time. In how many ways can the person climb eight stairs?",
+    ["21", "24", "31", "34"], 4,
+    ["Let a_n be the number of ways to reach stair n. The last move is either one stair after a_{n-1} or two stairs after a_{n-2}, so a_n=a_{n-1}+a_{n-2}.",
+     "Use a_0=1 (the empty sequence) and a_1=1. The values are a_2=2, a_3=3, a_4=5, a_5=8, a_6=13, a_7=21 and a_8=34.",
+     "Therefore eight stairs can be climbed in 34 ways, option 4. The distractor 21 is the count for seven stairs."],
+    source=SRC21, question_id="2355", status="official-final-key-matched", official="NTA final key: Question ID 2355, option 4",
+    note="The embedded answer overlay marks 21, but the final NTA key and the recurrence both give 34.")
+add(2021, "November 2021", "26", 2, "Graph Theory", "Regular and wheel graphs",
+    "For which value of n is the wheel graph W_n regular?",
+    ["2", "3", "4", "5"], 2,
+    ["Under the convention W_n=K_1+C_n, every rim vertex has degree 3 and the hub has degree n. Equality of all degrees requires n=3, so option 2 is correct under this convention.",
+     "Another common convention uses W_n for a wheel of total order n, namely K_1+C_{n-1}. Then the hub has degree n-1, and regularity requires n-1=3, giving n=4 (option 3). In either notation the graph is K_4.",
+     "The NTA final key accepts both options 2 and 3 because both wheel-indexing conventions are standard; the mathematical invariant is that the unique regular wheel is K_4."],
+    source=SRC21, question_id="2356", status="official-final-key-multiple-options", official="NTA final key: Question ID 2356, options 2 and 3 accepted",
+    note="Option 2 is stored as the primary answer because the stem's W_n notation often means K_1+C_n; option 3 is equally accepted under the order-n convention.")
+RECORDS[-1]["correctAnswer"] = "n=3 (option 2) or n=4 (option 3), depending on the wheel-indexing convention"
+RECORDS[-1]["optionAnalysis"] = [
+    {"number": 1, "verdict": "incorrect", "explanation": "A cycle C_2 is not a simple cycle in the standard wheel definition."},
+    {"number": 2, "verdict": "accepted", "explanation": "For W_n=K_1+C_n, n=3 makes both the hub and rim degrees equal to 3, producing K_4."},
+    {"number": 3, "verdict": "accepted", "explanation": "For the convention where W_n has n total vertices, W_4=K_1+C_3=K_4, which is 3-regular."},
+    {"number": 4, "verdict": "incorrect", "explanation": "Under either convention this wheel has a hub degree larger than the rim degree 3."},
+]
+add(2021, "November 2021", "27", 2, "Graph Theory", "Planarity and graph redrawings",
+    "The source shows three graphs A, B and C. Which are planar? Graph A is a six-vertex crossing drawing with outer triangle a-d-f and vertices b,c,e subdividing its sides; graph B is the six-vertex octahedral graph; graph C contains a subdivision of K3,3.",
+    ["A and B only", "B and C only", "A only", "B only"], 1,
+    ["A's displayed edge crossing is not a vertex and does not prove nonplanarity. Moving one of the two crossing chords outside the outer triangle gives an embedding without crossings, so A is planar.",
+     "B is the octahedral graph, isomorphic to K_{2,2,2}. It is the edge graph of a convex octahedron and therefore has a planar embedding, even though the supplied straight-line drawing has crossings.",
+     "In C, suppressing the degree-2 subdivision vertices exposes a K3,3 subdivision. Kuratowski's theorem therefore makes C nonplanar. Exactly A and B are planar, so option 1 is correct."],
+    source=SRC21, question_id="2357", status="official-final-key-matched", official="NTA final key: Question ID 2357, option 1",
+    note="The three drawings were visually inspected at high resolution. The learning point is that crossings in a particular drawing do not by themselves establish nonplanarity.")
 add(2021, "November 2021", "28", 3, "Boolean Algebra", "Boolean identities",
     "Match A x+x=x; B x+0=x; C x+1=1; D x+xy=x with idempotent, identity, domination and absorption laws.",
     ["A-III,B-I,C-II,D-IV", "A-I,B-II,C-III,D-IV", "A-III,B-I,C-IV,D-II", "A-II,B-IV,C-I,D-III"], 3,
-    ["x+x=x is idempotent (III); x+0=x is identity (I).", "x+1=1 is domination (IV); x+xy=x is absorption (II).", "Therefore option 3 is mathematically correct."], source=SRC21, status="disputed-official-answer", official="option 1 in the supplied answered PDF", note="The supplied answer marks option 1, which swaps domination and absorption. Independent Boolean-algebra verification gives option 3.")
+    ["x+x=x is idempotent (III); x+0=x is identity (I).", "x+1=1 is domination (IV); x+xy=x is absorption (II).", "Therefore option 3 is mathematically correct."], source=SRC21, status="official-final-key-matched", official="NTA final key: Question ID 2358, option 3", note="The embedded answer overlay marks option 1, but the NTA final key agrees with the independent Boolean-algebra derivation: option 3.", question_id="2358")
+add(2021, "November 2021", "29", 3, "Group Theory", "Semigroups and rectangular bands",
+    "Let (X,*) be a semigroup in which a≠b implies a*b≠b*a. Which identities hold? A. a*a=a. B. (a*b)*a=a. C. (a*b)*c=a*c.",
+    ["A and B only", "A and C only", "B and C only", "A, B and C"], 4,
+    ["First prove idempotence. If a*a differed from a, the hypothesis would require (a*a)*a≠a*(a*a), but associativity makes these expressions equal. Hence a*a=a, proving A.",
+     "Let x=a*b. Idempotence gives a*x=a*(a*b)=(a*a)*b=x. Now a and x*a commute: a*(x*a)=(a*x)*a=x*a, while (x*a)*a=x*(a*a)=x*a. The hypothesis forces a=x*a=(a*b)*a, proving B.",
+     "To prove C, set x=(a*b)*c and y=a*c. Using B twice, x*y=a*b*(c*a*c)=a*b*c=x and y*x=(a*c*a)*b*c=a*b*c=x. Thus x and y commute; the hypothesis forces x=y, so (a*b)*c=a*c. All three identities hold and option 4 is correct."],
+    source=SRC21, question_id="2359", status="official-final-key-matched", official="NTA final key: Question ID 2359, option 4",
+    note="Here 'anti-commutative' means distinct elements never commute; it is not the ring identity ab=-ba.")
 add(2021, "November 2021", "30", 3, "Optimization", "Graphical solution of a linear program",
     "Maximize 6x+5y subject to 2x−3y≤5, x+3y≤11, 4x+y≤15, x,y≥0. Find the optimum value.",
     ["15", "25", "349/11", "30"], 3,
-    ["The binding intersection x+3y=11 and 4x+y=15 gives x=34/11,y=29/11.", "It satisfies 2x−3y≤5.", "Objective=6(34/11)+5(29/11)=349/11≈31.73, larger than the other feasible vertices."], source=SRC21, status="disputed-official-answer", official="15 in the supplied answered PDF", note="The marked answer 15 is inconsistent with direct evaluation; (34/11,29/11) is feasible and yields 349/11.")
+    ["The binding intersection x+3y=11 and 4x+y=15 gives x=34/11,y=29/11.", "It satisfies 2x−3y≤5.", "Objective=6(34/11)+5(29/11)=349/11≈31.73, larger than the other feasible vertices."], source=SRC21, status="official-final-key-matched", official="NTA final key: Question ID 2360, option 3", note="The embedded answer overlay marks 15, but the NTA final key agrees with direct optimization: 349/11.", question_id="2360")
 
 SRC20 = "sources/ugc-net-cs-2020-nov-combined-with-answers.pdf"
 add(2020, "November 2020", "51", 62, "Counting, Mathematical Induction and Discrete Probability", "Inclusion-exclusion",

@@ -1,0 +1,307 @@
+{
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#51": {
+    "answerLabel": "2",
+    "explanation": "Write the statement with quantifiers: ‘Some students like hockey’ means ∃x(Student(x) ∧ LikesHockey(x)). Negating an existential quantifier changes it to a universal quantifier and negates its predicate: ¬∃x P(x) ≡ ∀x ¬P(x). Therefore every student does not like hockey, expressed in the options as ‘Every student dislike hockey.’",
+    "whyOthersFail": "Option 1 still asserts that at least one such student exists, so it can be true at the same time as the original statement. Options 3 and 4 assert that all students like hockey, which is much stronger than the original statement rather than its negation.",
+    "keyIdea": "Negation rules: ¬∃x P(x) ≡ ∀x ¬P(x), and ¬∀x P(x) ≡ ∃x ¬P(x).",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#52": {
+    "answerLabel": "1",
+    "explanation": "The relation uses strict inequalities in both coordinates: (x,y) R (u,v) when x<u and y<v. It is irreflexive because x<x is never true. A partial order, under the standard definition, must be reflexive; an equivalence relation must also be reflexive (as well as symmetric and transitive). Hence this strict relation is neither a partial order nor an equivalence relation.",
+    "whyOthersFail": "Options 2 and 3 call it an order even though reflexivity fails. Option 4 fails because the relation is neither reflexive nor symmetric: if x<u, the reverse inequality u<x cannot hold simultaneously.",
+    "keyIdea": "Before testing the harder properties of a relation, test reflexivity. A strict ‘less-than’ relation is irreflexive.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#53": {
+    "answerLabel": "3",
+    "explanation": "There are eight people (four couples). The seven people other than the questioner give seven distinct feasible handshake counts, so their answers must be 0,1,2,3,4,5,6. The person reporting 6 shook everyone except their spouse, so that spouse must be the person reporting 0. Remove that couple. The same pairing argument then matches 5 with 1 and 4 with 2. The only unpaired answer is 3, and it must belong to the questioner’s spouse.",
+    "whyOthersFail": "Counts 1, 2, and 4 are forced into complementary spouse-pairs (5,1) and (4,2). None can be the questioner’s spouse because their complementary partner is also among the seven respondents.",
+    "keyIdea": "In the couples-handshake puzzle with n couples, the distinct answers pair as 0 with 2n−2, 1 with 2n−3, and so on; the questioner’s spouse has n−1 handshakes.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#54": {
+    "answerLabel": "2",
+    "explanation": "Evaluate the four combinations of the two comparisons. The code returns false for (x>25,y>100), true for (x≤25,y≤100), false for (x>25,y≤100), and true for the remaining case (x≤25,y>100). Thus y does not affect the final result: both cases with x≤25 return true and both cases with x>25 return false. The entire conditional is therefore equivalent to returning x≤25.",
+    "whyOthersFail": "Option 1 is the exact opposite of the required result. Options 3 and 4 depend only on y, but the original conditional gives different results for the same y value when x crosses 25.",
+    "keyIdea": "For a small conditional with Boolean inputs, make a truth table and look for a variable that becomes irrelevant.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#55": {
+    "answerLabel": "2",
+    "explanation": "CPU registers are located inside the processor and are accessed directly by instructions. They have the smallest capacity but the lowest access latency in the usual memory hierarchy. Cache is also fast, but it sits below registers; main memory and secondary storage are progressively slower.",
+    "whyOthersFail": "Cache memory is designed to reduce average memory-access time but is not faster than the processor’s registers. Main memory requires an external memory access, while secondary memory is slower still.",
+    "keyIdea": "Typical speed order: registers → cache → main memory → secondary storage.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#56": {
+    "answerLabel": "3",
+    "explanation": "With n address lines, the circuit can select 2^n distinct addresses. Each selected address stores or supplies m data bits because there are m data lines. Hence the organization is 2^n words × m bits, and the total capacity is 2^n·m bits. This is option 3 (whose exponent is faint in the OCR text).",
+    "whyOthersFail": "Multiplying n by m treats address lines as though each line selected only one word. The address lines encode binary combinations, so the number of addressable words grows exponentially as 2^n, not linearly as n.",
+    "keyIdea": "n binary address lines select 2^n locations; m data lines determine the word width.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#57": {
+    "answerLabel": "1",
+    "explanation": "The minterms split into two groups of four. Minterms 0,2,8,10 all have B=0 and D=0 while A and C vary, giving B′D′. Minterms 5,7,13,15 all have B=1 and D=1 while A and C vary, giving BD. Combining the two implicants gives F=B′D′+BD.",
+    "whyOthersFail": "The minterm membership does not depend on A or C, so expressions built from A,C cannot be correct. The AD expression also changes when A changes, whereas paired minterms show A is eliminated.",
+    "keyIdea": "In a K-map group, every variable that changes within the group disappears from the implicant.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#58": {
+    "answerLabel": "2",
+    "explanation": "The unpipelined average instruction time is [0.40(4)+0.20(4)+0.40(5)]×10 ns = 4.4×10 ns = 44 ns. With pipelining, the clock period is the original 10 ns stage time plus 1 ns pipeline overhead, or 11 ns. In steady state the pipeline completes about one instruction per clock, so the speedup in instruction rate is 44/11=4.",
+    "whyOthersFail": "The alternatives 2, 6, and 8 do not follow from the weighted CPI and the 11 ns pipeline clock. Ignoring the one-nanosecond overhead would give 4.4, which is also not any of those alternatives.",
+    "keyIdea": "Pipeline throughput speedup = unpipelined average instruction time ÷ pipelined clock period, after the pipeline fills.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#59": {
+    "answerLabel": "2",
+    "explanation": "Machine language consists of binary-encoded instructions executed directly by a processor. It is hardware-dependent and offers almost no abstraction from the instruction-set architecture, so it is classified as a low-level language.",
+    "whyOthersFail": "Assembly language is another low-level language but uses mnemonic symbols and requires an assembler, so it is not identical to machine language. A high-level language provides greater abstraction, and ‘translating language’ is not the relevant language category.",
+    "keyIdea": "Machine code and assembly are low-level; machine code is the binary form the CPU executes directly.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#60": {
+    "answerLabel": "3",
+    "explanation": "For the same bit width, an unsigned integer uses every bit for magnitude and therefore represents 2^n nonnegative values. A typical n-bit signed representation uses one bit’s worth of encoding to distinguish negative from nonnegative values, so its maximum positive magnitude is smaller. Thus the claim that the signed type has a greater range of values than the unsigned type is wrong.",
+    "whyOthersFail": "Unsigned values are nonnegative, and signed values may be positive or negative. In an unsigned representation the most significant bit contributes to the numeric value rather than serving as a sign bit, so statements 1, 2, and 4 express the intended distinctions.",
+    "keyIdea": "For n bits, unsigned commonly spans 0 to 2^n−1; two’s-complement signed spans −2^(n−1) to 2^(n−1)−1.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#61": {
+    "answerLabel": "1",
+    "explanation": "A constructor defined outside its class uses the class scope-resolution qualifier: Date::Date(int dd) { ... }. The explicit specifier belongs on the constructor declaration inside the class; it is not repeated on the out-of-class definition. Therefore the form shown in option 1 is the correct definition syntax.",
+    "whyOthersFail": "Option 2 incorrectly places explicit on the out-of-class definition. Options 3 and 4 are false because constructors may be declared in the class and defined outside it just like other member functions.",
+    "keyIdea": "Declare `explicit Date(int)` in the class; define it later as `Date::Date(int) { ... }`.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#62": {
+    "answerLabel": "4",
+    "explanation": "Refreshing a browser normally sends the same persistent session cookie back to the server, so the server can associate the new request with the existing session and continue it. The other events explicitly end or invalidate the client/server session association.",
+    "whyOthersFail": "Closing the browser can discard a nonpersistent session cookie. Logging out commonly invalidates the server-side session, and an inactivity timeout expires it. A refresh with a persistent cookie does none of those things.",
+    "keyIdea": "HTTP is stateless; a session continues across requests only while its identifier remains valid on both client and server.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#63": {
+    "answerLabel": "2",
+    "explanation": "Overfitting means the model continues to adapt to the training examples—including their noise—without improving generalization. Its training error therefore keeps decreasing while the error measured on unseen test/validation data begins to increase. That divergence is the classic observable warning sign.",
+    "whyOthersFail": "If both errors decrease, generalization is still improving. If both increase, optimization itself is failing or the model is deteriorating. Constant errors indicate stalled learning, not specifically overfitting.",
+    "keyIdea": "Monitor a validation curve: the point where validation error rises while training error falls marks the onset of overfitting.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#64": {
+    "answerLabel": "2",
+    "explanation": "A superkey is any attribute set that uniquely identifies an entity or tuple. A candidate key is a minimal superkey—removing any attribute destroys uniqueness. Statement 2 reverses this logic by saying that a minimal candidate key is called a superkey; candidate keys are already minimal, while minimality is the property used to select candidate keys from superkeys. Hence statement 2 is the incorrect statement.",
+    "whyOthersFail": "Statements 1 and 4 give the intended minimal-uniqueness definition of a candidate key. Statement 3 correctly defines a superkey without imposing minimality.",
+    "keyIdea": "Every candidate key is a superkey, but not every superkey is a candidate key; candidate key = minimal superkey.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#65": {
+    "answerLabel": "2",
+    "explanation": "DEPT.did is the primary key of DEPT. The EMP relation contains an attribute with the same role, EMP.did, which can reference DEPT.did and thereby associate each employee with a department. Thus did is the possible foreign key indicated by the two schemas.",
+    "whyOthersFail": "EMP.eid identifies employees and has no matching referenced key in DEPT. The name ename is not shown as a key in either relation. Options that include eid or ename therefore add attributes unsupported as foreign keys by the given schemas.",
+    "keyIdea": "A foreign key in one relation references a candidate/primary key in another; matching names are suggestive, but the referenced key constraint is decisive.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#66": {
+    "answerLabel": "3",
+    "explanation": "The instance contains (1,1,a), (1,1,a), (2,1,b), and (3,2,b). For every repeated X value, Y and Z remain the same, so both X→Y and X→Z hold in this instance. By contrast, Y=1 occurs with Z=a and Z=b, so Y→Z fails; Z=b occurs with X=2 and X=3, so Z→X fails.",
+    "whyOthersFail": "Option 1 contains the false dependency Z→X. Option 2 contains both Y→Z and Z→X, which fail. Option 4 contains Y→X, which fails because Y=1 is paired with multiple X values.",
+    "keyIdea": "An FD A→B is violated as soon as two rows agree on A but disagree on B.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#67": {
+    "answerLabel": "2",
+    "explanation": "Linux uses the clone() system call to create a child task while letting the caller specify sharing behavior through flags. Flags such as CLONE_VM, CLONE_FILES, and CLONE_SIGHAND determine whether the parent and child share address space, file-descriptor tables, signal handlers, and other resources.",
+    "whyOthersFail": "fork() creates a child with a fixed process-style sharing model and does not take the described sharing flags. pthread() is a user-level threading API commonly implemented using clone(), while thread() is not the Linux system call described.",
+    "keyIdea": "On Linux, clone() is the low-level primitive whose flags control which execution resources are shared.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#68": {
+    "answerLabel": "3",
+    "explanation": "In a microkernel architecture, many operating-system services execute as user-space server processes. The microkernel’s central job is to provide interprocess communication so that a client program can request those services. The blanks are therefore ‘client’ and ‘services.’",
+    "whyOthersFail": "‘Virtual program’ is not the client/server terminology used for microkernels. Although the communicating entities are processes, the sentence specifically contrasts the client program with user-space services, making option 3 the precise completion.",
+    "keyIdea": "A microkernel keeps only essential mechanisms in kernel space and connects user-space clients and service servers through IPC.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#69": {
+    "answerLabel": "4",
+    "explanation": "Only one sequential user process can execute. When it issues a synchronous disk request, it blocks until that request completes; there is no second user process generating another outstanding request for the scheduler to choose. With a queue containing at most one request, FCFS and SSTF select exactly the same request. The scheduling replacement therefore gives 0% expected improvement for these user programs.",
+    "whyOthersFail": "The vendor’s 50% benchmark claim depends on workloads with a useful queue of competing requests. Doubling or halving that claim cannot overcome the stated single-sequential-process constraint, so 50%, 100%, and 25% are unsupported.",
+    "keyIdea": "A disk scheduling policy can reorder requests only when more than one request is waiting.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#70": {
+    "answerLabel": "2",
+    "explanation": "Under FCFS the order is P1,P2,P3,P4 with burst times 8,15,10,7 ms. Their waiting times are 0, 8, 8+15=23, and 8+15+10=33 ms. The average is (0+8+23+33)/4 = 64/4 = 16 ms.",
+    "whyOthersFail": "8 ms is only P2’s waiting time. The values 32 and 48 do not equal the mean of the four cumulative waiting times; they result from omitting or mis-accumulating earlier bursts.",
+    "keyIdea": "For FCFS, each process waits for the sum of all burst times before it; average those cumulative sums.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#71": {
+    "answerLabel": "4",
+    "explanation": "Portability, security, and scalability describe qualities or constraints on how well a system operates, so they are non-functional requirements. User interaction describes behavior the system must provide—how users interact with it—and is therefore a functional concern in this list.",
+    "whyOthersFail": "The first three options are standard quality attributes. They constrain implementation or operation rather than specifying a particular user-visible service.",
+    "keyIdea": "Functional requirements describe what the system does; non-functional requirements describe qualities or constraints on how it does it.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#72": {
+    "answerLabel": "2",
+    "explanation": "COCOMO is the Constructive Cost Model, an empirical software cost-estimation model originally developed by Barry Boehm. It estimates development effort, schedule, and cost from software size and project-specific cost drivers.",
+    "whyOthersFail": "Consumed cost model, common control model, and composition cost model are not the expansion of the COCOMO acronym.",
+    "keyIdea": "COCOMO = Constructive Cost Model; remember it as a software effort and schedule estimation model.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#73": {
+    "answerLabel": "1",
+    "explanation": "Adaptive maintenance changes software so it continues to work in a changed environment—for example, after an operating-system, hardware, regulation, or external-interface change. That is exactly the situation described.",
+    "whyOthersFail": "Corrective maintenance fixes discovered faults. Perfective maintenance improves performance or usability or adds enhancements. Preventive maintenance restructures software to reduce the chance of future problems.",
+    "keyIdea": "Adaptive = environment changed; corrective = defect found; perfective = enhancement; preventive = future-risk reduction.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#74": {
+    "answerLabel": "2",
+    "explanation": "Normal boundary-value analysis for n independent input variables uses one nominal test plus four boundary tests per variable: minimum, just above minimum, just below maximum, and maximum. Holding all other variables nominal while varying one at a time gives 4n+1 test cases. For two variables this would be 9 tests.",
+    "whyOthersFail": "The counts 4n+3, n+4, and 2n+4 do not follow from the four boundary values required for each variable plus the single all-nominal case.",
+    "keyIdea": "Normal BVA uses 4n+1 cases; robust BVA additionally tests just outside each boundary and uses 6n+1.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#75": {
+    "answerLabel": "1",
+    "explanation": "Cayley’s formula gives n^(n−2) unrooted labeled trees on n labeled vertices. Choosing a root for each such tree gives n choices, so the number of rooted labeled trees is n·n^(n−2)=n^(n−1). The option set is therefore referring to rooted labeled trees, and option 1 is the matching count.",
+    "whyOthersFail": "The expressions involving powers of 2 count binary choices of edges without enforcing the connected-and-acyclic conditions required of a tree. They therefore include many non-trees and omit the labeled-tree counting structure.",
+    "keyIdea": "Cayley: unrooted labeled trees n^(n−2); rooted labeled trees n^(n−1).",
+    "confidence": "medium"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#76": {
+    "answerLabel": "1",
+    "explanation": "Apply the recurrence repeatedly: f(25)=f(12)+1=f(6)+2=f(3)+3=f(1)+4=4. Each recursive step replaces n by ⌊n/2⌋, so the number of steps before reaching 1 is the position of the highest set bit minus one, namely ⌊log₂n⌋. For n=25, ⌊log₂25⌋=4.",
+    "whyOthersFail": "The value is not 14; that would confuse the recurrence depth with an arithmetic reduction. The expressions involving n/2 give approximately half the input rather than the number of repeated halvings.",
+    "keyIdea": "Repeated integer halving reaches 1 after ⌊log₂n⌋ steps.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#77": {
+    "answerLabel": "2",
+    "explanation": "FFT-based multiplication evaluates both degree-bounded polynomials at O(n) suitable points using FFTs, multiplies corresponding values in O(n), and applies an inverse FFT. Each FFT or inverse FFT costs O(n log n), which dominates the pointwise multiplication. The complete procedure is therefore O(n log₂n).",
+    "whyOthersFail": "O(n²) is the ordinary coefficient-by-coefficient multiplication cost. Exponential time is unnecessary, while O(log n) is too small even to read or write all n coefficients.",
+    "keyIdea": "FFT turns polynomial convolution from quadratic time into O(n log n) time.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#78": {
+    "answerLabel": "4",
+    "explanation": "The pictured graph has four vertices and is K₄ with one edge missing. K₄ has 4^(4−2)=16 spanning trees by Cayley’s formula. By symmetry, each of K₄’s six edges occurs in the same number of spanning trees; because every tree has three edges, the total edge occurrences are 16×3=48, or 48/6=8 per edge. Removing one edge therefore removes 8 trees, leaving 16−8=8.",
+    "whyOthersFail": "The counts 10, 5, and 9 do not match either direct enumeration or the K₄ symmetry argument. Exactly half of K₄’s spanning trees use the deleted edge.",
+    "keyIdea": "Recognize a nearly complete graph and count by deleting the spanning trees that contain the missing edge.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#79": {
+    "answerLabel": "3",
+    "explanation": "A deterministic k-tape Turing machine reads one tape symbol from each of its k tapes, so its input to δ is a state in Q and a k-tuple in Γ^k. One transition selects the next state, writes one symbol on each tape, and chooses one movement L, R, or S for each head. Thus δ: Q×Γ^k → Q×Γ^k×{L,R,S}^k.",
+    "whyOthersFail": "The powerset 2^Q is associated with sets of states in nondeterministic constructions, not an ordinary deterministic transition. Adding a second Q or both Q and 2^Q introduces components that a multi-tape step does not consume or produce.",
+    "keyIdea": "For k tapes, both the symbols read/written and the head movements are k-tuples.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#80": {
+    "answerLabel": "3",
+    "explanation": "The pumping lemma decomposes a sufficiently long string w as xyz with |xy|≤p, |y|≥1, and xy^iz in the language for every i≥0. The condition |y|≥1 prevents the pumped section from being empty. Therefore the minimum possible length of y is 1.",
+    "whyOthersFail": "Zero is explicitly forbidden. The pumping length n (or p) constrains the original string and the prefix xy, not the minimum length of y; there is no requirement that y have length 2.",
+    "keyIdea": "In the regular-language pumping lemma, the pumpable part must be nonempty: |y|≥1.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#81": {
+    "answerLabel": "1",
+    "explanation": "An LR item marks how much of a production’s right-hand side has been recognized. For an ε-production A→ε, the right-hand side has length zero, so there is no grammar symbol for the dot to cross. Its completed item is represented as A→· (often written [A→·]).",
+    "whyOthersFail": "ε denotes the empty string, not a terminal that is shifted by the parser. Forms placing a dot before or after a literal ε incorrectly treat ε as an input symbol, while the production without a dot is not an LR item.",
+    "keyIdea": "An ε-production has an empty right-hand side, so its LR item is complete immediately.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#82": {
+    "answerLabel": "3",
+    "explanation": "From the initial state q0, reading one a reaches q1. From q1, reading a can reach q3, which is final (the same transition also includes q2). Thus the string aa reaches an accepting state and has length 2. Neither the empty string nor a one-symbol string reaches q3 in the displayed transition table.",
+    "whyOthersFail": "Lengths 0 and 1 stop at q0 and q1 respectively, neither of which is final. Length 3 can also lead along longer paths, but it is not the minimum.",
+    "keyIdea": "For an NFA, track the set of reachable states after each symbol and stop as soon as that set contains a final state.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#83": {
+    "answerLabel": "4",
+    "explanation": "Convert each 8-bit octet independently: 01011010=5A, 00010001=11, 01010101=55, 00011000=18, 10101010=AA, and 00001111=0F. Joining the six bytes gives 5A:11:55:18:AA:0F.",
+    "whyOthersFail": "The other choices alter one or more byte values or reverse nibbles. Ethernet notation preserves the byte order shown and uses exactly two hexadecimal digits per byte.",
+    "keyIdea": "Split a 48-bit MAC address into six bytes, then convert each group of four bits to one hexadecimal digit.",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#84": {
+    "answerLabel": "2",
+    "explanation": "While transmitting at 10 Mbps, tokens are spent at 10 Mbps but replenished at 2 Mbps, so the bucket drains at a net rate of 8 Mbps. An initially full 16-megabit bucket therefore supports the burst for 16/8=2 seconds.",
+    "whyOthersFail": "Using 16/10 gives 1.6 seconds but ignores tokens arriving during transmission. Five or eight seconds would require a much smaller net drain rate than 10−2=8 Mbps.",
+    "keyIdea": "Maximum token-bucket burst duration = bucket capacity ÷ (peak sending rate − token generation rate).",
+    "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#85": {
+    "answerLabel": "2",
+    "explanation": "The propagation delay is unambiguous: 2500/(2×10^8)=12.5 μs. If the frame size is the printed 512 bytes, however, transmission delay is (512×8)/(10×10^6)=409.6 μs, and none of the options is correct. Option 2 results only if the intended frame size was 512 bits: 512/(10×10^6)=51.2 μs, paired with 12.5 μs. Thus option 2 is the apparent intended answer, but the printed unit makes the question defective.",
+    "whyOthersFail": "Options 1, 3, and 4 either swap the two delays or use values inconsistent with both the link rate and propagation speed. More importantly, no listed option matches a literal 512-byte frame.",
+    "keyIdea": "Transmission delay L/R uses frame length in bits; propagation delay distance/speed is independent of frame size.",
+    "confidence": "disputed-source-unit"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#86": {
+    "answerLabel": "3", "explanation": "A CRC codeword is formed by appending the r-bit remainder to the original dataword. Here the dataword is 111111 and the remainder is 110, so the transmitted codeword is 111111110.",
+    "whyOthersFail": "The other bit strings do not preserve the six data bits followed by the stated three-bit remainder.", "keyIdea": "CRC transmission word = dataword followed by the modulo-2 division remainder.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#87": {
+    "answerLabel": "1", "explanation": "A* orders nodes by f(n)=g(n)+h(n). If h is admissible, it never overestimates the remaining optimal cost; with the usual graph-search consistency/reopening conditions, A* returns a solution of minimum total path cost.",
+    "whyOthersFail": "A* is a minimization algorithm, so the highest-cost alternatives are reversed. A non-admissible heuristic can overestimate and cause an optimal path to be skipped.", "keyIdea": "Admissible h(n)≤h*(n) is the central optimality condition for A*.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#88": {
+    "answerLabel": "3", "explanation": "Relational symbolism represents objects and events symbolically together with the relations that connect them. This lets a program encode and reason about associations such as is-a, part-of, causes, or precedes.",
+    "whyOthersFail": "Heuristic processing guides search, cognitive science is the broader interdisciplinary field, and pattern matching compares structures but is not the general representation technique described.", "keyIdea": "Symbolic AI models knowledge using entities plus explicit relations among them.", "confidence": "medium"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#89": {
+    "answerLabel": "1", "explanation": "Alpha and beta are bounds associated with nodes on the current minimax search path. As child values return, the algorithm updates these bounds up the ancestor path and prunes when α≥β.",
+    "whyOthersFail": "The bounds are not fixed only at the initial state or postponed until the entire search ends; incremental updates are exactly what enables pruning.", "keyIdea": "Alpha-beta pruning propagates bounds along the active root-to-node path.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#90": {
+    "answerLabel": "4", "explanation": "The net input is 1·5+2·7+3·10+4·30=5+14+30+120=169. The linear transfer function has proportionality constant 3, so the output is 3×169=507.",
+    "whyOthersFail": "The other values result from omitting weights, failing to sum all four products, or not applying the final factor of 3.", "keyIdea": "A linear neuron computes y=kΣwᵢxᵢ (plus a bias only if one is specified).", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#91": {
+    "answerLabel": "4", "explanation": "P is true because a connected graph on 80 vertices needs at least 79 edges. Q is the Euler-circuit degree criterion. R is the standard theorem that every nontrivial tree has at least two leaves. S is true because bipartite graphs of arbitrarily many vertices exist and are 2-colorable. Therefore all four statements are correct.",
+    "whyOthersFail": "Options 1–3 undercount the true statements; none of P, Q, R, or S is false under the standard definitions.", "keyIdea": "Use the minimum-edge bound n−1 for connected graphs and the leaf theorem for trees.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#92": {
+    "answerLabel": "2", "explanation": "A finite Boolean algebra has 2^k elements, so five elements are impossible (A false). Complements are unique (B true). Boolean algebras are relatively complemented, so C is false. Direct products preserve the Boolean operations and axioms, so D is true. Only B and D are correct.",
+    "whyOthersFail": "Every alternative other than option 2 either accepts the impossible five-element algebra or rejects one of the standard closure/complement properties.", "keyIdea": "Finite Boolean algebra sizes are powers of two, and complements are unique.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#93": {
+    "answerLabel": "4", "explanation": "Virtual memory increases the effective addressable memory, keeps nonresident program/data pages in secondary storage, and permits programs larger than physical main memory (subject to virtual-address and backing-store limits). Thus statements 1–3 express the intended properties and none is false.",
+    "whyOthersFail": "Selecting 1, 2, or 3 would deny a core feature of demand-paged virtual memory.", "keyIdea": "Virtual memory separates a process's address space from the amount of installed RAM.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#94": {
+    "answerLabel": "1", "explanation": "DRAM stores each bit as charge in a compact capacitor cell, giving greater density than SRAM, but it is slower and the charge must be periodically refreshed. Hence A, B, and D are true while C is false.",
+    "whyOthersFail": "Every other choice includes C or omits A even though SRAM's latch cells are faster than refreshed capacitor cells.", "keyIdea": "DRAM: dense, inexpensive, slower, refresh required; SRAM: faster, larger cell, no refresh.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#95": {
+    "answerLabel": "4", "explanation": "A is false because the processor directly addresses registers/cache/main memory, while secondary storage is accessed through I/O. B and C are true in the intended hierarchy. D is false because practical memory systems use multiple levels. Therefore A and D are false.",
+    "whyOthersFail": "Options 1–3 incorrectly mark B or C false or fail to include the false single-level claim D.", "keyIdea": "The memory hierarchy is multi-level, and CPU load/store instructions do not directly address disk blocks.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#96": {
+    "answerLabel": "4", "explanation": "Multiplying (x,y) by diag(0.5,1.5) gives (0.5x,1.5y). The horizontal component is halved (D) and the vertical component is increased to three halves of its original value (B).",
+    "whyOthersFail": "A reverses the vertical effect, while C says the horizontal coordinate doubles instead of being multiplied by 0.5.", "keyIdea": "A diagonal 2-D scaling matrix directly lists the x- and y-scale factors.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#97": {
+    "answerLabel": "3", "explanation": "HTML defines three standard list structures: unordered lists (`ul`), ordered lists (`ol`), and description/definition lists (`dl`). These correspond to A, B, and C.",
+    "whyOthersFail": "‘Correlated list’ and ‘enumerated list’ are not separate HTML list elements; enumeration is handled by an ordered list.", "keyIdea": "HTML list containers are ul, ol, and dl.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#98": {
+    "answerLabel": "4", "explanation": "Traditional application-managed files commonly produce redundant inconsistent data, awkward access logic, isolated incompatible files, and difficulty guaranteeing that a multi-step update is atomic. A DBMS is designed to address all four problems.",
+    "whyOthersFail": "Options 1–3 omit one or more genuine file-system drawbacks, especially isolation or failure atomicity.", "keyIdea": "Core DBMS motivations include controlled redundancy, data independence, integrated access, and transaction guarantees.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#99": {
+    "answerLabel": "1", "explanation": "The hierarchical model explicitly organizes records as a parent-child tree. The network model generalizes this using owner-member (parent-child-like) set relationships and permits a record to participate in multiple such sets. The relational model instead represents associations through keys and joins. Thus A and B apply.",
+    "whyOthersFail": "Any option containing C treats the relational model as a navigational parent-child model, which it is not.", "keyIdea": "Hierarchical and network databases are navigational; relational databases connect tables through values and keys.", "confidence": "high"
+  },
+  "sources/ugc-net-cs-2023-mar-11-shift-2-dec-2022-session-combined.pdf#100": {
+    "answerLabel": "1", "explanation": "R1 and R2 share exactly one tuple, (b1,5), and the output contains exactly that tuple. This is the set intersection R1∩R2. Algebraically R1−(R1−R2) would also equal the intersection, but option 3 is printed as that equivalent expression; the direct requested operation is option 1, making the item non-unique if option 3 is interpreted literally.",
+    "whyOthersFail": "R1−R2 returns the three R1-only tuples, and the union returns all distinct tuples. Option 3 is mathematically equivalent to intersection, so the source unfortunately provides a second equivalent expression rather than a genuinely distinct distractor.", "keyIdea": "Intersection keeps tuples present in both relations; A−(A−B)=A∩B.", "confidence": "disputed-multiple-equivalent-options"
+  }
+}

@@ -38,18 +38,18 @@
 
 ## Coverage and source limitation
 
-This guide contains **143 reviewed and solved Unit 1 questions** from the verified UGC NET corpus. See the [extraction audit](../data/unit-1-audit.md) for validation details and the explicitly accounted source-defect queue.
+This guide contains **151 reviewed and solved Unit 1 questions** from the verified UGC NET corpus. See the [extraction audit](../data/unit-1-audit.md) for validation details and the explicitly accounted source-defect queue.
 This guide covers UGC NET sources only. No verifiable Rajasthan SET Computer Science question paper or official key is present, so Rajasthan SET coverage is not claimed.
 
 ### Topic counts
 
 | Topic | Questions |
 |---|---:|
-| Mathematical Logic | 17 |
-| Sets and Relations | 24 |
-| Counting, Mathematical Induction and Discrete Probability | 27 |
-| Group Theory | 7 |
-| Graph Theory | 29 |
+| Mathematical Logic | 18 |
+| Sets and Relations | 25 |
+| Counting, Mathematical Induction and Discrete Probability | 30 |
+| Group Theory | 8 |
+| Graph Theory | 31 |
 | Boolean Algebra | 16 |
 | Optimization | 23 |
 
@@ -67,9 +67,9 @@ Replace implication by ¬p ∨ q, push negations through quantifiers, and test v
 
 ### Sets and Relations
 
-A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
-**Formula/rule:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+**Formula/rule:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 
 **Fast method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 
@@ -253,7 +253,7 @@ On A=N×N define (a,b) R (c,d) iff a≤c or b≤d. Assertion: R is a partial ord
 
 **Build the basics**
 
-This question tests **Partial ordering**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Partial ordering**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -267,7 +267,7 @@ The reasoning gives option 4: **A false; R true**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
@@ -811,7 +811,7 @@ Arrange by increasing cardinality: A₁={{1,2},{3}}; A₂={{1},{2},{3},{4}}; A�
 
 **Build the basics**
 
-This question tests **Cardinality of nested sets**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Cardinality of nested sets**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -824,7 +824,7 @@ The reasoning gives option 4: **A₃,A₁,A₄,A₂,A₅**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
@@ -948,7 +948,7 @@ On {1,2,3,4}, which listed relations are reflexive? R₁={(1,1),(1,2),(2,1),(2,2
 
 **Build the basics**
 
-This question tests **Reflexive relations**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Reflexive relations**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -962,7 +962,7 @@ The reasoning gives option 4: **R₃,R₅**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
@@ -1091,7 +1091,7 @@ Match A A△B; B A−(B∪C); C A−(B∩C); D A∩(B−C) with I (A−B)∪(A�
 
 **Build the basics**
 
-This question tests **Set operations and symmetric difference**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Set operations and symmetric difference**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -1104,7 +1104,7 @@ The reasoning gives option 1: **A-III,B-II,C-I,D-IV**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
@@ -1125,7 +1125,7 @@ On N×N, (a,b)R(c,d) iff ad(b+c)=bc(a+d). What kind of relation is R?
 
 **Build the basics**
 
-This question tests **Equivalence relations**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Equivalence relations**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -1139,7 +1139,7 @@ The reasoning gives option 4: **Equivalence relation**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
@@ -1507,7 +1507,7 @@ For R={(1,3),(1,1),(3,1),(1,2),(3,3),(4,4)} on {1,2,3,4}, which classification i
 
 **Build the basics**
 
-This question tests **Relation properties**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Relation properties**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -1520,7 +1520,7 @@ The reasoning gives option 4: **Neither reflexive, symmetric nor transitive**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
@@ -1609,7 +1609,7 @@ On integer pairs define (x,y)R(u,v) iff x<u and y>v. Which classification applie
 
 **Build the basics**
 
-This question tests **Strict partial orders**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Strict partial orders**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -1622,7 +1622,7 @@ The reasoning gives option 1: **Neither partial order nor equivalence relation**
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
@@ -1857,7 +1857,7 @@ For ε=0.0005, define x Rε y iff |x−y|<ε. Which properties hold: A reflexive
 
 **Build the basics**
 
-This question tests **Approximate-equality relation**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Approximate-equality relation**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -1871,7 +1871,7 @@ The reasoning gives option 1: **A,B only**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
@@ -1951,6 +1951,265 @@ The reasoning gives option 1: **Both correct**.
 
 #### Question 53
 
+*UGC NET November 2021, original Q21*
+
+Which pairs are logically equivalent? A. ¬p→(q→r) and q→(p∨r). B. (p→q)→r and p→(q→r). C. (p→q)→(r→s) and (p→r)→(q→s).
+
+1. A only
+2. A and B only
+3. B and C only
+4. A and C only
+
+**Correct answer:** 1 — A only
+
+**Build the basics**
+
+This question tests **Logical equivalence**. Replace implication by ¬p ∨ q, push negations through quantifiers, and test validity by searching for a counterexample. A tautology is true under every valuation; an argument is valid when the conjunction of its premises implies its conclusion.
+
+**Step-by-step reasoning**
+
+1. ¬p→(q→r) simplifies to p∨¬q∨r. The other formula in A, q→(p∨r), simplifies to the same expression, so A is equivalent.
+2. In B, (p→q)→r becomes (p∧¬q)∨r, whereas p→(q→r) becomes ¬p∨¬q∨r. Taking p=false and r=false separates them, so B is not equivalent.
+3. C is not an equivalence; for example p=false, q=true, r=true, s=false makes the left formula false and the right formula true. Therefore only A holds.
+
+**Conclusion**
+
+The reasoning gives option 1: **A only**.
+
+**How to solve similar questions**
+
+- **Rule to remember:** p→q ≡ ¬p∨q; ¬∀x P(x) ≡ ∃x ¬P(x); ¬∃x P(x) ≡ ∀x ¬P(x).
+- **Fast exam method:** For a proposed tautology, first try to make the consequent false and see whether the antecedent can still be true.
+- **Common mistake to avoid:** The converse q→p is not the contrapositive ¬q→¬p, and quantifier order generally cannot be swapped.
+
+> **Important wording note:** The stem and formulas were recovered by visual inspection of PDF page 2 because the broad text index retained only the choices.
+
+---
+
+#### Question 54
+
+*UGC NET November 2021, original Q22*
+
+Which statements are correct? I. ⌊2x⌋=⌊x⌋+⌊x+1/2⌋ for every real x. II. ⌊x+y⌋=⌊x⌋+⌊y⌋ for every real x and y.
+
+1. Both I and II are true
+2. Both I and II are false
+3. I is true but II is false
+4. I is false but II is true
+
+**Correct answer:** 3 — I is true but II is false
+
+**Build the basics**
+
+This question tests **Floor and ceiling functions**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
+
+**Step-by-step reasoning**
+
+1. Write x=n+f with n=⌊x⌋ and 0≤f<1. Then ⌊2x⌋=2n+⌊2f⌋ and ⌊x⌋+⌊x+1/2⌋=2n+⌊f+1/2⌋. Both added floors are 0 for f<1/2 and 1 for f≥1/2, so I is true.
+2. II is not an identity because fractional parts can carry into the next integer. With x=y=0.6, ⌊x+y⌋=1 but ⌊x⌋+⌊y⌋=0.
+3. Thus Statement I is true and Statement II is false, giving option 3.
+
+**Conclusion**
+
+The reasoning gives option 3: **I is true but II is false**.
+
+**How to solve similar questions**
+
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
+- **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
+- **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
+
+> **Important wording note:** The embedded answer overlay says both statements are true, but the final NTA key and the counterexample establish option 3.
+
+---
+
+#### Question 55
+
+*UGC NET November 2021, original Q23*
+
+How many ways are there to assign five different jobs to four different employees if every employee receives at least one job?
+
+1. 1024
+2. 625
+3. 240
+4. 20
+
+**Correct answer:** 3 — 240
+
+**Build the basics**
+
+This question tests **Onto assignments**. Counting problems reduce to product/sum rules, stars-and-bars, inclusion–exclusion, permutations or combinations. Probability is favourable equally likely outcomes divided by all outcomes; conditional probability changes the sample space, and Bayes reverses a condition.
+
+**Step-by-step reasoning**
+
+1. Because five distinct jobs go to four employees and none may be empty, exactly one employee must receive two jobs and each other employee one.
+2. Choose the employee receiving two jobs in 4 ways, choose that employee's two jobs in C(5,2)=10 ways, and biject the remaining three jobs to the remaining three employees in 3!=6 ways.
+3. The product is 4·10·6=240. Equivalently, inclusion-exclusion gives 4^5-4·3^5+6·2^5-4=240.
+
+**Conclusion**
+
+The reasoning gives option 3: **240**.
+
+**How to solve similar questions**
+
+- **Rule to remember:** nPr=n!/(n−r)!; nCr=n!/[r!(n−r)!]; P(A|B)=P(A∩B)/P(B); P(A|B)=P(B|A)P(A)/P(B).
+- **Fast exam method:** Decide first whether order matters and whether replacement is allowed; that usually eliminates most options immediately.
+- **Common mistake to avoid:** Pairwise intersections are added back only after being subtracted, and a three-way intersection is then added once.
+
+> **Important wording note:** The embedded answer overlay marks 1024, which counts all functions and ignores the nonempty-employee condition; the final key corrects it to 240.
+
+---
+
+#### Question 56
+
+*UGC NET November 2021, original Q24*
+
+A warehouse has 50 aisles, 85 horizontal locations per aisle, and 5 shelves. What is the least number of products that guarantees two products in the same bin?
+
+1. 251
+2. 426
+3. 4251
+4. 21251
+
+**Correct answer:** 4 — 21251
+
+**Build the basics**
+
+This question tests **Pigeonhole principle**. Counting problems reduce to product/sum rules, stars-and-bars, inclusion–exclusion, permutations or combinations. Probability is favourable equally likely outcomes divided by all outcomes; conditional probability changes the sample space, and Bayes reverses a condition.
+
+**Step-by-step reasoning**
+
+1. A bin is identified by one choice from each coordinate, so the number of bins is 50·85·5=21,250.
+2. With 21,250 products it is still possible to put one product in every bin, so a collision is not yet forced.
+3. The next product must reuse a bin by the pigeonhole principle. Hence the least guaranteed number is 21,250+1=21,251.
+
+**Conclusion**
+
+The reasoning gives option 4: **21251**.
+
+**How to solve similar questions**
+
+- **Rule to remember:** nPr=n!/(n−r)!; nCr=n!/[r!(n−r)!]; P(A|B)=P(A∩B)/P(B); P(A|B)=P(B|A)P(A)/P(B).
+- **Fast exam method:** Decide first whether order matters and whether replacement is allowed; that usually eliminates most options immediately.
+- **Common mistake to avoid:** Pairwise intersections are added back only after being subtracted, and a three-way intersection is then added once.
+
+> **Important wording note:** The source OCR says 'self'; visual inspection shows the intended warehouse coordinate is shelf. The embedded answer overlay is superseded by the final key.
+
+---
+
+#### Question 57
+
+*UGC NET November 2021, original Q25*
+
+A person may climb either one stair or two stairs at a time. In how many ways can the person climb eight stairs?
+
+1. 21
+2. 24
+3. 31
+4. 34
+
+**Correct answer:** 4 — 34
+
+**Build the basics**
+
+This question tests **Recurrence relations**. Counting problems reduce to product/sum rules, stars-and-bars, inclusion–exclusion, permutations or combinations. Probability is favourable equally likely outcomes divided by all outcomes; conditional probability changes the sample space, and Bayes reverses a condition.
+
+**Step-by-step reasoning**
+
+1. Let a_n be the number of ways to reach stair n. The last move is either one stair after a_{n-1} or two stairs after a_{n-2}, so a_n=a_{n-1}+a_{n-2}.
+2. Use a_0=1 (the empty sequence) and a_1=1. The values are a_2=2, a_3=3, a_4=5, a_5=8, a_6=13, a_7=21 and a_8=34.
+3. Therefore eight stairs can be climbed in 34 ways, option 4. The distractor 21 is the count for seven stairs.
+
+**Conclusion**
+
+The reasoning gives option 4: **34**.
+
+**How to solve similar questions**
+
+- **Rule to remember:** nPr=n!/(n−r)!; nCr=n!/[r!(n−r)!]; P(A|B)=P(A∩B)/P(B); P(A|B)=P(B|A)P(A)/P(B).
+- **Fast exam method:** Decide first whether order matters and whether replacement is allowed; that usually eliminates most options immediately.
+- **Common mistake to avoid:** Pairwise intersections are added back only after being subtracted, and a three-way intersection is then added once.
+
+> **Important wording note:** The embedded answer overlay marks 21, but the final NTA key and the recurrence both give 34.
+
+---
+
+#### Question 58
+
+*UGC NET November 2021, original Q26*
+
+For which value of n is the wheel graph W_n regular?
+
+1. 2
+2. 3
+3. 4
+4. 5
+
+**Correct answer:** 2 — n=3 (option 2) or n=4 (option 3), depending on the wheel-indexing convention
+
+**Build the basics**
+
+This question tests **Regular and wheel graphs**. Use degree sums, Euler’s formula, colouring criteria and standard tree identities. A connected graph has an Euler circuit iff every degree is even; a graph is bipartite iff it has no odd cycle. A tree with n vertices has n−1 edges.
+
+**Step-by-step reasoning**
+
+1. Under the convention W_n=K_1+C_n, every rim vertex has degree 3 and the hub has degree n. Equality of all degrees requires n=3, so option 2 is correct under this convention.
+2. Another common convention uses W_n for a wheel of total order n, namely K_1+C_{n-1}. Then the hub has degree n-1, and regularity requires n-1=3, giving n=4 (option 3). In either notation the graph is K_4.
+3. The NTA final key accepts both options 2 and 3 because both wheel-indexing conventions are standard; the mathematical invariant is that the unique regular wheel is K_4.
+
+**Conclusion**
+
+The reasoning gives option 2: **n=3 (option 2) or n=4 (option 3), depending on the wheel-indexing convention**.
+
+**How to solve similar questions**
+
+- **Rule to remember:** Σdeg(v)=2|E|; planar connected V−E+F=2; τ(Kn)=n^(n−2); full m-ary leaves=(m−1)i+1.
+- **Fast exam method:** Parity, degree sum and V−E+F often solve a graph MCQ without drawing the whole graph.
+- **Common mistake to avoid:** Euler questions concern edges; Hamilton questions concern vertices. Necessary and sufficient degree conditions must not be confused.
+
+> **Important wording note:** Option 2 is stored as the primary answer because the stem's W_n notation often means K_1+C_n; option 3 is equally accepted under the order-n convention.
+
+---
+
+#### Question 59
+
+*UGC NET November 2021, original Q27*
+
+The source shows three graphs A, B and C. Which are planar? Graph A is a six-vertex crossing drawing with outer triangle a-d-f and vertices b,c,e subdividing its sides; graph B is the six-vertex octahedral graph; graph C contains a subdivision of K3,3.
+
+1. A and B only
+2. B and C only
+3. A only
+4. B only
+
+**Correct answer:** 1 — A and B only
+
+**Build the basics**
+
+This question tests **Planarity and graph redrawings**. Use degree sums, Euler’s formula, colouring criteria and standard tree identities. A connected graph has an Euler circuit iff every degree is even; a graph is bipartite iff it has no odd cycle. A tree with n vertices has n−1 edges.
+
+**Step-by-step reasoning**
+
+1. A's displayed edge crossing is not a vertex and does not prove nonplanarity. Moving one of the two crossing chords outside the outer triangle gives an embedding without crossings, so A is planar.
+2. B is the octahedral graph, isomorphic to K_{2,2,2}. It is the edge graph of a convex octahedron and therefore has a planar embedding, even though the supplied straight-line drawing has crossings.
+3. In C, suppressing the degree-2 subdivision vertices exposes a K3,3 subdivision. Kuratowski's theorem therefore makes C nonplanar. Exactly A and B are planar, so option 1 is correct.
+
+**Conclusion**
+
+The reasoning gives option 1: **A and B only**.
+
+**How to solve similar questions**
+
+- **Rule to remember:** Σdeg(v)=2|E|; planar connected V−E+F=2; τ(Kn)=n^(n−2); full m-ary leaves=(m−1)i+1.
+- **Fast exam method:** Parity, degree sum and V−E+F often solve a graph MCQ without drawing the whole graph.
+- **Common mistake to avoid:** Euler questions concern edges; Hamilton questions concern vertices. Necessary and sufficient degree conditions must not be confused.
+
+> **Important wording note:** The three drawings were visually inspected at high resolution. The learning point is that crossings in a particular drawing do not by themselves establish nonplanarity.
+
+---
+
+#### Question 60
+
 *UGC NET November 2021, original Q28*
 
 Match A x+x=x; B x+0=x; C x+1=1; D x+xy=x with idempotent, identity, domination and absorption laws.
@@ -1982,11 +2241,48 @@ The reasoning gives option 3: **A-III,B-I,C-IV,D-II**.
 - **Fast exam method:** For four-option identities, test 0/1 assignments; a single counterexample removes an option.
 - **Common mistake to avoid:** A simplified SOP need not be a canonical (complete) SOP; canonical terms contain every variable.
 
-> **Important wording note:** The supplied answer marks option 1, which swaps domination and absorption. Independent Boolean-algebra verification gives option 3.
+> **Important wording note:** The embedded answer overlay marks option 1, but the NTA final key agrees with the independent Boolean-algebra derivation: option 3.
 
 ---
 
-#### Question 54
+#### Question 61
+
+*UGC NET November 2021, original Q29*
+
+Let (X,*) be a semigroup in which a≠b implies a*b≠b*a. Which identities hold? A. a*a=a. B. (a*b)*a=a. C. (a*b)*c=a*c.
+
+1. A and B only
+2. A and C only
+3. B and C only
+4. A, B and C
+
+**Correct answer:** 4 — A, B and C
+
+**Build the basics**
+
+This question tests **Semigroups and rectangular bands**. A group has closure, associativity, an identity and inverses; an abelian group also commutes. Homomorphisms preserve the operation, automorphisms are isomorphisms from a structure to itself, and fields are commutative integral domains in which every nonzero element is invertible.
+
+**Step-by-step reasoning**
+
+1. First prove idempotence. If a*a differed from a, the hypothesis would require (a*a)*a≠a*(a*a), but associativity makes these expressions equal. Hence a*a=a, proving A.
+2. Let x=a*b. Idempotence gives a*x=a*(a*b)=(a*a)*b=x. Now a and x*a commute: a*(x*a)=(a*x)*a=x*a, while (x*a)*a=x*(a*a)=x*a. The hypothesis forces a=x*a=(a*b)*a, proving B.
+3. To prove C, set x=(a*b)*c and y=a*c. Using B twice, x*y=a*b*(c*a*c)=a*b*c=x and y*x=(a*c*a)*b*c=a*b*c=x. Thus x and y commute; the hypothesis forces x=y, so (a*b)*c=a*c. All three identities hold and option 4 is correct.
+
+**Conclusion**
+
+The reasoning gives option 4: **A, B and C**.
+
+**How to solve similar questions**
+
+- **Rule to remember:** For finite G and H≤G, |H| divides |G| (Lagrange). Every finite integral domain is a field.
+- **Fast exam method:** To refute an ideal claim, multiply a typical element on the left and right by a completely general ring element.
+- **Common mistake to avoid:** A numerical divisibility fact does not establish that one group is a subgroup of another.
+
+> **Important wording note:** Here 'anti-commutative' means distinct elements never commute; it is not the ring identity ab=-ba.
+
+---
+
+#### Question 62
 
 *UGC NET November 2021, original Q30*
 
@@ -2019,13 +2315,13 @@ The reasoning gives option 3: **349/11**.
 - **Fast exam method:** For a two-variable LP, list feasible intersections and evaluate the objective instead of running simplex.
 - **Common mistake to avoid:** The critical path is longest in duration, not the path with the most activities; degeneracy is about basic variables/independent allocations.
 
-> **Important wording note:** The marked answer 15 is inconsistent with direct evaluation; (34/11,29/11) is feasible and yields 349/11.
+> **Important wording note:** The embedded answer overlay marks 15, but the NTA final key agrees with direct optimization: 349/11.
 
 ### 2020
 
 ---
 
-#### Question 55
+#### Question 63
 
 *UGC NET November 2020, original Q51*
 
@@ -2060,7 +2356,7 @@ The reasoning gives option 3: **55**.
 
 ---
 
-#### Question 56
+#### Question 64
 
 *UGC NET November 2020, original Q52*
 
@@ -2095,7 +2391,7 @@ The reasoning gives option 4: **9**.
 
 ---
 
-#### Question 57
+#### Question 65
 
 *UGC NET November 2020, original Q53*
 
@@ -2130,7 +2426,7 @@ The reasoning gives option 4: **[(p∧q)→r] and [(p→r)∧(q→r)]**.
 
 ---
 
-#### Question 58
+#### Question 66
 
 *UGC NET November 2020, original Q54*
 
@@ -2165,7 +2461,7 @@ The reasoning gives option 4: **8**.
 
 ---
 
-#### Question 59
+#### Question 67
 
 *UGC NET November 2020, original Q88*
 
@@ -2199,7 +2495,7 @@ The reasoning gives option 1: **Disjunctions of literals**.
 
 ---
 
-#### Question 60
+#### Question 68
 
 *UGC NET November 2020, original Q89*
 
@@ -2214,7 +2510,7 @@ On {a,b,c,d,e,f,g}, R={(a,a),(b,b),(c,d),(c,g),(d,g),(e,e),(f,f),(g,g)}. Which l
 
 **Build the basics**
 
-This question tests **Reflexive, symmetric and antisymmetric properties**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Reflexive, symmetric and antisymmetric properties**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -2228,13 +2524,13 @@ The reasoning gives option 4: **B and not A**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
 ---
 
-#### Question 61
+#### Question 69
 
 *UGC NET November 2020, original Q90*
 
@@ -2269,7 +2565,7 @@ The reasoning gives option 2: **Steps deriving P(c) and Q(c) by simplification**
 
 ---
 
-#### Question 62
+#### Question 70
 
 *UGC NET November 2020, original Q103*
 
@@ -2306,7 +2602,7 @@ The reasoning gives option 3: **B,E**.
 
 ---
 
-#### Question 63
+#### Question 71
 
 *UGC NET December 2019, original Q51*
 
@@ -2340,7 +2636,7 @@ The reasoning gives option 2: **m+n−1, independent**.
 
 ---
 
-#### Question 64
+#### Question 72
 
 *UGC NET December 2019, original Q52*
 
@@ -2375,7 +2671,7 @@ The reasoning gives option 3: **x₁=1000,x₂=500,z=1500**.
 
 ---
 
-#### Question 65
+#### Question 73
 
 *UGC NET December 2019, original Q53*
 
@@ -2410,7 +2706,7 @@ The reasoning gives option 1: **A**.
 
 ---
 
-#### Question 66
+#### Question 74
 
 *UGC NET December 2019, original Q54*
 
@@ -2425,7 +2721,7 @@ Find GLB and LUB under divisibility for A={3,9,12} and B={1,2,4,5,10}.
 
 **Build the basics**
 
-This question tests **Bounds in a divisibility poset**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Bounds in a divisibility poset**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -2438,13 +2734,13 @@ The reasoning gives option 1: **A:3,36; B:1,20**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
 ---
 
-#### Question 67
+#### Question 75
 
 *UGC NET December 2019, original Q55*
 
@@ -2459,7 +2755,7 @@ On all people, aRb iff a is a brother of b. Is R symmetric, transitive, an equiv
 
 **Build the basics**
 
-This question tests **Properties of relations**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Properties of relations**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -2473,13 +2769,13 @@ The reasoning gives option 1: **No,No,No,No**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
 ---
 
-#### Question 68
+#### Question 76
 
 *UGC NET December 2019, original Q57*
 
@@ -2514,7 +2810,7 @@ The reasoning gives option 1: **12,11**.
 
 ---
 
-#### Question 69
+#### Question 77
 
 *UGC NET December 2019, original Q58*
 
@@ -2529,7 +2825,7 @@ How many reflexive relations exist on a four-element set?
 
 **Build the basics**
 
-This question tests **Counting reflexive relations**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Counting reflexive relations**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -2543,13 +2839,13 @@ The reasoning gives option 1: **2¹²**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
 ---
 
-#### Question 70
+#### Question 78
 
 *UGC NET December 2019, original Q84*
 
@@ -2583,7 +2879,7 @@ The reasoning gives option 2: **Activity,longest,dependent,duration**.
 
 ---
 
-#### Question 71
+#### Question 79
 
 *UGC NET December 2019, original Q86*
 
@@ -2617,7 +2913,7 @@ The reasoning gives option 3: **Each pair of vertices in V' is joined by an edge
 
 ---
 
-#### Question 72
+#### Question 80
 
 *UGC NET December 2019, original Q109*
 
@@ -2652,7 +2948,7 @@ The reasoning gives option 3: **Both**.
 
 ---
 
-#### Question 73
+#### Question 81
 
 *UGC NET June 2019, original Q51*
 
@@ -2667,7 +2963,7 @@ For the poset ({3,5,9,15,24,45}, divides), which extremal elements exist?
 
 **Build the basics**
 
-This question tests **Partial orders under divisibility**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Partial orders under divisibility**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -2681,13 +2977,13 @@ The reasoning gives option 4: **Neither greatest nor least**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
 ---
 
-#### Question 74
+#### Question 82
 
 *UGC NET June 2019, original Q53*
 
@@ -2721,7 +3017,7 @@ The reasoning gives option 3: **640**.
 
 ---
 
-#### Question 75
+#### Question 83
 
 *UGC NET June 2019, original Q54*
 
@@ -2755,7 +3051,7 @@ The reasoning gives option 2: **8**.
 
 ---
 
-#### Question 76
+#### Question 84
 
 *UGC NET June 2019, original Q55*
 
@@ -2789,7 +3085,7 @@ The reasoning gives option 3: **m=n and both≥2**.
 
 ---
 
-#### Question 77
+#### Question 85
 
 *UGC NET June 2019, original Q57*
 
@@ -2825,7 +3121,7 @@ The reasoning gives option 4: **42**.
 
 ---
 
-#### Question 78
+#### Question 86
 
 *UGC NET December 2018, original Q51*
 
@@ -2859,7 +3155,7 @@ The reasoning gives option 1: **I and III**.
 
 ---
 
-#### Question 79
+#### Question 87
 
 *UGC NET December 2018, original Q53*
 
@@ -2894,7 +3190,7 @@ The reasoning gives option 2: **3/7**.
 
 ---
 
-#### Question 80
+#### Question 88
 
 *UGC NET December 2018, original Q54*
 
@@ -2928,7 +3224,7 @@ The reasoning gives option 1: **120**.
 
 ---
 
-#### Question 81
+#### Question 89
 
 *UGC NET December 2018, original Q55*
 
@@ -2963,7 +3259,7 @@ The reasoning gives option 3: **I,II**.
 
 ---
 
-#### Question 82
+#### Question 90
 
 *UGC NET December 2018, original Q58*
 
@@ -2997,7 +3293,7 @@ The reasoning gives option 1: **Completion of two or more activities**.
 
 ---
 
-#### Question 83
+#### Question 91
 
 *UGC NET December 2018, original Q59*
 
@@ -3032,7 +3328,7 @@ The reasoning gives option 1: **x₁=2,x₂=0,z=−4**.
 
 ---
 
-#### Question 84
+#### Question 92
 
 *UGC NET December 2018, original Q76*
 
@@ -3066,7 +3362,7 @@ The reasoning gives option 2: **10**.
 
 ---
 
-#### Question 85
+#### Question 93
 
 *UGC NET December 2018, original Q78*
 
@@ -3100,7 +3396,7 @@ The reasoning gives option 3: **G has cycles of odd length**.
 
 ---
 
-#### Question 86
+#### Question 94
 
 *UGC NET July 2018, original Q25*
 
@@ -3135,7 +3431,7 @@ The reasoning gives option 4: **2.15**.
 
 ---
 
-#### Question 87
+#### Question 95
 
 *UGC NET July 2018, original Q26*
 
@@ -3169,7 +3465,7 @@ The reasoning gives option 2: **Exactly 37**.
 
 ---
 
-#### Question 88
+#### Question 96
 
 *UGC NET July 2018, original Q29*
 
@@ -3203,7 +3499,7 @@ The reasoning gives option 2: **33**.
 
 ---
 
-#### Question 89
+#### Question 97
 
 *UGC NET July 2018, original Q53*
 
@@ -3237,7 +3533,7 @@ The reasoning gives option 4: **e^(−20)**.
 
 ---
 
-#### Question 90
+#### Question 98
 
 *UGC NET July 2018, original Q80*
 
@@ -3271,7 +3567,7 @@ The reasoning gives option 1: **2,598,960**.
 
 ---
 
-#### Question 91
+#### Question 99
 
 *UGC NET July 2018, original Q82*
 
@@ -3305,7 +3601,7 @@ The reasoning gives option 3: **The set of all global minima is concave**.
 
 ---
 
-#### Question 92
+#### Question 100
 
 *UGC NET July 2018, original Q83*
 
@@ -3340,7 +3636,7 @@ The reasoning gives option 2: **Unbounded**.
 
 ---
 
-#### Question 93
+#### Question 101
 
 *UGC NET July 2018, original Q84*
 
@@ -3374,7 +3670,7 @@ The reasoning gives option 1: **0.515**.
 
 ---
 
-#### Question 94
+#### Question 102
 
 *UGC NET July 2018, original Q85*
 
@@ -3408,7 +3704,7 @@ The reasoning gives option 2: **∀x¬Q(x)**.
 
 ---
 
-#### Question 95
+#### Question 103
 
 *UGC NET July 2018, original Q86*
 
@@ -3423,7 +3719,7 @@ If Aᵢ={−i,…,−1,0,1,…,i}, what is ⋃_{i=1}^∞ Aᵢ?
 
 **Build the basics**
 
-This question tests **Unions of sets**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Unions of sets**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -3436,13 +3732,13 @@ The reasoning gives option 1: **Z**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
 ---
 
-#### Question 96
+#### Question 104
 
 *UGC NET July 2018, original Q87*
 
@@ -3457,7 +3753,7 @@ Match: A ∀x∀y(f(x)=f(y)→x=y); B ∀y∃x(f(x)=y); C ∀x f(x)=k with I con
 
 **Build the basics**
 
-This question tests **Injective, surjective and constant functions**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Injective, surjective and constant functions**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -3470,13 +3766,13 @@ The reasoning gives option 4: **A-II,B-III,C-I**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
 ---
 
-#### Question 97
+#### Question 105
 
 *UGC NET July 2018, original Q88*
 
@@ -3491,7 +3787,7 @@ Which listed relation on {0,1,2,3} is an equivalence relation?
 
 **Build the basics**
 
-This question tests **Equivalence relations**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Equivalence relations**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -3504,13 +3800,13 @@ The reasoning gives option 2: **{(0,0),(1,1),(2,2),(3,3)}**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
 ---
 
-#### Question 98
+#### Question 106
 
 *UGC NET July 2018, original Q89*
 
@@ -3525,7 +3821,7 @@ Which defines an equivalence relation on all functions Z→Z?
 
 **Build the basics**
 
-This question tests **Equivalence relations on functions**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Equivalence relations on functions**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -3538,13 +3834,13 @@ The reasoning gives option 4: **f(x)−g(x)=k for every x, for some integer k**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
 ---
 
-#### Question 99
+#### Question 107
 
 *UGC NET July 2018, original Q90*
 
@@ -3559,7 +3855,7 @@ Which statement is true?
 
 **Build the basics**
 
-This question tests **Partial and total orders**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Partial and total orders**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -3572,13 +3868,13 @@ The reasoning gives option 2: **Subset inclusion is a partial order on P(S)**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
 ---
 
-#### Question 100
+#### Question 108
 
 *UGC NET July 2018, original Q99*
 
@@ -3616,7 +3912,7 @@ The derived result is **AC'+B'C'+B'D'**.
 
 ---
 
-#### Question 101
+#### Question 109
 
 *UGC NET January 2017 Paper II, original Q5*
 
@@ -3651,7 +3947,7 @@ The reasoning gives option 4: **All listed conditions**.
 
 ---
 
-#### Question 102
+#### Question 110
 
 *UGC NET January 2017 Paper II, original Q6*
 
@@ -3685,7 +3981,7 @@ The reasoning gives option 4: **Q∨S**.
 
 ---
 
-#### Question 103
+#### Question 111
 
 *UGC NET January 2017 Paper III, original Q68*
 
@@ -3721,7 +4017,7 @@ The reasoning gives option 1: **The loop contains an odd number of cells**.
 
 ---
 
-#### Question 104
+#### Question 112
 
 *UGC NET July 2016 Paper II, original Q1*
 
@@ -3736,7 +4032,7 @@ How many equivalence relations on a five-element set have exactly three equivale
 
 **Build the basics**
 
-This question tests **Counting equivalence relations**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Counting equivalence relations**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -3749,13 +4045,13 @@ The reasoning gives option 3: **25**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
 ---
 
-#### Question 105
+#### Question 113
 
 *UGC NET July 2016 Paper II, original Q2*
 
@@ -3789,7 +4085,7 @@ The reasoning gives option 3: **16 and 4**.
 
 ---
 
-#### Question 106
+#### Question 114
 
 *UGC NET July 2016 Paper II, original Q3*
 
@@ -3804,7 +4100,7 @@ If R and S are reflexive relations on A, which of R∪S and R∩S must be reflex
 
 **Build the basics**
 
-This question tests **Operations on reflexive relations**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Operations on reflexive relations**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -3817,13 +4113,13 @@ The reasoning gives option 3: **Both**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
 ---
 
-#### Question 107
+#### Question 115
 
 *UGC NET July 2016 Paper II, original Q4*
 
@@ -3857,7 +4153,7 @@ The reasoning gives option 2: **2/3**.
 
 ---
 
-#### Question 108
+#### Question 116
 
 *UGC NET July 2016 Paper II, original Q6*
 
@@ -3891,7 +4187,7 @@ The reasoning gives option 3: **1⊕1⊕0=1**.
 
 ---
 
-#### Question 109
+#### Question 117
 
 *UGC NET July 2016 Paper III, original Q36*
 
@@ -3925,7 +4221,7 @@ The reasoning gives option 2: **n−3 and n−2**.
 
 ---
 
-#### Question 110
+#### Question 118
 
 *UGC NET July 2016 Paper III, original Q62*
 
@@ -3961,7 +4257,7 @@ The reasoning gives option 4: **A,B,C**.
 
 ---
 
-#### Question 111
+#### Question 119
 
 *UGC NET June 2015 Paper II, original Q1*
 
@@ -3995,7 +4291,7 @@ The reasoning gives option 2: **330**.
 
 ---
 
-#### Question 112
+#### Question 120
 
 *UGC NET June 2015 Paper II, original Q2*
 
@@ -4029,7 +4325,7 @@ The reasoning gives option 3: **14/36**.
 
 ---
 
-#### Question 113
+#### Question 121
 
 *UGC NET June 2015 Paper II, original Q3*
 
@@ -4063,7 +4359,7 @@ The reasoning gives option 1: **1001**.
 
 ---
 
-#### Question 114
+#### Question 122
 
 *UGC NET June 2015 Paper II, original Q4*
 
@@ -4097,7 +4393,7 @@ The reasoning gives option 3: **A,B,C**.
 
 ---
 
-#### Question 115
+#### Question 123
 
 *UGC NET June 2015 Paper II, original Q6*
 
@@ -4131,7 +4427,7 @@ The reasoning gives option 4: **A,B,C**.
 
 ---
 
-#### Question 116
+#### Question 124
 
 *UGC NET June 2015 Paper II, original Q9*
 
@@ -4165,7 +4461,7 @@ The reasoning gives option 1: **A-I,B-II,C-III,D-IV**.
 
 ---
 
-#### Question 117
+#### Question 125
 
 *UGC NET December 2015 Paper II, original Q1*
 
@@ -4199,7 +4495,7 @@ The reasoning gives option 2: **52492**.
 
 ---
 
-#### Question 118
+#### Question 126
 
 *UGC NET December 2015 Paper II, original Q2*
 
@@ -4233,7 +4529,7 @@ The reasoning gives option 4: **D only**.
 
 ---
 
-#### Question 119
+#### Question 127
 
 *UGC NET December 2015 Paper II, original Q3*
 
@@ -4248,7 +4544,7 @@ Which is not countable: negative integers, multiples of 7, even integers, or rea
 
 **Build the basics**
 
-This question tests **Countability**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Countability**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -4261,13 +4557,13 @@ The reasoning gives option 4: **Reals in (0,1/2) only**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
 ---
 
-#### Question 120
+#### Question 128
 
 *UGC NET December 2015 Paper II, original Q7*
 
@@ -4301,7 +4597,7 @@ The reasoning gives option 1: **True,True,False**.
 
 ---
 
-#### Question 121
+#### Question 129
 
 *UGC NET December 2015 Paper III, original Q52*
 
@@ -4335,7 +4631,7 @@ The reasoning gives option 1: **Degenerate**.
 
 ---
 
-#### Question 122
+#### Question 130
 
 *UGC NET December 2015 Paper III, original Q53*
 
@@ -4371,7 +4667,7 @@ The reasoning gives option 4: **A,B,C**.
 
 ---
 
-#### Question 123
+#### Question 131
 
 *UGC NET December 2014 Paper II, original Q4*
 
@@ -4405,7 +4701,7 @@ The reasoning gives option 2: **0.632121**.
 
 ---
 
-#### Question 124
+#### Question 132
 
 *UGC NET December 2014 Paper III, original Q67*
 
@@ -4439,7 +4735,7 @@ The reasoning gives option 2: **Original problem infeasible**.
 
 ---
 
-#### Question 125
+#### Question 133
 
 *UGC NET December 2014 Paper III, original Q68*
 
@@ -4475,7 +4771,7 @@ The reasoning gives option 4: **Degenerate (none of the first three)**.
 
 ---
 
-#### Question 126
+#### Question 134
 
 *UGC NET December 2013 Paper II, original Q31*
 
@@ -4509,7 +4805,7 @@ The reasoning gives option 3: **Interchange + with · and 0 with 1**.
 
 ---
 
-#### Question 127
+#### Question 135
 
 *UGC NET December 2013 Paper II, original Q34*
 
@@ -4543,7 +4839,7 @@ The reasoning gives option 3: **Existential-universal only**.
 
 ---
 
-#### Question 128
+#### Question 136
 
 *UGC NET December 2013 Paper II, original Q36*
 
@@ -4577,7 +4873,7 @@ The reasoning gives option 2: **n−t**.
 
 ---
 
-#### Question 129
+#### Question 137
 
 *UGC NET December 2013 Paper II, original Q37*
 
@@ -4592,7 +4888,7 @@ For f(x)=2x+3 and g(x)=3x+2, what are f∘g and g∘f?
 
 **Build the basics**
 
-This question tests **Function composition**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Function composition**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -4605,13 +4901,13 @@ The reasoning gives option 1: **6x+7 and 6x+11**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
 ---
 
-#### Question 130
+#### Question 138
 
 *UGC NET December 2013 Paper II, original Q39*
 
@@ -4645,7 +4941,7 @@ The reasoning gives option 3: **K₅ or K₃,₃**.
 
 ---
 
-#### Question 131
+#### Question 139
 
 *UGC NET December 2013 Paper III, original Q39*
 
@@ -4679,7 +4975,7 @@ The reasoning gives option 4: **Clique=maximal complete vertex set; cover=a vert
 
 ---
 
-#### Question 132
+#### Question 140
 
 *UGC NET June 2013 Paper III, original Q23*
 
@@ -4715,7 +5011,7 @@ The reasoning gives option 3: **An alternative optimal solution**.
 
 ---
 
-#### Question 133
+#### Question 141
 
 *UGC NET June 2012 Paper II, original Q1*
 
@@ -4749,7 +5045,7 @@ The reasoning gives option 1: **Stack**.
 
 ---
 
-#### Question 134
+#### Question 142
 
 *UGC NET June 2012 Paper II, original Q2*
 
@@ -4783,7 +5079,7 @@ The reasoning gives option 3: **ABDECF**.
 
 ---
 
-#### Question 135
+#### Question 143
 
 *UGC NET June 2012 Paper II, original Q4*
 
@@ -4817,7 +5113,7 @@ The reasoning gives option 3: **4**.
 
 ---
 
-#### Question 136
+#### Question 144
 
 *UGC NET December 2012 Paper II, original Q4*
 
@@ -4832,7 +5128,7 @@ What is the power set of {∅}?
 
 **Build the basics**
 
-This question tests **Power sets**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Power sets**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -4845,7 +5141,7 @@ The reasoning gives option 3: **{∅,{∅}}**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
@@ -4853,7 +5149,7 @@ The reasoning gives option 3: **{∅,{∅}}**.
 
 ---
 
-#### Question 137
+#### Question 145
 
 *UGC NET December 2011 Paper III, original Q3*
 
@@ -4888,7 +5184,7 @@ The reasoning gives option 2: **(2/7,9/7)**.
 
 ---
 
-#### Question 138
+#### Question 146
 
 *UGC NET December 2011 Paper III, original Q4*
 
@@ -4923,7 +5219,7 @@ The derived result is **Minimum cost 1900 (under the visually recovered supply 8
 
 ---
 
-#### Question 139
+#### Question 147
 
 *UGC NET June 2010 Paper II, original Q1*
 
@@ -4938,7 +5234,7 @@ Two entities are called clones when all attributes in the stated complete attrib
 
 **Build the basics**
 
-This question tests **Equivalence relations**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive.
+This question tests **Equivalence relations**. A relation is reflexive when every diagonal pair occurs, symmetric when reversal preserves membership, antisymmetric when mutual relatedness forces equality, and transitive when two composable pairs force the third. A partial order is reflexive, antisymmetric and transitive. Floor and ceiling functions map a real number to its neighbouring integers and are handled by separating integer and fractional parts.
 
 **Step-by-step reasoning**
 
@@ -4951,13 +5247,13 @@ The reasoning gives option 1: **True**.
 
 **How to solve similar questions**
 
-- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|.
+- **Rule to remember:** |P(A)|=2^|A|; |A∪B|=|A|+|B|−|A∩B|; x=⌊x⌋+{x}, where 0≤{x}<1.
 - **Fast exam method:** Disprove a relation property with one witness: a missing diagonal, an unreturned pair, a distinct two-way pair, or a missing composite pair.
 - **Common mistake to avoid:** Symmetric and antisymmetric are not opposites; a relation can be both (for example, equality) or neither.
 
 ---
 
-#### Question 140
+#### Question 148
 
 *UGC NET June 2010 Paper II, original Q4*
 
@@ -4993,7 +5289,7 @@ The reasoning gives option 2: **3**.
 
 ---
 
-#### Question 141
+#### Question 149
 
 *UGC NET December 2009 Paper II, original Q6*
 
@@ -5027,7 +5323,7 @@ The reasoning gives option 3: **X+YZ**.
 
 ---
 
-#### Question 142
+#### Question 150
 
 *UGC NET December 2009 Paper II, original Q21*
 
@@ -5061,7 +5357,7 @@ The reasoning gives option 1: **Odd**.
 
 ---
 
-#### Question 143
+#### Question 151
 
 *UGC NET December 2009 Paper II, original Q22*
 
@@ -5095,7 +5391,7 @@ The reasoning gives option 2: **n(n−1)/2**.
 
 ## Validation summary
 
-- Records: 143; unique IDs: 143.
+- Records: 151; unique IDs: 151.
 - Source files represented: 31.
 - Every record has a short exam/session reference, independently derived answer and step-by-step solution; options are preserved for objective questions.
 - Full source filenames, PDF pages, IDs, classifications and verification states remain in `data/questions.json` for auditing, but are intentionally hidden from the study flow.
@@ -5110,7 +5406,7 @@ The reasoning gives option 2: **n(n−1)/2**.
 | 2024 | 12 |
 | 2023 | 20 |
 | 2022 | 5 |
-| 2021 | 2 |
+| 2021 | 10 |
 | 2020 | 8 |
 | 2019 | 15 |
 | 2018 | 23 |

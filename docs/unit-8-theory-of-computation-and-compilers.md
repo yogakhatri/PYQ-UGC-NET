@@ -23,7 +23,7 @@
 This guide contains all **220 question blocks currently recoverable and assigned to Unit 8** from the local UGC NET archive. Questions are arranged chapter-wise and numbered continuously through the unit.
 
 > [!WARNING]
-> This is a working extraction inventory, not a complete solved guide. **0 answers are validated and 220 remain pending** in this unit. Some unit and chapter placements use fallback routing, and OCR or missing figures can make questions incomplete.
+> This is a working extraction inventory, not a complete solved guide. **7 answers are validated and 213 remain pending** in this unit. Some unit and chapter placements use fallback routing, and OCR or missing figures can make questions incomplete.
 
 Use this file for question discovery and broad chapter revision. The chapter notes and exam methods are general, not question-specific solutions. Full source paths, PDF pages and classification states remain in the structured data for auditing.
 
@@ -81,7 +81,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 <a id="chapter-2"></a>
 
-### 2. Regular Language Models (30 questions)
+### 2. Regular Language Models (31 questions)
 
 **What to master:** DFA; NFA; Equivalence; Regular Languages, Grammars and Expressions; Properties; Pumping Lemma; Non-Regular Languages; Lexical Analysis.
 
@@ -643,7 +643,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 *UGC NET Nov 2021, original Q31*
 
-> Which of the following languages are not regular? A. L={ (01) 0 | n > k, k>=0 } B. L={ c b a | n >= 0, k>=0 } C. L={ 0 1 | n≠k } Choose the correct answer from the options given below:
+> Which languages are not regular? A. L={(01)^n 0^k | n>k, k>=0}. B. L={c^n b^k a^(n+k) | n>=0, k>=0}. C. L={0^n 1^k | n!=k}. Choose the correct answer:
 
 **Options**
 
@@ -652,23 +652,98 @@ This item has not yet passed reliable answer-key matching and independent deriva
 3. B and C only
 4. A, B and C
 
-**Chapter foundations**
+**Correct answer**
 
-This question belongs to the ideas covered by **Regular Language Models**. Revise these foundations: DFA; NFA; Equivalence; Regular Languages, Grammars and Expressions; Properties; Pumping Lemma; Non-Regular Languages; Lexical Analysis.
+**Option 4: A, B and C**
 
-**Exam method**
+*Verification: Official NTA final key matched by Question ID 2361 and Option ID 9444; all three nonregularity claims independently proved.*
 
-1. Identify the exact definition, formula, algorithm or system property being tested.
-2. For Regular Language Models questions: For automata trace states or build a product machine; for grammars compute FIRST/FOLLOW and items; for decidability use closure or reduction arguments. Use the chapter rules below and eliminate options that violate definitions, units, or boundary cases.
-3. Check units, boundary cases and every statement before selecting an option.
+**Step-by-step solution**
 
-**Answer status**
+1. For A, use the homomorphism h(x)=`01`, h(y)=`0`. If A were regular, its inverse image, intersected with the regular form `x*y*`, would make `{x^n y^k | n>k}` regular. Pump `x^p y^(p-1)`: every allowed pumped segment lies in the x-block, and pumping it down leaves at most p-1 x symbols against p-1 y symbols, violating n>k. Hence A is not regular.
+2. For B, intersect with the regular language `c* a*`, which forces k=0. The result is `{c^n a^n | n>=0}`, a standard nonregular language. Regular languages are closed under intersection, so B cannot have been regular.
+3. For C, assume it is regular. Its complement within the regular set `0*1*` would also be regular, but that relative complement is `{0^n1^n | n>=0}`, which is nonregular. Therefore C is not regular.
+4. A, B and C are all nonregular, so the final-key answer is option 4.
 
-This item has not yet passed reliable answer-key matching and independent derivation, so no option is printed here. The omission is intentional: an unverified answer would make the guide unsafe for revision.
+**Why each option is right or wrong**
+
+- **1. A and B only — Incorrect.** It is the embedded/provisional overlay, but C is also nonregular by closure under relative complement.
+- **2. A and C only — Incorrect.** B contains an equal-count dependency exposed by setting k=0 through regular intersection.
+- **3. B and C only — Incorrect.** A also requires an unbounded comparison between repetition counts and is not finite-state recognizable.
+- **4. A, B and C — Correct.** Each language contains an unbounded counting dependency that can be reduced to or proved like a standard nonregular language.
+
+**Conceptual lesson**
+
+Closure proofs are often shorter and safer than a fresh pumping-lemma case analysis. If a suspect language were regular, intersecting it with any regular filter, complementing it, or applying a homomorphism would have to preserve regularity.
+
+To expose a hidden equality constraint, filter away independent blocks. For B, requiring no b symbols turns `a^(n+k)` into `a^n`. For C, complementing inside `0*1*` turns inequality into equality.
+
+The pumping lemma must be used with the correct quantifiers: after the adversary chooses the decomposition, you choose a pump count that violates the language. A vague statement that a language 'needs counting' is intuition, not a proof.
+
+**How to solve similar questions**
+
+Try regular closure operations first: intersect with a simple regular expression to freeze a parameter, use complement inside a regular universe, or apply a homomorphism to reach `{a^n b^n}`. Use pumping only when no clean reduction appears.
+
+**Verification references**
+
+- [Final-answer-key archive](https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2022/04/2022040888.pdf)
+- [Independent concept reference](https://www.cs.cornell.edu/courses/cs2800/2016sp/lectures/lec36-pumping.html)
 
 ---
 
 #### Question 22
+
+*UGC NET Nov 2021, original Q35*
+
+> Minimize the following DFA. Start state a; only accepting state c. Transitions on (0,1): a->(b,f), b->(g,c), c->(a,c), d->(c,g), e->(h,f), f->(c,g), g->(g,e), h->(g,c). What is the minimum number of states?
+
+**Options**
+
+1. 3
+2. 4
+3. 5
+4. 6
+
+**Correct answer**
+
+**Option 3: 5 states**
+
+*Verification: Official NTA final key matched by Question ID 2365 and Option ID 9459; DFA reconstructed visually and minimized by partition refinement.*
+
+**Step-by-step solution**
+
+1. Start with accepting/nonaccepting partition `{c}` and `{a,b,d,e,f,g,h}`. Refining by one-symbol destinations separates the nonaccepting states into `{a,e,g}`, `{b,h}`, and `{d,f}` because their transitions go to different current blocks.
+2. Refine `{a,e,g}` once more. States a and e both go on 0 to `{b,h}` and on 1 to `{d,f}`, so they remain equivalent. State g goes on both 0 and 1 within `{a,e,g}`, so g separates from them.
+3. The blocks `{b,h}` and `{d,f}` remain stable: b and h both have transition signature `(g,c)`, while d and f both have `(c,g)`. The accepting state c remains alone.
+4. The stable equivalence classes are `{c}`, `{a,e}`, `{g}`, `{b,h}`, and `{d,f}`—five states. Therefore option 3 is correct.
+
+**Why each option is right or wrong**
+
+- **1. 3 states — Incorrect.** The accepting class plus only two rejecting classes cannot preserve all distinct transition behaviours.
+- **2. 4 states — Incorrect.** The initial rejecting group needs four stable classes, not three.
+- **3. 5 states — Correct.** Partition refinement stabilizes at five Myhill-Nerode equivalence classes.
+- **4. 6 states — Incorrect.** It fails to merge both equivalent pairs `{a,e}`, `{b,h}`, or `{d,f}` completely.
+
+**Conceptual lesson**
+
+DFA minimization merges states only when every possible remaining suffix is accepted or rejected identically from them. Partition refinement computes exactly this equivalence.
+
+Begin by separating final from nonfinal states. Repeatedly split a block whenever two members transition, on some symbol, into different current blocks. Stop when a full pass makes no split.
+
+Remove unreachable states before minimization. In this reconstructed DFA all relevant equivalence classes are reachable from a, so all five survive.
+
+**How to solve similar questions**
+
+Create a table with one row per state and columns for each input. Start with final/nonfinal blocks, replace destinations by block labels, split unequal signatures, and repeat until stable.
+
+**Verification references**
+
+- [Final-answer-key archive](https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2022/04/2022040888.pdf)
+- [Independent concept reference](https://www.cs.cornell.edu/courses/cs4120/2022sp/notes/leximpl/)
+
+---
+
+#### Question 23
 
 *UGC NET Nov 2021, original Q36*
 
@@ -697,7 +772,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 23
+#### Question 24
 
 *UGC NET Dec 2022 session, 11 Mar 2023 Shift 2, original Q1*
 
@@ -726,7 +801,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 24
+#### Question 25
 
 *UGC NET Aug 2024, original Q84*
 
@@ -755,7 +830,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 25
+#### Question 26
 
 *UGC NET Aug 2024, original Q113*
 
@@ -791,7 +866,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 26
+#### Question 27
 
 *UGC NET June 2025, original Q82*
 
@@ -813,7 +888,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 27
+#### Question 28
 
 *UGC NET Dec 2025 session (Jan 2026), original Q99*
 
@@ -835,7 +910,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 28
+#### Question 29
 
 *UGC NET Dec 2025 session (Jan 2026), original Q101*
 
@@ -857,7 +932,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 29
+#### Question 30
 
 *UGC NET Dec 2025 session (Jan 2026), original Q103*
 
@@ -879,7 +954,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 30
+#### Question 31
 
 *UGC NET Dec 2025 session (Jan 2026), original Q105*
 
@@ -908,7 +983,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 31
+#### Question 32
 
 *UGC NET Dec 2025 session (Jan 2026), original Q108*
 
@@ -944,7 +1019,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 <a id="chapter-3"></a>
 
-### 3. Context-Free Language (69 questions)
+### 3. Context-Free Language (70 questions)
 
 **What to master:** PDA and NPDA; CFG; Chomsky and Greibach Normal Forms; Ambiguity; Parse/Derivation Trees; PDA-CFG Equivalence; CFL Properties.
 
@@ -958,7 +1033,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 32
+#### Question 33
 
 *UGC NET Dec 2009, Paper II, original Q34*
 
@@ -987,7 +1062,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 33
+#### Question 34
 
 *UGC NET June 2010, Paper II, original Q34*
 
@@ -1016,7 +1091,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 34
+#### Question 35
 
 *UGC NET Dec 2013, Paper II, original Q26*
 
@@ -1045,7 +1120,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 35
+#### Question 36
 
 *UGC NET Dec 2013, Paper II, original Q27*
 
@@ -1074,7 +1149,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 36
+#### Question 37
 
 *UGC NET Dec 2013, Paper III, original Q40*
 
@@ -1103,7 +1178,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 37
+#### Question 38
 
 *UGC NET Dec 2013, Paper III, original Q41*
 
@@ -1132,7 +1207,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 38
+#### Question 39
 
 *UGC NET Dec 2013, Paper III, original Q42*
 
@@ -1161,7 +1236,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 39
+#### Question 40
 
 *UGC NET June 2013, Paper III, original Q36*
 
@@ -1190,7 +1265,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 40
+#### Question 41
 
 *UGC NET June 2013, Paper III, original Q38*
 
@@ -1219,7 +1294,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 41
+#### Question 42
 
 *UGC NET June 2013, Paper III, original Q39*
 
@@ -1255,7 +1330,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 42
+#### Question 43
 
 *UGC NET June 2013, Paper III, original Q40*
 
@@ -1284,7 +1359,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 43
+#### Question 44
 
 *UGC NET Dec 2014, Paper II, original Q35*
 
@@ -1313,7 +1388,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 44
+#### Question 45
 
 *UGC NET Dec 2014, Paper III, original Q22*
 
@@ -1342,7 +1417,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 45
+#### Question 46
 
 *UGC NET Dec 2014, Paper III, original Q61*
 
@@ -1371,7 +1446,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 46
+#### Question 47
 
 *UGC NET Dec 2014, Paper III, original Q63*
 
@@ -1400,7 +1475,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 47
+#### Question 48
 
 *UGC NET Dec 2015, Paper II, original Q43*
 
@@ -1429,7 +1504,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 48
+#### Question 49
 
 *UGC NET Dec 2015, Paper III, original Q22*
 
@@ -1458,7 +1533,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 49
+#### Question 50
 
 *UGC NET Dec 2015, Paper III, original Q23*
 
@@ -1487,7 +1562,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 50
+#### Question 51
 
 *UGC NET Dec 2015, Paper III, original Q24*
 
@@ -1516,7 +1591,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 51
+#### Question 52
 
 *UGC NET Dec 2015, Paper III, original Q26*
 
@@ -1538,7 +1613,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 52
+#### Question 53
 
 *UGC NET Dec 2015, Paper III, original Q28*
 
@@ -1567,7 +1642,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 53
+#### Question 54
 
 *UGC NET Dec 2015, Paper III, original Q73*
 
@@ -1596,7 +1671,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 54
+#### Question 55
 
 *UGC NET June 2015, Paper II, original Q33*
 
@@ -1625,7 +1700,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 55
+#### Question 56
 
 *UGC NET June 2015, Paper III, original Q19*
 
@@ -1654,7 +1729,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 56
+#### Question 57
 
 *UGC NET June 2015, Paper III, original Q21*
 
@@ -1683,7 +1758,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 57
+#### Question 58
 
 *UGC NET June 2015, Paper III, original Q61*
 
@@ -1712,7 +1787,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 58
+#### Question 59
 
 *UGC NET July 2016, Paper II, original Q11*
 
@@ -1741,7 +1816,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 59
+#### Question 60
 
 *UGC NET July 2016, Paper III, original Q55*
 
@@ -1770,7 +1845,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 60
+#### Question 61
 
 *UGC NET July 2016, Paper III, original Q56*
 
@@ -1799,7 +1874,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 61
+#### Question 62
 
 *UGC NET Jan 2017, Paper III, original Q22*
 
@@ -1828,7 +1903,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 62
+#### Question 63
 
 *UGC NET Jan 2017, Paper III, original Q23*
 
@@ -1857,7 +1932,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 63
+#### Question 64
 
 *UGC NET Jan 2017, Paper III, original Q61*
 
@@ -1886,7 +1961,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 64
+#### Question 65
 
 *UGC NET Jan 2017, Paper III, original Q63*
 
@@ -1915,7 +1990,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 65
+#### Question 66
 
 *UGC NET Nov 2017, Paper II, original Q34*
 
@@ -1944,7 +2019,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 66
+#### Question 67
 
 *UGC NET Dec 2018, original Q84*
 
@@ -1966,7 +2041,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 67
+#### Question 68
 
 *UGC NET Dec 2018, original Q85*
 
@@ -1988,7 +2063,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 68
+#### Question 69
 
 *UGC NET Dec 2018, original Q86*
 
@@ -2010,7 +2085,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 69
+#### Question 70
 
 *UGC NET Dec 2018, original Q87*
 
@@ -2032,7 +2107,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 70
+#### Question 71
 
 *UGC NET July 2018, Paper II, original Q34*
 
@@ -2061,7 +2136,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 71
+#### Question 72
 
 *UGC NET July 2018, Paper II, original Q35*
 
@@ -2090,7 +2165,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 72
+#### Question 73
 
 *UGC NET July 2018, Paper II, original Q37*
 
@@ -2119,7 +2194,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 73
+#### Question 74
 
 *UGC NET July 2018, Paper II, original Q38*
 
@@ -2148,7 +2223,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 74
+#### Question 75
 
 *UGC NET Dec 2019, original Q95*
 
@@ -2177,7 +2252,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 75
+#### Question 76
 
 *UGC NET Dec 2019, original Q97*
 
@@ -2206,7 +2281,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 76
+#### Question 77
 
 *UGC NET Dec 2019, original Q99*
 
@@ -2235,7 +2310,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 77
+#### Question 78
 
 *UGC NET Dec 2019, original Q100*
 
@@ -2257,7 +2332,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 78
+#### Question 79
 
 *UGC NET June 2019, original Q126*
 
@@ -2279,7 +2354,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 79
+#### Question 80
 
 *UGC NET Nov 2020, original Q77*
 
@@ -2308,7 +2383,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 80
+#### Question 81
 
 *UGC NET Nov 2020, original Q79*
 
@@ -2337,7 +2412,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 81
+#### Question 82
 
 *UGC NET Nov 2020, original Q105*
 
@@ -2366,7 +2441,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 82
+#### Question 83
 
 *UGC NET Nov 2020, original Q121*
 
@@ -2395,7 +2470,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 83
+#### Question 84
 
 *UGC NET Nov 2020, original Q137*
 
@@ -2424,18 +2499,63 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 84
+#### Question 85
+
+*UGC NET Nov 2021, original Q32*
+
+> has at least one 1 2. should end with 0 3. has no consecutive 0’s or 1’s 4. has at least two 0’s
+
+**Correct answer**
+
+**Option 4: has at least two 0s**
+
+*Verification: Official NTA final key matched by Question ID 2362 and Option ID 9448; grammar independently characterized by its two nonterminals.*
+
+**Step-by-step solution**
+
+1. From `X -> 0X | 1X | 0`, every string derived from X ends in 0, and any nonempty binary prefix may precede that final 0. Thus X generates exactly the nonempty binary strings ending in 0.
+2. From `Y -> Y0 | Y1 | 0`, derivation starts with the base 0 and appends arbitrary binary symbols. Thus Y generates exactly the nonempty binary strings beginning with 0.
+3. The start production is `S -> XY`. The final 0 contributed by X and the initial 0 contributed by Y are distinct positions, so every generated terminal string has at least two 0s.
+4. Conversely, split any binary string containing at least two 0s immediately after one nonfinal 0: the prefix can be generated by X and the suffix, which begins with the next 0, by Y. Hence the characterization is exact and option 4 is correct.
+
+**Why each option is right or wrong**
+
+- **1. Has at least one 1 — Incorrect.** The grammar can derive `00`, which has no 1.
+- **2. Should end with 0 — Incorrect.** Y may append 1, so a generated string such as `001` need not end in 0.
+- **3. Has no consecutive 0s or 1s — Incorrect.** Repeated symbols are allowed; `00`, `000` and `0110` can be generated.
+- **4. Has at least two 0s — Correct.** X supplies an ending 0 and Y supplies a separate beginning 0, and every string with two or more 0s admits the required split.
+
+**Conceptual lesson**
+
+Characterize each nonterminal separately before reasoning about the start symbol. A right-recursive rule such as `X -> aX | bX | c` builds an arbitrary prefix before a forced final symbol; a left-recursive rule such as `Y -> Ya | Yb | c` starts from a forced first symbol and appends a suffix.
+
+To prove a grammar describes a language exactly, prove both directions: every derivation has the claimed property (soundness), and every string with that property has a derivation (completeness).
+
+For concatenation `S -> XY`, look for a legal split point. Here the split occurs between two selected 0s, which also shows why 'at least two' is sufficient rather than merely necessary.
+
+**How to solve similar questions**
+
+Write a plain-language description for each nonterminal, combine them according to the start production, test short strings against the options, and finally prove the converse by exhibiting a split or derivation.
+
+**Verification references**
+
+- [Final-answer-key archive](https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2022/04/2022040888.pdf)
+- [Independent concept reference](https://www.cs.cornell.edu/courses/cs4120/2026sp/notes/)
+
+---
+
+#### Question 86
 
 *UGC NET Nov 2021, original Q33*
 
-> Let L = { 0 1 0 | n>=1, m>=1 } L = { 0 1 0 | n>=1, m>=1 } L = { 0 1 0 | n>=1} Which of the following are correct statements?
+> Let L1={0^n 1^m 0^n | n>=1,m>=1}, L2={0^n 1^m 0^m | n>=1,m>=1}, and L3={0^n 1^n 0^n | n>=1}. Which statements are correct?
 >
 > **Additional extracted choices — check the source page:**
 >
-> - **A.** L =L L
-> - **B.** L and L are context free languages but L is not a context free language
-> - **C.** L and L are not context free languages but L is a context free language
-> - **D.** L is a subset of L Choose the correct answer from the options given below:
+> - **A.** L3=L1 intersection L2.
+> - **B.** L1 and L2 are context-free but L3 is not context-free.
+> - **C.** L1 and L2 are not context-free but L3 is context-free.
+> - **D.** L1 is a subset of L3.
 
 **Options**
 
@@ -2444,23 +2564,46 @@ This item has not yet passed reliable answer-key matching and independent deriva
 3. A and D only
 4. A only
 
-**Chapter foundations**
+**Correct answer**
 
-This question belongs to the ideas covered by **Context-Free Language**. Revise these foundations: PDA and NPDA; CFG; Chomsky and Greibach Normal Forms; Ambiguity; Parse/Derivation Trees; PDA-CFG Equivalence; CFL Properties.
+**Option 1: A and B only**
 
-**Exam method**
+*Verification: Official NTA final key matched by Question ID 2363 and Option ID 9449; language identities independently checked.*
 
-1. Identify the exact definition, formula, algorithm or system property being tested.
-2. For Context-Free Language questions: For automata trace states or build a product machine; for grammars compute FIRST/FOLLOW and items; for decidability use closure or reduction arguments. Use the chapter rules below and eliminate options that violate definitions, units, or boundary cases.
-3. Check units, boundary cases and every statement before selecting an option.
+**Step-by-step solution**
 
-**Answer status**
+1. A string in both L1 and L2 must have its final 0-count equal to n (from L1) and equal to m (from L2). Hence n=m and the intersection is exactly `{0^n1^n0^n}`, which is L3. Statement A is true.
+2. L1 is context-free because a PDA can match the first and last 0-blocks while ignoring the middle 1-block. L2 is context-free because it can ignore the first 0-block and match the 1-block against the final 0-block.
+3. L3 requires three separated blocks to have the same unbounded count and is the standard non-context-free pattern analogous to `{a^n b^n c^n}`. Statement B is true and C is false.
+4. D says L1 is a subset of L3, which is false: `0 11 0` belongs to L1 with n=1,m=2 but not to L3. Thus only A and B hold, giving option 1.
 
-This item has not yet passed reliable answer-key matching and independent derivation, so no option is printed here. The omission is intentional: an unverified answer would make the guide unsafe for revision.
+**Why each option is right or wrong**
+
+- **1. A and B only — Correct.** Intersection forces n=m; L1 and L2 are CFLs, while L3 is not.
+- **2. A and C only — Incorrect.** It reverses the context-free status of all three languages.
+- **3. A and D only — Incorrect.** D has the subset direction wrong; L3 is contained in L1, not conversely.
+- **4. A only — Incorrect.** B is also true.
+
+**Conceptual lesson**
+
+A pushdown automaton has one stack and can directly coordinate two unbounded regions. L1 coordinates its first and third blocks; L2 coordinates its second and third blocks. Requiring all three counts simultaneously exceeds this one-stack pattern.
+
+Context-free languages are not closed under intersection. This example is a standard witness: two CFLs can each enforce one equality, while their intersection enforces both and becomes non-context-free.
+
+For subset claims, test a smallest asymmetric example. Choosing n and m unequal immediately separates L1 or L2 from L3.
+
+**How to solve similar questions**
+
+Write the equality constraint imposed by each language, combine constraints for intersections, and use a small unequal-count word for subset claims. Recognize three-way equality as the standard non-CFL warning pattern.
+
+**Verification references**
+
+- [Final-answer-key archive](https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2022/04/2022040888.pdf)
+- [Independent concept reference](https://www.cs.cornell.edu/courses/cs3810/2008su/Exams/381-2006fa-prelim1-solutions.pdf)
 
 ---
 
-#### Question 85
+#### Question 87
 
 *UGC NET Nov 2021, original Q34*
 
@@ -2473,23 +2616,45 @@ This item has not yet passed reliable answer-key matching and independent deriva
 3. Statement I is true but Statement II is false
 4. Statement I is false but Statement II is true
 
-**Chapter foundations**
+**Correct answer**
 
-This question belongs to the ideas covered by **Context-Free Language**. Revise these foundations: PDA and NPDA; CFG; Chomsky and Greibach Normal Forms; Ambiguity; Parse/Derivation Trees; PDA-CFG Equivalence; CFL Properties.
+**Option 1: Both Statement I and Statement II are true**
 
-**Exam method**
+*Verification: Official NTA final key matched by Question ID 2364 and Option ID 9453; independently verified from CFL closure constructions.*
 
-1. Identify the exact definition, formula, algorithm or system property being tested.
-2. For Context-Free Language questions: For automata trace states or build a product machine; for grammars compute FIRST/FOLLOW and items; for decidability use closure or reduction arguments. Use the chapter rules below and eliminate options that violate definitions, units, or boundary cases.
-3. Check units, boundary cases and every statement before selecting an option.
+**Step-by-step solution**
 
-**Answer status**
+1. For homomorphism, start with a CFG for L and replace each terminal occurrence in its productions by that terminal's homomorphic image. The resulting grammar generates exactly h(L), including erasing images when the homomorphism permits them. Statement I is true.
+2. For reversal, reverse the order of symbols on the right-hand side of every production (with a routine normalization if needed). Reversing a derivation tree's yield constructs a CFG for the reversed language. Statement II is true.
+3. Because context-free languages are closed under both homomorphism and reversal, option 1 is correct.
 
-This item has not yet passed reliable answer-key matching and independent derivation, so no option is printed here. The omission is intentional: an unverified answer would make the guide unsafe for revision.
+**Why each option is right or wrong**
+
+- **1. Both statements are true — Correct.** CFLs are closed under homomorphism and reversal.
+- **2. Both statements are false — Incorrect.** Both operations have direct grammar constructions.
+- **3. I true, II false — Incorrect.** Reversing every production order gives a grammar for the reversal.
+- **4. I false, II true — Incorrect.** Applying a homomorphism to terminal yields preserves context-freeness.
+
+**Conceptual lesson**
+
+A closure claim asks whether applying an operation to languages in a family always stays in that family. The strongest exam proof is usually constructive: transform a grammar or automaton for the input language into one for the result.
+
+CFLs are closed under union, concatenation, Kleene star, reversal, homomorphism, inverse homomorphism and intersection with a regular language. They are not closed under arbitrary intersection or complement.
+
+Do not transfer the regular-language closure table blindly. Regular languages are closed under intersection and complement; CFLs generally are not.
+
+**How to solve similar questions**
+
+Recall the CFL closure table in constructive groups: grammar substitutions handle union/concatenation/star/homomorphism/reversal, while product with a finite automaton handles intersection with a regular language.
+
+**Verification references**
+
+- [Final-answer-key archive](https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2022/04/2022040888.pdf)
+- [Independent concept reference](https://www.cs.cornell.edu/courses/cs381/2003fa/)
 
 ---
 
-#### Question 86
+#### Question 88
 
 *UGC NET Nov 2021, original Q37*
 
@@ -2518,7 +2683,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 87
+#### Question 89
 
 *UGC NET Oct 2022, original Q13*
 
@@ -2547,7 +2712,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 88
+#### Question 90
 
 *UGC NET Oct 2022, original Q16*
 
@@ -2569,7 +2734,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 89
+#### Question 91
 
 *UGC NET Oct 2022, original Q56*
 
@@ -2598,7 +2763,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 90
+#### Question 92
 
 *UGC NET Oct 2022, original Q59*
 
@@ -2627,7 +2792,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 91
+#### Question 93
 
 *UGC NET Oct 2022, original Q82*
 
@@ -2656,7 +2821,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 92
+#### Question 94
 
 *UGC NET June 2023, Paper II, original Q33*
 
@@ -2685,7 +2850,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 93
+#### Question 95
 
 *UGC NET June 2023, Paper II, original Q87*
 
@@ -2714,7 +2879,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 94
+#### Question 96
 
 *UGC NET Aug 2024, original Q53*
 
@@ -2743,7 +2908,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 95
+#### Question 97
 
 *UGC NET Aug 2024, original Q102*
 
@@ -2779,7 +2944,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 96
+#### Question 98
 
 *UGC NET Aug 2024, original Q106*
 
@@ -2815,7 +2980,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 97
+#### Question 99
 
 *UGC NET Aug 2024, original Q116*
 
@@ -2851,7 +3016,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 98
+#### Question 100
 
 *UGC NET June 2024, original Q69*
 
@@ -2887,7 +3052,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 99
+#### Question 101
 
 *UGC NET June 2025, original Q122*
 
@@ -2916,7 +3081,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 100
+#### Question 102
 
 *UGC NET Dec 2025 session (Jan 2026), original Q102*
 
@@ -2952,7 +3117,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 101
+#### Question 103
 
 *UGC NET June 2012, Paper II, original Q40*
 
@@ -2981,7 +3146,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 102
+#### Question 104
 
 *UGC NET Dec 2014, Paper III, original Q11*
 
@@ -3010,7 +3175,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 103
+#### Question 105
 
 *UGC NET Dec 2014, Paper III, original Q13*
 
@@ -3039,7 +3204,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 104
+#### Question 106
 
 *UGC NET Dec 2014, Paper III, original Q62*
 
@@ -3075,7 +3240,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 105
+#### Question 107
 
 *UGC NET Dec 2015, Paper III, original Q65*
 
@@ -3097,7 +3262,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 106
+#### Question 108
 
 *UGC NET June 2015, Paper III, original Q62*
 
@@ -3126,7 +3291,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 107
+#### Question 109
 
 *UGC NET Jan 2017, Paper III, original Q20*
 
@@ -3155,7 +3320,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 108
+#### Question 110
 
 *UGC NET Jan 2017, Paper III, original Q21*
 
@@ -3184,7 +3349,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 109
+#### Question 111
 
 *UGC NET Jan 2017, Paper III, original Q62*
 
@@ -3213,7 +3378,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 110
+#### Question 112
 
 *UGC NET July 2018, Paper II, original Q31*
 
@@ -3242,7 +3407,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 111
+#### Question 113
 
 *UGC NET July 2018, Paper II, original Q33*
 
@@ -3271,7 +3436,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 112
+#### Question 114
 
 *UGC NET July 2018, Paper II, original Q40*
 
@@ -3300,7 +3465,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 113
+#### Question 115
 
 *UGC NET Dec 2019, original Q101*
 
@@ -3329,7 +3494,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 114
+#### Question 116
 
 *UGC NET June 2019, original Q130*
 
@@ -3358,7 +3523,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 115
+#### Question 117
 
 *UGC NET Aug 2024, original Q100*
 
@@ -3394,7 +3559,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 116
+#### Question 118
 
 *UGC NET June 2024, original Q55*
 
@@ -3444,7 +3609,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 117
+#### Question 119
 
 *UGC NET Dec 2014, Paper II, original Q21*
 
@@ -3473,7 +3638,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 118
+#### Question 120
 
 *UGC NET Nov 2020, original Q125*
 
@@ -3502,7 +3667,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 119
+#### Question 121
 
 *UGC NET June 2024, original Q70*
 
@@ -3545,7 +3710,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 120
+#### Question 122
 
 *UGC NET Dec 2009, Paper II, original Q17*
 
@@ -3574,7 +3739,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 121
+#### Question 123
 
 *UGC NET Dec 2009, Paper II, original Q32*
 
@@ -3603,7 +3768,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 122
+#### Question 124
 
 *UGC NET June 2010, Paper II, original Q17*
 
@@ -3632,7 +3797,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 123
+#### Question 125
 
 *UGC NET Dec 2012, Paper II, original Q13*
 
@@ -3661,7 +3826,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 124
+#### Question 126
 
 *UGC NET Dec 2012, Paper II, original Q27*
 
@@ -3690,7 +3855,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 125
+#### Question 127
 
 *UGC NET Dec 2013, Paper II, original Q30*
 
@@ -3719,7 +3884,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 126
+#### Question 128
 
 *UGC NET June 2015, Paper II, original Q34*
 
@@ -3748,7 +3913,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 127
+#### Question 129
 
 *UGC NET July 2016, Paper II, original Q35*
 
@@ -3777,7 +3942,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 128
+#### Question 130
 
 *UGC NET Jan 2017, Paper II, original Q33*
 
@@ -3806,7 +3971,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 129
+#### Question 131
 
 *UGC NET Dec 2018, original Q90*
 
@@ -3828,7 +3993,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 130
+#### Question 132
 
 *UGC NET July 2018, Paper II, original Q39*
 
@@ -3857,7 +4022,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 131
+#### Question 133
 
 *UGC NET Nov 2021, original Q40*
 
@@ -3870,23 +4035,45 @@ This item has not yet passed reliable answer-key matching and independent deriva
 3. Statement I is true but Statement II is false
 4. Statement I is false but Statement II is true
 
-**Chapter foundations**
+**Correct answer**
 
-This question belongs to the ideas covered by **Syntax Analysis**. Revise these foundations: Associativity; Precedence; Grammar Transformations; Top-Down, Recursive-Descent, Predictive and LL(1) Parsing; Bottom-Up, LR and LALR(1) Parsing.
+**Option 2: Both Statement I and Statement II are false**
 
-**Exam method**
+*Verification: Official NTA final key matched by Question ID 2370 and Option ID 9478; independently verified from parser classifications.*
 
-1. Identify the exact definition, formula, algorithm or system property being tested.
-2. For Syntax Analysis questions: For automata trace states or build a product machine; for grammars compute FIRST/FOLLOW and items; for decidability use closure or reduction arguments. Use the chapter rules below and eliminate options that violate definitions, units, or boundary cases.
-3. Check units, boundary cases and every statement before selecting an option.
+**Step-by-step solution**
 
-**Answer status**
+1. LL(1) parsers predict a production from the leftmost nonterminal using one lookahead symbol, so LL(1) is top-down. LR parsers recognize handles and construct a rightmost derivation in reverse, so LR is bottom-up. Statement I incorrectly calls both bottom-up and is false.
+2. Recursive-descent parsing expands nonterminals from the start symbol and is top-down. SLR is an LR-family shift-reduce parser and is bottom-up. Statement II incorrectly calls both top-down and is false.
+3. Both statements mix one top-down example with one bottom-up example, so option 2 is correct.
 
-This item has not yet passed reliable answer-key matching and independent derivation, so no option is printed here. The omission is intentional: an unverified answer would make the guide unsafe for revision.
+**Why each option is right or wrong**
+
+- **1. Both statements true — Incorrect.** LL(1) is top-down and SLR is bottom-up.
+- **2. Both statements false — Correct.** Each statement incorrectly groups parsers from opposite directions.
+- **3. I true, II false — Incorrect.** Statement I is already false because LL(1) is top-down.
+- **4. I false, II true — Incorrect.** Statement II is false because SLR is bottom-up.
+
+**Conceptual lesson**
+
+Top-down parsers begin with the start symbol and choose productions to derive the input. Recursive descent, predictive parsing and LL(1) belong here.
+
+Bottom-up parsers begin with the input and reduce substrings (handles) toward the start symbol. Shift-reduce, LR, SLR, CLR and LALR belong here.
+
+The first L in LL means scanning left to right and the second L means constructing a leftmost derivation. LR scans left to right and constructs a rightmost derivation in reverse.
+
+**How to solve similar questions**
+
+Write two buckets before reading the combinations: top-down = recursive descent/predictive/LL; bottom-up = shift-reduce/LR/SLR/LALR/CLR. Classify each named parser independently.
+
+**Verification references**
+
+- [Final-answer-key archive](https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2022/04/2022040888.pdf)
+- [Independent concept reference](https://www.cs.cornell.edu/courses/cs4120/2026sp/notes/)
 
 ---
 
-#### Question 132
+#### Question 134
 
 *UGC NET Oct 2022, original Q12*
 
@@ -3915,7 +4102,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 133
+#### Question 135
 
 *UGC NET Oct 2022, original Q81*
 
@@ -3944,7 +4131,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 134
+#### Question 136
 
 *UGC NET June 2023, Paper II, original Q27*
 
@@ -3973,7 +4160,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 135
+#### Question 137
 
 *UGC NET June 2024, original Q52*
 
@@ -3995,7 +4182,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 136
+#### Question 138
 
 *UGC NET June 2024, original Q82*
 
@@ -4045,7 +4232,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 137
+#### Question 139
 
 *UGC NET Dec 2009, Paper II, original Q35*
 
@@ -4074,7 +4261,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 138
+#### Question 140
 
 *UGC NET June 2010, Paper II, original Q33*
 
@@ -4103,7 +4290,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 139
+#### Question 141
 
 *UGC NET Dec 2012, Paper II, original Q2*
 
@@ -4125,7 +4312,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 140
+#### Question 142
 
 *UGC NET Dec 2012, Paper II, original Q44*
 
@@ -4147,7 +4334,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 141
+#### Question 143
 
 *UGC NET Dec 2013, Paper III, original Q21*
 
@@ -4176,7 +4363,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 142
+#### Question 144
 
 *UGC NET June 2015, Paper III, original Q63*
 
@@ -4205,7 +4392,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 143
+#### Question 145
 
 *UGC NET Nov 2017, Paper II, original Q35*
 
@@ -4241,7 +4428,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 144
+#### Question 146
 
 *UGC NET July 2018, Paper II, original Q36*
 
@@ -4270,7 +4457,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 145
+#### Question 147
 
 *UGC NET Dec 2019, original Q93*
 
@@ -4299,7 +4486,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 146
+#### Question 148
 
 *UGC NET Dec 2019, original Q107*
 
@@ -4328,7 +4515,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 147
+#### Question 149
 
 *UGC NET Dec 2019, original Q109*
 
@@ -4357,7 +4544,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 148
+#### Question 150
 
 *UGC NET June 2019, original Q120*
 
@@ -4386,7 +4573,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 149
+#### Question 151
 
 *UGC NET Nov 2020, original Q107*
 
@@ -4415,7 +4602,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 150
+#### Question 152
 
 *UGC NET Nov 2020, original Q148*
 
@@ -4444,7 +4631,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 151
+#### Question 153
 
 *UGC NET Aug 2024, original Q51*
 
@@ -4473,7 +4660,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 152
+#### Question 154
 
 *UGC NET Aug 2024, original Q52*
 
@@ -4502,7 +4689,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 153
+#### Question 155
 
 *UGC NET Aug 2024, original Q87*
 
@@ -4524,7 +4711,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 154
+#### Question 156
 
 *UGC NET Aug 2024, original Q125*
 
@@ -4560,7 +4747,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 155
+#### Question 157
 
 *UGC NET June 2024, original Q100*
 
@@ -4582,7 +4769,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 156
+#### Question 158
 
 *UGC NET June 2025, original Q76*
 
@@ -4611,7 +4798,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 157
+#### Question 159
 
 *UGC NET June 2025, original Q87*
 
@@ -4633,7 +4820,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 158
+#### Question 160
 
 *UGC NET June 2025, original Q101*
 
@@ -4669,7 +4856,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 159
+#### Question 161
 
 *UGC NET June 2025, original Q109*
 
@@ -4705,7 +4892,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 160
+#### Question 162
 
 *UGC NET June 2025, original Q127*
 
@@ -4748,7 +4935,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 161
+#### Question 163
 
 *UGC NET June 2025, original Q142*
 
@@ -4777,7 +4964,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 162
+#### Question 164
 
 *UGC NET Dec 2025 session (Jan 2026), original Q55*
 
@@ -4806,7 +4993,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 163
+#### Question 165
 
 *UGC NET Dec 2025 session (Jan 2026), original Q69*
 
@@ -4828,7 +5015,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 164
+#### Question 166
 
 *UGC NET Dec 2025 session (Jan 2026), original Q70*
 
@@ -4850,7 +5037,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 165
+#### Question 167
 
 *UGC NET Dec 2025 session (Jan 2026), original Q127*
 
@@ -4872,7 +5059,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 166
+#### Question 168
 
 *UGC NET Dec 2025 session (Jan 2026), original Q130*
 
@@ -4908,7 +5095,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 167
+#### Question 169
 
 *UGC NET Dec 2009, Paper II, original Q5*
 
@@ -4937,7 +5124,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 168
+#### Question 170
 
 *UGC NET June 2010, Paper II, original Q32*
 
@@ -4966,7 +5153,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 169
+#### Question 171
 
 *UGC NET Dec 2014, Paper II, original Q31*
 
@@ -4995,7 +5182,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 170
+#### Question 172
 
 *UGC NET Dec 2014, Paper II, original Q33*
 
@@ -5024,7 +5211,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 171
+#### Question 173
 
 *UGC NET Nov 2020, original Q91*
 
@@ -5046,7 +5233,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 172
+#### Question 174
 
 *UGC NET Nov 2021, original Q74*
 
@@ -5082,7 +5269,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 173
+#### Question 175
 
 *UGC NET June 2025, original Q118*
 
@@ -5132,7 +5319,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 174
+#### Question 176
 
 *UGC NET Dec 2009, Paper II, original Q33*
 
@@ -5161,7 +5348,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 175
+#### Question 177
 
 *UGC NET Dec 2012, Paper II, original Q18*
 
@@ -5183,7 +5370,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 176
+#### Question 178
 
 *UGC NET Nov 2020, original Q80*
 
@@ -5212,7 +5399,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 177
+#### Question 179
 
 *UGC NET Nov 2020, original Q87*
 
@@ -5241,7 +5428,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 178
+#### Question 180
 
 *UGC NET Oct 2022, original Q80*
 
@@ -5270,7 +5457,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 179
+#### Question 181
 
 *UGC NET Dec 2025 session (Jan 2026), original Q107*
 
@@ -5292,7 +5479,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 <a id="chapter-10"></a>
 
-### 10. Code Generation and Optimization (41 questions)
+### 10. Code Generation and Optimization (39 questions)
 
 **What to master:** Control-Flow and Data-Flow Analysis; Local, Global, Loop and Peephole Optimization; Instruction Scheduling.
 
@@ -5306,7 +5493,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 180
+#### Question 182
 
 *UGC NET June 2010, Paper II, original Q11*
 
@@ -5335,7 +5522,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 181
+#### Question 183
 
 *UGC NET June 2010, Paper II, original Q35*
 
@@ -5364,7 +5551,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 182
+#### Question 184
 
 *UGC NET Dec 2012, Paper II, original Q4*
 
@@ -5393,7 +5580,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 183
+#### Question 185
 
 *UGC NET Dec 2012, Paper II, original Q38*
 
@@ -5415,7 +5602,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 184
+#### Question 186
 
 *UGC NET Dec 2012, Paper II, original Q49*
 
@@ -5444,7 +5631,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 185
+#### Question 187
 
 *UGC NET June 2013, Paper III, original Q37*
 
@@ -5473,7 +5660,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 186
+#### Question 188
 
 *UGC NET June 2013, Paper III, original Q67*
 
@@ -5502,7 +5689,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 187
+#### Question 189
 
 *UGC NET Dec 2014, Paper II, original Q32*
 
@@ -5531,7 +5718,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 188
+#### Question 190
 
 *UGC NET Dec 2014, Paper III, original Q20*
 
@@ -5560,7 +5747,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 189
+#### Question 191
 
 *UGC NET Dec 2015, Paper II, original Q41*
 
@@ -5582,7 +5769,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 190
+#### Question 192
 
 *UGC NET Dec 2015, Paper III, original Q27*
 
@@ -5611,7 +5798,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 191
+#### Question 193
 
 *UGC NET June 2015, Paper II, original Q35*
 
@@ -5640,7 +5827,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 192
+#### Question 194
 
 *UGC NET July 2016, Paper II, original Q25*
 
@@ -5669,7 +5856,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 193
+#### Question 195
 
 *UGC NET July 2016, Paper II, original Q33*
 
@@ -5698,7 +5885,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 194
+#### Question 196
 
 *UGC NET July 2016, Paper III, original Q74*
 
@@ -5727,7 +5914,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 195
+#### Question 197
 
 *UGC NET Jan 2017, Paper II, original Q2*
 
@@ -5763,7 +5950,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 196
+#### Question 198
 
 *UGC NET Jan 2017, Paper II, original Q12*
 
@@ -5792,7 +5979,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 197
+#### Question 199
 
 *UGC NET Jan 2017, Paper III, original Q65*
 
@@ -5821,7 +6008,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 198
+#### Question 200
 
 *UGC NET July 2018, Paper II, original Q32*
 
@@ -5850,7 +6037,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 199
+#### Question 201
 
 *UGC NET July 2018, Paper II, original Q76*
 
@@ -5879,84 +6066,70 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 200
-
-*UGC NET Nov 2021, original Q21*
-
-> A only 2. A and B only 3. B and C only 4. A and C only
-
-**Chapter foundations**
-
-This question belongs to the ideas covered by **Code Generation and Optimization**. Revise these foundations: Control-Flow and Data-Flow Analysis; Local, Global, Loop and Peephole Optimization; Instruction Scheduling.
-
-**Exam method**
-
-1. Identify the exact definition, formula, algorithm or system property being tested.
-2. For Code Generation and Optimization questions: For automata trace states or build a product machine; for grammars compute FIRST/FOLLOW and items; for decidability use closure or reduction arguments. Use the chapter rules below and eliminate options that violate definitions, units, or boundary cases.
-3. Check units, boundary cases and every statement before selecting an option.
-
-**Answer status**
-
-This item has not yet passed reliable answer-key matching and independent derivation, so no option is printed here. The omission is intentional: an unverified answer would make the guide unsafe for revision.
-
----
-
-#### Question 201
-
-*UGC NET Nov 2021, original Q22*
-
-> Both Statement I and Statement II are true 2. Both Statement I and Statement II are false 3. Statement I is true but Statement II is false 4. Statement I is false but Statement II is true
-
-**Chapter foundations**
-
-This question belongs to the ideas covered by **Code Generation and Optimization**. Revise these foundations: Control-Flow and Data-Flow Analysis; Local, Global, Loop and Peephole Optimization; Instruction Scheduling.
-
-**Exam method**
-
-1. Identify the exact definition, formula, algorithm or system property being tested.
-2. For Code Generation and Optimization questions: For automata trace states or build a product machine; for grammars compute FIRST/FOLLOW and items; for decidability use closure or reduction arguments. Use the chapter rules below and eliminate options that violate definitions, units, or boundary cases.
-3. Check units, boundary cases and every statement before selecting an option.
-
-**Answer status**
-
-This item has not yet passed reliable answer-key matching and independent derivation, so no option is printed here. The omission is intentional: an unverified answer would make the guide unsafe for revision.
-
----
-
 #### Question 202
 
-*UGC NET Nov 2021, original Q23*
+*UGC NET Nov 2021, original Q39*
 
-> How many ways are there to assign 5 different jobs to 4 different employees if every employee is assigned at least 1 job?
+> Which of the following concepts can be used to identify loops? A. Depth first ordering B. Dominators C. Reducible graphs Choose the correct answer from the options given below:
 
 **Options**
 
-1. 1024
-2. 625
-3. 240
-4. 20
+1. A and B only
+2. A and C only
+3. B and C only
+4. A, B and C
 
-**Chapter foundations**
+**Correct answer**
 
-This question belongs to the ideas covered by **Code Generation and Optimization**. Revise these foundations: Control-Flow and Data-Flow Analysis; Local, Global, Loop and Peephole Optimization; Instruction Scheduling.
+**Option 4: A, B and C**
 
-**Exam method**
+*Verification: Official NTA final key matched by Question ID 2369 and Option ID 9476; independently verified from control-flow loop analysis.*
 
-1. Identify the exact definition, formula, algorithm or system property being tested.
-2. For Code Generation and Optimization questions: For automata trace states or build a product machine; for grammars compute FIRST/FOLLOW and items; for decidability use closure or reduction arguments. Use the chapter rules below and eliminate options that violate definitions, units, or boundary cases.
-3. Check units, boundary cases and every statement before selecting an option.
+**Step-by-step solution**
 
-**Answer status**
+1. Depth-first traversal classifies control-flow edges and exposes back edges in the DFS ordering, so depth-first ordering contributes to loop detection. A is valid.
+2. A natural-loop back edge `n -> h` is characterized by the header h dominating the tail n. Dominator analysis is therefore central to identifying natural loops. B is valid.
+3. Reducibility guarantees that back edges correspond cleanly to natural single-entry loops and that the control-flow graph can be decomposed using these loop regions. Reducible-graph structure is therefore also used in loop identification. C is valid.
+4. All three concepts are applicable, so option 4 is correct.
 
-This item has not yet passed reliable answer-key matching and independent derivation, so no option is printed here. The omission is intentional: an unverified answer would make the guide unsafe for revision.
+**Why each option is right or wrong**
+
+- **1. A and B only — Incorrect.** It omits reducible-graph structure, which connects back-edge analysis to natural loops.
+- **2. A and C only — Incorrect.** Dominance is the defining test for a natural-loop back edge.
+- **3. B and C only — Incorrect.** DFS order and edge classification are also standard loop-analysis machinery.
+- **4. A, B and C — Correct.** DFS ordering, dominators and reducibility all participate in recognizing compiler control-flow loops.
+
+**Conceptual lesson**
+
+A node d dominates n when every path from the control-flow entry to n passes through d. If an edge goes from n back to a dominating header h, that edge defines a natural loop.
+
+The natural loop contains the header, the tail and nodes that can reach the tail without passing through the header, subject to domination by the header. A reverse traversal from the tail is a common construction.
+
+A reducible CFG has well-behaved single-entry loop structure; irreducible graphs may contain strongly connected regions with multiple entries and require more general analysis.
+
+**How to solve similar questions**
+
+Draw the CFG, compute or reason about dominators, identify edges whose heads dominate their tails, and collect each natural loop by traversing predecessors back to its header.
+
+**Verification references**
+
+- [Final-answer-key archive](https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2022/04/2022040888.pdf)
+- [Independent concept reference](https://courses.cs.cornell.edu/cs4120/2022sp/notes/cflow/index.html)
 
 ---
 
 #### Question 203
 
-*UGC NET Nov 2021, original Q27*
+*UGC NET Nov 2021, original Q46*
 
-> A and B only 2. B and C only 3. A only 4. B only
+> Given below are two statements Statement I: In an undirected graph, number of odd degree vertices is even. Statement II: In an undirected graph, sum of degrees of all vertices is even. In light of the above statements, choose the correct answer from the options given below.
+
+**Options**
+
+1. Both Statement I and Statement II are true.
+2. Both Statement I and Statement II are false.
+3. Statement I is true but Statement II is false.
+4. Statement I is false but Statement II is true.
 
 **Chapter foundations**
 
@@ -5976,16 +6149,16 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 #### Question 204
 
-*UGC NET Nov 2021, original Q35*
+*UGC NET Nov 2021, original Q52*
 
-> What is the minimum number of states required to the finite automaton equivalent to the transition diagram given below?
+> Given below are two statements Statement I: Breadth‐First Search is optimal when all the step costs are equal whereas uniform‐cost search is optimal with any step‐cost. Statement II: When all the step costs are same uniform‐cost search expends more nodes at depth d than the Breadth‐First Search. In light of the above statements, choose the correct answer from the options given below
 
 **Options**
 
-1. 3
-2. 4
-3. 5
-4. 6
+1. Both Statement I and Statement II are true
+2. Both Statement I and Statement II are false
+3. Statement I is true but Statement II is false
+4. Statement I is false but Statement II is true
 
 **Chapter foundations**
 
@@ -6005,16 +6178,16 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 #### Question 205
 
-*UGC NET Nov 2021, original Q41*
+*UGC NET Nov 2021, original Q84*
 
-> The postfix form of the expression (A + B) * (C * D ‐ E) * F / G is _______ .
+> Which of the following is not an example of pseudo‐instruction?
 
 **Options**
 
-1. A B + C D * E – F G / * *
-2. A B + C D * E – F * * G /
-3. A B + C D * E – * F * G /
-4. A B + C D E * – * F * G /
+1. ORG
+2. DEC
+3. END
+4. HLT
 
 **Chapter foundations**
 
@@ -6405,9 +6578,9 @@ This item has not yet passed reliable answer-key matching and independent deriva
 ## Coverage and quality notes
 
 - Recovered question blocks in this unit: **220**
-- Chapter placements with direct keyword support: **191**
-- Chapter placements needing manual review: **29**
-- Questions with validated answers in this guide: **0**
+- Chapter placements with direct keyword support: **195**
+- Chapter placements needing manual review: **25**
+- Questions with validated answers in this guide: **7**
 - OCR may flatten mathematical notation, tables, code indentation, and figures. Full audit references are retained in the structured data.
 - Some combined Paper 1/Paper 2 scans and older papers lack a trustworthy embedded key. Such questions remain pending rather than receiving guessed answers.
 

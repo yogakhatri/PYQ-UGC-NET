@@ -1388,7 +1388,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 <a id="chapter-6"></a>
 
-### 6. Fuzzy Sets (17 questions)
+### 6. Fuzzy Sets (16 questions)
 
 **What to master:** Fuzziness; Membership Functions; Fuzzification and Defuzzification; Operations; Functions and Linguistic Variables; Relations; Rules and Inference; Fuzzy Control and Rule-Based Systems.
 
@@ -1745,35 +1745,6 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 #### Question 56
 
-*UGC NET Nov 2021, original Q29*
-
-> Let (X, *) be a semigroup. Furthermore, for every a and b in X, if a ≠ b, then a*b ≠ b*a. Based on the defined seimigroup, choose the correct equalities from the options given below: A. For every a in X, a*a = a B. For every a, b in X, a*b *a= a C. For every a, b, c in X, a*b *c= a*c
-
-**Options**
-
-1. A and B only
-2. A and C only
-3. B and C only
-4. A, B and C
-
-**Chapter foundations**
-
-This question belongs to the ideas covered by **Fuzzy Sets**. Revise these foundations: Fuzziness; Membership Functions; Fuzzification and Defuzzification; Operations; Functions and Linguistic Variables; Relations; Rules and Inference; Fuzzy Control and Rule-Based Systems.
-
-**Exam method**
-
-1. Identify the exact definition, formula, algorithm or system property being tested.
-2. For Fuzzy Sets questions: For search show OPEN/CLOSED or minimax values; for logic ground and resolve; for fuzzy questions compute membership then aggregate and defuzzify; for neural nets calculate net input and activation. Use the chapter rules below and eliminate options that violate definitions, units, or boundary cases.
-3. Check units, boundary cases and every statement before selecting an option.
-
-**Answer status**
-
-This item has not yet passed reliable answer-key matching and independent derivation, so no option is printed here. The omission is intentional: an unverified answer would make the guide unsafe for revision.
-
----
-
-#### Question 57
-
 *UGC NET June 2024, original Q80*
 
 > For the fuzzy set A - (k, 03), (23, 0.7, (53, 04), the complement of A would be represen (1) A and B Only (2) Band COnly (2) 1(5, 0.3), (x 0.2), (xz 0.4)) (1) I=, D4). (xy, 0.3), (2g. 0.1)) (4) ((2y,. 0.21), (=≥ 0.28), (xy, 0.12)) (3) ((F, 0.7), (zz 0.3). (ty. 0.6))
@@ -1794,7 +1765,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 58
+#### Question 57
 
 *UGC NET June 2024, original Q96*
 
@@ -1830,7 +1801,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 59
+#### Question 58
 
 *UGC NET June 2024, original Q97*
 
@@ -1859,7 +1830,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 60
+#### Question 59
 
 *UGC NET June 2025, original Q139*
 
@@ -1895,7 +1866,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 <a id="chapter-7"></a>
 
-### 7. Genetic Algorithms (9 questions)
+### 7. Genetic Algorithms (10 questions)
 
 **What to master:** Encoding; Genetic Operators; Fitness Functions; GA Cycle; Problem Solving.
 
@@ -1909,7 +1880,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 61
+#### Question 60
 
 *UGC NET Dec 2015, Paper III, original Q45*
 
@@ -1931,7 +1902,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 62
+#### Question 61
 
 *UGC NET July 2018, Paper II, original Q73*
 
@@ -1960,7 +1931,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 63
+#### Question 62
 
 *UGC NET Dec 2019, original Q115*
 
@@ -1989,7 +1960,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 64
+#### Question 63
 
 *UGC NET June 2019, original Q147*
 
@@ -2025,7 +1996,7 @@ This item has not yet passed reliable answer-key matching and independent deriva
 
 ---
 
-#### Question 65
+#### Question 64
 
 *UGC NET Nov 2020, original Q140*
 
@@ -2037,6 +2008,35 @@ This item has not yet passed reliable answer-key matching and independent deriva
 2. Both Statement I and Statement Il are false
 3. Statement I is correct but Statement II is false
 4. Statement I is incorrect but Statement II is true 53622817058.2 53622817059.3 53622817060.4 Sub-Section Number: 33628171 Sub-Section Id : Question Shuffling Allowed : Yes
+
+**Chapter foundations**
+
+This question belongs to the ideas covered by **Genetic Algorithms**. Revise these foundations: Encoding; Genetic Operators; Fitness Functions; GA Cycle; Problem Solving.
+
+**Exam method**
+
+1. Identify the exact definition, formula, algorithm or system property being tested.
+2. For Genetic Algorithms questions: For search show OPEN/CLOSED or minimax values; for logic ground and resolve; for fuzzy questions compute membership then aggregate and defuzzify; for neural nets calculate net input and activation. Use the chapter rules below and eliminate options that violate definitions, units, or boundary cases.
+3. Check units, boundary cases and every statement before selecting an option.
+
+**Answer status**
+
+This item has not yet passed reliable answer-key matching and independent derivation, so no option is printed here. The omission is intentional: an unverified answer would make the guide unsafe for revision.
+
+---
+
+#### Question 65
+
+*UGC NET Nov 2021, original Q68*
+
+> A company is consuming parts in the manufacturing of other products. Each of the part is either manufactured within the company or purchased from the external suppliers or both. For each part, partnumber, partname is maintained. Attribute batchnumber is maintained if the consumed part is manufactured in the company. If part is purchased from external supplier, then supplier name is maintained. Which of the following constraints need to be considered when modelling class/subclass concepts in ERD for the given problem.
+
+**Options**
+
+1. Total specialization and overlapping constraints
+2. Disjoint constraint only
+3. Partial participation
+4. Partial participation and disjoint constraints
 
 **Chapter foundations**
 

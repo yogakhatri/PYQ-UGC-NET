@@ -3,19 +3,19 @@
 [Project home](../README.md) · [Official syllabus](syllabus.md) · [Contributing](../CONTRIBUTING.md)
 
 > [!WARNING]
-> Unit 1 has project-reviewed solutions. Units 2–10 are working extraction inventories: seventeen answers are validated and 1,922 remain withheld; some classifications use fallback routing, and OCR or missing figures can make questions incomplete.
+> Unit 1 has project-reviewed solutions. Units 2–10 are working extraction inventories: twenty-six answers are validated and 1,908 remain withheld; some classifications use fallback routing, and OCR or missing figures can make questions incomplete.
 
 | Unit | Guide | Questions | Answer status |
 |---:|---|---:|---|
-| 1 | [Discrete Structures and Optimization](unit-1-discrete-structures-and-optimization.md) | 143 | Project-reviewed solutions |
-| 2 | [Computer System Architecture](unit-2-computer-system-architecture.md) | 391 | Inventory; no validated answers |
-| 3 | [Programming Languages and Computer Graphics](unit-3-programming-languages-and-computer-graphics.md) | 184 | Inventory; 11 validated answers |
-| 4 | [Database Management Systems](unit-4-database-management-systems.md) | 176 | Inventory; no validated answers |
-| 5 | [System Software and Operating System](unit-5-system-software-and-operating-system.md) | 184 | Inventory; no validated answers |
-| 6 | [Software Engineering](unit-6-software-engineering.md) | 180 | Inventory; 6 validated answers |
-| 7 | [Data Structures and Algorithms](unit-7-data-structures-and-algorithms.md) | 251 | Inventory; no validated answers |
-| 8 | [Theory of Computation and Compilers](unit-8-theory-of-computation-and-compilers.md) | 220 | Inventory; no validated answers |
-| 9 | [Data Communication and Computer Networks](unit-9-data-communication-and-computer-networks.md) | 256 | Inventory; no validated answers |
+| 1 | [Discrete Structures and Optimization](unit-1-discrete-structures-and-optimization.md) | 151 | Project-reviewed solutions |
+| 2 | [Computer System Architecture](unit-2-computer-system-architecture.md) | 386 | Inventory; no validated answers |
+| 3 | [Programming Languages and Computer Graphics](unit-3-programming-languages-and-computer-graphics.md) | 189 | Inventory; 12 validated answers |
+| 4 | [Database Management Systems](unit-4-database-management-systems.md) | 178 | Inventory; no validated answers |
+| 5 | [System Software and Operating System](unit-5-system-software-and-operating-system.md) | 182 | Inventory; no validated answers |
+| 6 | [Software Engineering](unit-6-software-engineering.md) | 180 | Inventory; 10 validated answers |
+| 7 | [Data Structures and Algorithms](unit-7-data-structures-and-algorithms.md) | 248 | Inventory; no validated answers |
+| 8 | [Theory of Computation and Compilers](unit-8-theory-of-computation-and-compilers.md) | 219 | Inventory; 4 validated answers |
+| 9 | [Data Communication and Computer Networks](unit-9-data-communication-and-computer-networks.md) | 255 | Inventory; no validated answers |
 | 10 | [Artificial Intelligence](unit-10-artificial-intelligence.md) | 97 | Inventory; no validated answers |
 
 ## Reading tips

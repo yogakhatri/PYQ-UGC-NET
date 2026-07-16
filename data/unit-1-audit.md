@@ -3,10 +3,10 @@
 ## Outcome
 
 - **Guide:** `docs/unit-1-discrete-structures-and-optimization.md`
-- **Solved records:** 143
+- **Solved records:** 151
 - **Years represented:** every year present in the verified UGC corpus from 2009 through 2026
 - **Source PDFs represented:** 31
-- **Question IDs:** 143 unique
+- **Question IDs:** 151 unique
 - **Topics:** all seven official Unit 1 topic groups represented
 - **Question duplicate groups:** 6 conservative exact/conceptual groups
 - **Rajasthan SET:** 0 questions because no verifiable SET paper/key is present
@@ -26,7 +26,7 @@
 
 Each row in `questions.json` contains exam/session metadata, question number/ID, source filename and page, official unit/topic/subtopic, complete normalized question and any source options, answer status, correct answer, solution steps, concept/rule, shortcut, trap, option analysis, duplicate canonical ID and source anchor.
 
-The CSV is a lossless tabular projection of the same 143 records; nested options and solution steps are JSON-encoded inside their CSV cells.
+The CSV is a lossless tabular projection of the same 151 records; nested options and solution steps are JSON-encoded inside their CSV cells.
 
 ## Scope and exceptions
 

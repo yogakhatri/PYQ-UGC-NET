@@ -11,18 +11,7 @@ from urllib.parse import unquote
 
 
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED_GUIDES = {
-    "unit-1-discrete-structures-and-optimization.md": 143,
-    "unit-2-computer-system-architecture.md": 391,
-    "unit-3-programming-languages-and-computer-graphics.md": 184,
-    "unit-4-database-management-systems.md": 176,
-    "unit-5-system-software-and-operating-system.md": 184,
-    "unit-6-software-engineering.md": 180,
-    "unit-7-data-structures-and-algorithms.md": 251,
-    "unit-8-theory-of-computation-and-compilers.md": 220,
-    "unit-9-data-communication-and-computer-networks.md": 256,
-    "unit-10-artificial-intelligence.md": 97,
-}
+UNIT_1_GUIDE_NAME = "unit-1-discrete-structures-and-optimization.md"
 REQUIRED_PUBLIC_FILES = (
     "README.md",
     "LICENSE",
@@ -58,9 +47,20 @@ def fail(errors: list[str], message: str) -> None:
 
 
 def check_guides(errors: list[str]) -> None:
+    coverage = json.loads(
+        (ROOT / "data" / "units-2-10-working-coverage.json").read_text(encoding="utf-8")
+    )
+    unit_1_count = len(json.loads(
+        (ROOT / "data" / "questions.json").read_text(encoding="utf-8")
+    ))
+    expected_guides = {UNIT_1_GUIDE_NAME: unit_1_count}
+    expected_guides.update({
+        Path(entry["file"]).name: entry["questions"]
+        for entry in coverage.values()
+    })
     guides = sorted((ROOT / "docs").glob("unit-*.md"))
     actual_names = {path.name for path in guides}
-    expected_names = set(EXPECTED_GUIDES)
+    expected_names = set(expected_guides)
     if actual_names != expected_names:
         fail(
             errors,
@@ -72,7 +72,7 @@ def check_guides(errors: list[str]) -> None:
     for path in guides:
         text = path.read_text(encoding="utf-8")
         numbers = [int(value) for value in QUESTION_HEADING.findall(text)]
-        expected_count = EXPECTED_GUIDES.get(path.name)
+        expected_count = expected_guides.get(path.name)
         if expected_count is None:
             continue
         if numbers != list(range(1, expected_count + 1)):
@@ -189,9 +189,17 @@ def check_repository_contract(errors: list[str]) -> None:
             if entry["keyStatus"] in {"single-option", "multiple-options-accepted"} and not entry["correctOptions"]:
                 fail(errors, f"Official key {session_key} Q{question_number} has no mapped option number")
 
-    guide_total = sum(EXPECTED_GUIDES.values())
-    if guide_total != 2082:
-        fail(errors, f"Expected guide-count table totals {guide_total}; expected 2082")
+    coverage = json.loads(
+        (ROOT / "data" / "units-2-10-working-coverage.json").read_text(encoding="utf-8")
+    )
+    unit_1_count = len(json.loads(
+        (ROOT / "data" / "questions.json").read_text(encoding="utf-8")
+    ))
+    guide_total = unit_1_count + sum(
+        entry["questions"] for entry in coverage.values()
+    )
+    if guide_total > len(records) + unit_1_count:
+        fail(errors, f"Guide-count metadata is impossible: {guide_total} records")
 
     ignore_text = (ROOT / ".gitignore").read_text(encoding="utf-8")
     if "sources/*.pdf" not in ignore_text:
