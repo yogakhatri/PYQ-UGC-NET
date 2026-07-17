@@ -1,0 +1,25 @@
+# Question 150
+
+*UGC NET CS · 2023 Mar 11 Shift 2 Dec 2022 Session · Turing Machines · Recursive and Recursively Enumerable Languages*
+
+A Turing Machine for the language L=(a0 cd| n21. m≥1; is designed. The resultant model is M= (190.91.92.93.94;95.96.97.9F), {a,b,c.d), (a,b,c.d,X,,X2,Y1, Y2),6, 90, B, (qr)) and part of '8'is given in the transition table. You need to write the following questions based on design of Turing Machine for the given language. Note that, while designing the Turing Machine Xy and X2 are used to work with 'a's and 'c's and Y1 and Yo are used to handle 'b's and 'd's of the given string. d YI B (91,X, R) 9c M2 91 (91,b, R) (g) a, R) MI (91X2, R) (g2.b. L) (92 X1, R) K92-X2. L) 93 M3 190X2, R MS (44.b, R) 94 (94. Y2, R) (gs, Y2. L) (95.b. L) 95 (gs. Y2. L) 96 K96-X,, R) 97 (grY 2, R) (9г.B, R) What is the Move in the cell with number 'MS' of the resultant Table?
+
+- **1.** (94.X2.R)
+- **2.** (qs.X2,R)
+- **3.** (95-42.L)
+- **4.** Error Entry
+
+> [!TIP]
+> **Correct answer: 1. (94.X2.R)**
+
+## Solution
+
+M5 is q4 reading X2. While seeking an unmatched d, q4 must pass the X2 markers used for c symbols without changing them, so it remains q4 and moves right: (q4,X2,R).
+
+## Key Points
+
+- Processed markers between the current head position and target are skipped in the active scan state.
+
+## Why the other options are incorrect
+
+Switching to q5 starts the leftward return before a d has been marked; moving left likewise reverses too early.

@@ -1,0 +1,25 @@
+# Question 148
+
+*UGC NET CS · 2023 Mar 11 Shift 2 Dec 2022 Session · Turing Machines · Recursive and Recursively Enumerable Languages*
+
+A Turing Machine for the language L={a"b™*/"| n21, m≥1) is designed. The resultant model is M= (190.91.92.93.94,95>96-97.9fl, (a.b,c,d), (a,b.c.d,X),X2,Y1, Y2),6, 90, B, (g6)) and part of 8' is given in the transition table. You need to write the following questions based on design of Turing Machine for the given language. Note that, while designing the Turing Machine Xy and X2 are used to work with 'a's and 'c's and Y and Y are used to handle 'b's and 'd's of the given string. d M2 90 91 (9.a. R) MI (91,b, R) (91X2, R) (42,b, L) (42,a. L) 92 (92.X1, R) (g2-X,, I) 93 M3 94. Y, R) K96X2, R) 94 MS (94, 6, R) (95, Y 2, L) (94. Y2, R) (95,b, L) Kgs.X2. L) M4 95 96 K96X2, R> (97.Y2, R) 97 [91%, R) (9. 3, B) What is the Move in the cell with number 'M3' of the resultant Table?
+
+- **1.** (91 X1.L)
+- **2.** (94.41. R)
+- **3.** (91 Xy,R)
+- **4.** Error Entry
+
+> [!TIP]
+> **Correct answer: 4. Error Entry**
+
+## Solution
+
+M3 is the q3 transition on an unmarked a. State q3 is scanning right to find the next b, so it should preserve a, remain in q3, and move right: (q3,a,R). None of options 1–3 states this, making option 4 the only applicable choice.
+
+## Key Points
+
+- A scan state normally preserves irrelevant symbols and continues in the same direction/state.
+
+## Why the other options are incorrect
+
+The listed moves write X1 or jump to q1/q4, which would corrupt or prematurely change the scan phase.

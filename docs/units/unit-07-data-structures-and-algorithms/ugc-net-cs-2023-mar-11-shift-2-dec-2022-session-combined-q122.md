@@ -1,0 +1,25 @@
+# Question 122
+
+*UGC NET CS · 2023 Mar 11 Shift 2 Dec 2022 Session · Graph Algorithms · Minimum Spanning Trees*
+
+No. ID: 1870 Match List I with List II LIST I LIST II Dijkstra's Algorithm Calculates path matrix Prim's Algorithm Stores minimum cost edge IL Warshall's Algorithm III. Stores the total cost from a source node to the current node IV. Finds Minimum Spanning Tree Kruskal's algorithm Choose the correct answer from the options given below:
+
+- **1.** A-I, B-II, C-III, D-IV
+- **2.** A-III, B-II, C-I, D-IV
+- **3.** A-II, B-I, C-IV, D-III
+- **4.** A-III, B-IV, C-II, D-I
+
+> [!TIP]
+> **Correct answer: 2. A-III, B-II, C-I, D-IV**
+
+## Solution
+
+Dijkstra stores the best total source-to-current cost (A–III). Prim repeatedly stores/selects a minimum crossing edge (B–II). Warshall calculates reachability/path matrices (C–I). Kruskal finds a minimum spanning tree (D–IV).
+
+## Key Points
+
+- Dijkstra: single-source shortest paths; Warshall: all-pairs reachability; Prim/Kruskal: MST.
+
+## Why the other options are incorrect
+
+Other options confuse shortest-path, transitive-closure, and MST roles.

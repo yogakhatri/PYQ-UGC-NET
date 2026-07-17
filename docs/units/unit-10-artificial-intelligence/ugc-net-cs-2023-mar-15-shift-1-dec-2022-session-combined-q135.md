@@ -1,0 +1,25 @@
+# Question 135
+
+*UGC NET CS · 2023 Mar 15 Shift 1 Dec 2022 Session · Artificial Neural Networks · Hopfield Network*
+
+0: 89085 Which of the following is related to function of layers in a neural network? A. Information → Input layer→ Hidden layer B. Bias → output layer → hidden layer. C. Hidden layer → algorithm → output layer. D. Input layer → output layer → algorithms. Choose the correct answer from the options given below:
+
+- **1.** Only sequence 'A' is correct.
+- **2.** Only sequence B' is correct.
+- **3.** Only sequence 'C' is correct.
+- **4.** Only sequence 'D' is correct.
+
+> [!TIP]
+> **Correct answer: 1. Only sequence 'A' is correct.**
+
+## Solution
+
+A feed-forward neural network accepts information at its input layer, transforms it through one or more hidden layers, and ultimately produces an output. Sequence A correctly begins this flow as Information → Input layer → Hidden layer.
+
+## Key Points
+
+- Data flows input → hidden processing → output in a standard feed-forward ANN.
+
+## Why the other options are incorrect
+
+Bias is a parameter applied within neurons, not an input flowing from output to hidden layers. An algorithm is not a network layer, and a normal feed-forward path does not put the output layer before the processing that produces it.

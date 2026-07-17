@@ -1,0 +1,25 @@
+# Question 137
+
+*UGC NET CS · 2023 Mar 11 Shift 2 Dec 2022 Session · Language Design and Translation Issues · Virtual Computers and Binding Times*
+
+Assertion A: A Raster scan device is a CRT graphic device and can use a television monitor for display Reason R: In Raster scan display the picture is composed of a series of dots. These dots are traced out as a series of horizontal lines. Television works in a similar fashion. In the light of the above statements, choose the correct answer from the options given below:
+
+- **1.** Both A and Rare true and R is the correct explanation of A
+- **2.** Both A and R are true but R is not the correct explanation of A
+- **3.** A is true but R is false
+- **4.** A is talse but R is true
+
+> [!TIP]
+> **Correct answer: 1. Both A and Rare true and R is the correct explanation of A**
+
+## Solution
+
+Raster-scan CRT systems form pictures as dot samples traced line by line, the same scanning principle used by television displays. Both A and R are true, and R directly explains why a television monitor can serve as a raster display.
+
+## Key Points
+
+- Raster displays refresh a pixel grid in horizontal scan lines.
+
+## Why the other options are incorrect
+
+The remaining choices deny either a true statement or the explanatory connection.

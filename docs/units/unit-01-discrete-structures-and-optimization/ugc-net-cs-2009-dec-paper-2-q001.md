@@ -1,0 +1,25 @@
+# Question 1
+
+*UGC NET CS · 2009 Dec Paper 2 · Sets and Relations · Representation and Properties of Relations*
+
+If she is my friend and you are her friend, then we are frie nds. Given this, the friend relationship in this context is ____________. (i) commutative (ii) transitive (iii) implicative (iv) equivalence
+
+- **A.** (i) and (ii)
+- **B.** (iii)
+- **C.** (i), (ii), (iii) and (iv)
+- **D.** None of these
+
+> [!TIP]
+> **Correct answer: B. (iii)**
+
+## Solution
+
+The sentence has the logical form: if one person is related to a second and the second is related to a third, then the first is related to the third. In symbols, xRy and yRz imply xRz. This is an implication expressing transitivity; among the combinations offered, statement (iii), 'implicative', is the intended description.
+
+## Key Points
+
+- Translate the natural-language conditional into xRy ∧ yRz ⇒ xRz before classifying it.
+
+## Why the other options are incorrect
+
+The sentence alone does not establish symmetry/commutativity, because it does not assert every reversed pair. Nor does it establish reflexivity, which is required along with symmetry and transitivity for an equivalence relation. Hence options A and C claim unsupported properties, and D overlooks the implication form.

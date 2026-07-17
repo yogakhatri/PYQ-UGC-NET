@@ -1,2 +1,0 @@
-# Runtime dependency for PDF inventory and native-text extraction.
-pypdf>=5.0,<7.0

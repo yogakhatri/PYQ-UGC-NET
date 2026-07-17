@@ -1,0 +1,25 @@
+# Question 82
+
+*UGC NET CS · 2023 Mar 11 Shift 2 Dec 2022 Session · Regular Language Models · Epsilon-NFA reachability*
+
+I. No.31 BID:187032 In the c-NFA. M = (f90. 91.92.93].{a). ô. go. {q3}) where 'ổ is given in the transition table below, what is the minimum length of string to reach to the final state? a 90 {913 91 {92.93) 92 0 93
+
+- **1.** 0
+- **2.** 1
+- **3.** 2
+- **4.** 3
+
+> [!TIP]
+> **Correct answer: 3. 2**
+
+## Solution
+
+From the initial state q0, reading one a reaches q1. From q1, reading a can reach q3, which is final (the same transition also includes q2). Thus the string aa reaches an accepting state and has length 2. Neither the empty string nor a one-symbol string reaches q3 in the displayed transition table.
+
+## Key Points
+
+- For an NFA, track the set of reachable states after each symbol and stop as soon as that set contains a final state.
+
+## Why the other options are incorrect
+
+Lengths 0 and 1 stop at q0 and q1 respectively, neither of which is final. Length 3 can also lead along longer paths, but it is not the minimum.

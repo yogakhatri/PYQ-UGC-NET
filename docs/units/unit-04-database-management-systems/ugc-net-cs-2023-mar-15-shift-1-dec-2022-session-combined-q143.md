@@ -1,0 +1,25 @@
+# Question 143
+
+*UGC NET CS · 2023 Mar 15 Shift 1 Dec 2022 Session · Database System Concepts and Architecture · Database Languages and Interfaces*
+
+il. No.9. BID:8709 Use the following schema of the academic institution relational database: student (rollno, name, degree, year, sex, deptno, advisor) department (deptid, name, hod, phone) professor (empid, name, sex, startyear, deptno, phone) course (courseid, cname, credits, deptno) enrollment (rollno, courseid, sem, year, grade) teaching (empid, courseid, sem, year, classroom) prerequisite (precourseid, courseid) deptno is foreign key in the student, professor and course relations referring to deptid of department relation; advisor is a foreign key in the student relation referring to empid of professor relation; hod is a foreign key in the department relation referring to empid of professor relation; rollno is a foreign key in the enrollment relation referring to rollno of student relation; courseid is a foreign key in the enrollment, teaching relations referring to courseid of course relation; empid is a foreign key of the teaching relation referring to empid of professor relation; precourseid and courseid are foreign keys in the prerequisite relation referring to courseid of the course relation; Which of the following queries would compute, for each department, the total credits of all the courses offered by the department?
+
+- **1.** select deptid, name, sum(credits) as totalcredits from department, course where deptid = deptno group by deptid, name
+- **2.** select deptid, name, count(credits) as totalcredits from department, course where deptid=deptno group by deptid, name
+- **3.** select deptid, name, sum(credits) as totalcredits from department, course where deptid =deptno
+- **4.** select deptid, name, sum(credits) as totalcredits from department, course group by deptid, name having deptid=deptno
+
+> [!TIP]
+> **Correct answer: 1. select deptid, name, sum(credits) as totalcredits from department, course where deptid = deptno group by deptid, name**
+
+## Solution
+
+To obtain the total credits offered by each department, course rows must be joined to their department by deptid=deptno, grouped by department identity and name, and aggregated with SUM(credits). Option 1 performs exactly these operations.
+
+## Key Points
+
+- Join first, GROUP BY each department, then SUM its course credits.
+
+## Why the other options are incorrect
+
+COUNT counts course rows rather than credits. Option 3 lacks GROUP BY and cannot legally mix department columns with the aggregate. Option 4 puts a join condition improperly in HAVING and creates a Cartesian product before grouping.

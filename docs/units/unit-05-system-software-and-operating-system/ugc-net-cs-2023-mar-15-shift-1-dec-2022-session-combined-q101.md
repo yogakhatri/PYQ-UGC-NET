@@ -1,0 +1,25 @@
+# Question 101
+
+*UGC NET CS · 2023 Mar 15 Shift 1 Dec 2022 Session · CPU Scheduling · Multiple-Processor Scheduling*
+
+stoption 10-459031 S. N0-87051 Which of the following statements are true? A. If the time quantum is extremely small, round robin can result in a large number of context switches. B. The average turnaround time of a set of processes does not necessarily improve as the time-quantum size increases. C. The average turnaround time can be improved if most processes finish their next CPU burst in a single time quantum. Choose the correct answer from the options given below:
+
+- **1.** A only
+- **2.** A, B only
+- **3.** B, C only
+- **4.** A, B, C
+
+> [!TIP]
+> **Correct answer: 4. A, B, C**
+
+## Solution
+
+A tiny quantum creates many context switches (A). Turnaround is not monotonic in quantum, so increasing it need not improve the average (B). Choosing a quantum large enough for most next CPU bursts lets those processes finish without another wait and can improve turnaround (C). All are true.
+
+## Key Points
+
+- Quantum size trades responsiveness/context-switch overhead against completion per turn.
+
+## Why the other options are incorrect
+
+Options 1–3 omit at least one correct scheduling observation.

@@ -1,0 +1,25 @@
+# Question 140
+
+*UGC NET CS · 2023 Mar 11 Shift 2 Dec 2022 Session · OSI and TCP/IP Layer Functions · Error Detection and Correction*
+
+A TCP Server application is programmed to listen on port P on Host S. A TCP Client is connected to the TCP Server over the network. Considered that while TCP Connection is active the server is crashed and rebooted. Assume that the client does not use TCP keepalive timer. Which of the following behaviours is/are possible? Statement I: If client is waiting to receive a packet, it may wait indefinitely Statement II: If the client sends a packet after the server reboot, it will receive the FIN segment In the light of the above statements, choose the correct answer from the options given below
+
+- **1.** Both Statement I and Statement Il are true
+- **2.** Both Statement I and Statement I are false
+- **3.** Statement I is true but Statement II is false
+- **4.** Statement I is false but Statement II is true
+
+> [!TIP]
+> **Correct answer: 3. Statement I is true but Statement II is false**
+
+## Solution
+
+Without keepalive, an idle client blocked in receive may not learn that the reboot erased server state, so it can wait indefinitely (I true). If it later sends, the rebooted host has no matching TCP connection and responds with RST, not FIN (II false).
+
+## Key Points
+
+- Unknown post-reboot TCP segments elicit reset; FIN represents graceful shutdown.
+
+## Why the other options are incorrect
+
+Options accepting II confuse abrupt loss of state with an orderly TCP close, which uses FIN.

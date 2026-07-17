@@ -1,38 +1,27 @@
-# Study Guide Index
+# UGC NET Computer Science: 45-Day Question Guide
 
-[Project home](../README.md) · [Official syllabus](syllabus.md) · [Contributing](../CONTRIBUTING.md)
+Start with the [45-day study plan](45-day-plan.md). Questions are grouped by unit, chapter and subtopic. Each completed card gives the correct answer, a clear solution, key points and distractor analysis.
 
-> [!WARNING]
-> Unit 1 has project-reviewed solutions. Units 2–10 are working extraction inventories: twenty-six answers are validated and 1,908 remain withheld; some classifications use fallback routing, and OCR or missing figures can make questions incomplete.
+**Current complete cards: 1824 of 2460.** Remaining cards are not shown until their answers and explanations are independently completed.
 
-| Unit | Guide | Questions | Answer status |
-|---:|---|---:|---|
-| 1 | [Discrete Structures and Optimization](unit-1-discrete-structures-and-optimization.md) | 151 | Project-reviewed solutions |
-| 2 | [Computer System Architecture](unit-2-computer-system-architecture.md) | 386 | Inventory; no validated answers |
-| 3 | [Programming Languages and Computer Graphics](unit-3-programming-languages-and-computer-graphics.md) | 189 | Inventory; 12 validated answers |
-| 4 | [Database Management Systems](unit-4-database-management-systems.md) | 178 | Inventory; no validated answers |
-| 5 | [System Software and Operating System](unit-5-system-software-and-operating-system.md) | 182 | Inventory; no validated answers |
-| 6 | [Software Engineering](unit-6-software-engineering.md) | 180 | Inventory; 10 validated answers |
-| 7 | [Data Structures and Algorithms](unit-7-data-structures-and-algorithms.md) | 248 | Inventory; no validated answers |
-| 8 | [Theory of Computation and Compilers](unit-8-theory-of-computation-and-compilers.md) | 219 | Inventory; 4 validated answers |
-| 9 | [Data Communication and Computer Networks](unit-9-data-communication-and-computer-networks.md) | 255 | Inventory; no validated answers |
-| 10 | [Artificial Intelligence](unit-10-artificial-intelligence.md) | 97 | Inventory; no validated answers |
+## Units
 
-## Reading tips
+| Unit | Guide | Questions | Complete cards |
+|---:|---|---:|---:|
+| 1 | [Discrete Structures and Optimization](units/unit-01-discrete-structures-and-optimization/README.md) | 226 | 187 |
+| 2 | [Computer System Architecture](units/unit-02-computer-system-architecture/README.md) | 273 | 179 |
+| 3 | [Programming Languages and Computer Graphics](units/unit-03-programming-languages-and-computer-graphics/README.md) | 274 | 236 |
+| 4 | [Database Management Systems](units/unit-04-database-management-systems/README.md) | 222 | 175 |
+| 5 | [System Software and Operating System](units/unit-05-system-software-and-operating-system/README.md) | 225 | 191 |
+| 6 | [Software Engineering](units/unit-06-software-engineering/README.md) | 224 | 181 |
+| 7 | [Data Structures and Algorithms](units/unit-07-data-structures-and-algorithms/README.md) | 242 | 177 |
+| 8 | [Theory of Computation and Compilers](units/unit-08-theory-of-computation-and-compilers/README.md) | 239 | 160 |
+| 9 | [Data Communication and Computer Networks](units/unit-09-data-communication-and-computer-networks/README.md) | 280 | 212 |
+| 10 | [Artificial Intelligence](units/unit-10-artificial-intelligence/README.md) | 155 | 126 |
 
-1. Use each guide’s contents links to jump to a chapter.
-2. Attempt the question before reading the method.
-3. Treat every omitted answer as an open validation task.
-4. Report damaged wording with the short exam reference shown above the question.
-5. Use the repository audits when proposing a correction.
+## How to use a learning card
 
-## Project evidence
-
-- [Coverage and completion audit](../data/all-units-coverage-audit.md)
-- [Unit 1 validation audit](../data/unit-1-audit.md)
-- [Source-file inventory](../data/source-files-report.md)
-- [Extraction issues](../data/extraction-errors.md)
-- [Classification review queue](../data/classification-review.md)
-- [Disputed questions](../data/disputed-questions.md)
-
-This repository covers the Computer Science subject paper, not Paper 1. No verifiable Rajasthan SET Computer Science paper is present in the supplied corpus.
+1. Attempt the question without viewing the answer.
+2. If correct and confident, read only **Key Points**.
+3. If wrong or uncertain, read the complete **Solution** and distractor analysis.
+4. Reattempt wrong questions after 1, 3 and 7 days.

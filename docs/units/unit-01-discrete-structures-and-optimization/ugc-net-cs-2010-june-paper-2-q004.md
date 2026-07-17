@@ -1,0 +1,25 @@
+# Question 4
+
+*UGC NET CS · 2010 June Paper 2 · Graph Theory · Hamiltonian Paths and Circuits*
+
+S 1 : I teach algorithms and maths. S 2 : My professor teaches maths, electronics and computer science. S 3 : I have a student of maths. S 4 : Algorithm is a part of computer science. S 5 : Maths students know computer science. What would be the chromatic number of a graph, vertices of which are the actors/entities that are involved in the sentences S 1 to S 5 and edges-to represent the associations/relationships amongst the entities/actors as expressed in the sentences S 1 to S 5 above ?
+
+- **A.** 2
+- **B.** 3
+- **C.** 4
+- **D.** None of these COMPUTER SCIENCE & APPLICATIONS Paper – II Note : This paper contains fifty (50) objective type questions, each question carrying two (2) marks. Attempt all the questions.
+
+> [!TIP]
+> **Correct answer: B. 3**
+
+## Solution
+
+Create a vertex for each actor/entity and connect entities associated in a sentence. The statements include a triangle such as I–student–maths–I, so at least three colors are required. A consistent three-coloring exists for the remaining vertices (professor, algorithms, electronics, computer science), so the lower bound is attainable. The chromatic number is 3.
+
+## Key Points
+
+- Find a triangle for a lower bound, then exhibit a 3-coloring for the matching upper bound.
+
+## Why the other options are incorrect
+
+Two colors cannot color the triangle. No four-clique or other obstruction forces a fourth color, so 4 and 'none' are unnecessary.
